@@ -1,0 +1,31 @@
+{
+	"RootView":{
+		"bgColor":"000000AA",
+		"width":"750",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"bgColor":"996633FF",
+				"width":"512",
+				"x":"103",
+				"y":"358",
+				"fontSize":"50",
+				"id":"do_Button_1",
+				"text":"手指按下",
+				"type":"do_Button",
+				"fontColor":"FFFFFFFF",
+				"height":"512"
+			},
+			{
+				"textAlign":"center",
+				"x":"102",
+				"width":"510",
+				"y":"646",
+				"id":"do_Label_1",
+				"type":"do_Label",
+				"height":"70"
+			}
+		],
+		"height":"1206"
+	}
+}
