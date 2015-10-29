@@ -1,0 +1,31 @@
+{
+	"RootView":{
+		"x":"0",
+		"width":"356",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"bgColor":"C0C0C0FF",
+				"width":"200",
+				"fontSize":"40",
+				"id":"do_Button_1",
+				"text":"取消关注",
+				"type":"do_Button",
+				"height":"156"
+			},
+			{
+				"bgColor":"FF0000FF",
+				"x":"200",
+				"width":"156",
+				"fontSize":"40",
+				"id":"do_Button_2",
+				"text":"删除",
+				"type":"do_Button",
+				"fontColor":"FFFFFFFF",
+				"height":"156"
+			}
+		],
+		"height":"156"
+	}
+}
