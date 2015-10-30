@@ -1,0 +1,110 @@
+﻿{
+  "ID": "do_Device",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "设备的信息环境类",
+  "Version": "Internal",
+  "Description": "能获取设备的多种信息，能监控设备按钮的操作事件，能控制设备的一些辅助功能",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150713/02b1d098-62e5-40e4-998f-a0745587d622.png",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "iOS 7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [],
+  "syncMethodes": [
+    {
+      "ID": "beep",
+      "Name": "短音提示",
+      "Description": "设备会播放一个“嘟”的提示音",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    },
+    {
+      "ID": "flash",
+      "Name": "开关闪光灯",
+      "Description": "开关手机系统闪光灯",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "status",
+          "Name": "闪光灯状态",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "变化闪光灯状态，可以为“on”或者“off”2个状态，分别表示开关闪光灯"
+        }
+      ]
+    },
+    {
+      "ID": "getAllAppInfo",
+      "Name": "获取应用信息",
+      "Description": "能获取安装到设备上的所有应用的列表和对应的一些信息，目前只支持获取流量（仅支持android平台）",
+      "ReturnType": "Node",
+      "ReturnDesc": "[\r\n{'name':'app的名称'，'pname':'app的包名','isSystem':'是否为系统应用，0 不是，1 是','traffic':'app使用的流量，单位byte'},\r\n...\r\n]",
+      "Paras": []
+    },
+    {
+      "ID": "getInfo",
+      "Name": "获取设备信息",
+      "Description": "",
+      "ReturnType": "Node",
+      "ReturnDesc": "返回值是一个JSON键值对，键值分别为“设备信息名称”和“设备信息值”，比如\\r\\n{\\r\\n    \\\"OS\\\":\\\"Android\\\",\\r\\n    \\\"OSVersion\\\":\\\"4.1\\\",\\r\\n    .....\\r\\n}\\r\\n不同的操作系统可能有少部分信息获取不到，另外deviceId：设备唯一标识，deviceName：设备名称，OS：操作系统版本，OSVersion：操作系统版本号，sdkVersion：获取手机操作系统SDK版本号，resolutionH：水平分辨率，resolutionV：垂直分辨率，dpiH：水平像素密度，dpiV：垂直像素密度，screenH：水平屏幕宽度（dip)，screenV：垂直屏幕宽度（dip)，phoneType：手机机型，phoneNumber：手机号码，communicationType：运营商类型，simSerialNumber：SIM卡的序列号，IMSI：IMSI(国际移动用户识别码)",
+      "Paras": [
+        {
+          "ID": "name",
+          "Name": "设备信息名称",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "all",
+          "Description": "根据设备信息名称获取设备信息值。缺省为“all”，表示返回所有的信息.除了“all”之外，name还可以为以下这些值：deviceId：设备唯一标识 deviceName：设备名称OS：操作系统版本OSVersion：操作系统版本号sdkVersion：获取手机操作系统SDK版本号resolutionH：水平分辨率resolutionV：垂直分辨率dpiH：水平像素密度dpiV：垂直像素密度screenH：水平屏幕宽度（dip)screenV：垂直屏幕宽度（dip)phoneType：手机机型phoneNumber：手机号码 communicationType：运营商类型simSerialNumber：SIM卡的序列号IMSI：IMSI(国际移动用户识别码)"
+        }
+      ]
+    },
+    {
+      "ID": "vibrate",
+      "Name": "设备振动",
+      "Description": "设备震动，缺省是一秒",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "duration",
+          "Name": "振动持续时间",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "1000",
+          "Description": "振动持续时间，单位是毫秒"
+        }
+      ]
+    }
+  ],
+  "asyncMethodes": [
+    {
+      "ID": "screenShot",
+      "Name": "截屏",
+      "Description": "截取当前屏幕显示内容",
+      "ReturnType": "String",
+      "ReturnDesc": "返回截屏图片保存的地址，是一个data://temp/do_Device目录下一个图片文件，文件名是日期+时间",
+      "Paras": []
+    }
+  ]
+}
