@@ -6,14 +6,14 @@
 		"type":"do_ALayout",
 		"views":[
 			{
-				"bgColor":"1F7F7FFF",
+				"bgColor":"2E16A8FF",
 				"width":"750",
 				"id":"do_ALayout_2",
 				"type":"do_ALayout",
 				"height":"40"
 			},
 			{
-				"bgColor":"1F7F7FFF",
+				"bgColor":"2E16A8FF",
 				"width":"750",
 				"y":"40",
 				"id":"do_ALayout_3",
@@ -35,39 +35,46 @@
 						"width":"294",
 						"fontSize":"40",
 						"id":"do_Label_1",
-						"text":"do_App组件",
+						"text":"Page3",
 						"type":"do_Label",
 						"fontColor":"FFFFFFFF",
 						"height":"88"
-					},
-					{
-						"x":"4",
-						"y":"4",
-						"id":"close",
-						"type":"do_ALayout",
-						"views":[
-							{
-								"x":"20",
-								"width":"62",
-								"y":"22",
-								"id":"do_ImageView_2",
-								"source":"source://do_App/image/close.png",
-								"type":"do_ImageView",
-								"height":"44"
-							}
-						]
 					}
 				],
 				"height":"88"
 			},
 			{
-				"templates":"source://do_App/view/cell.ui",
-				"width":"750",
-				"y":"128",
-				"id":"listview",
-				"type":"do_ListView",
-				"selectedColor":"C0C0C0FF",
-				"height":"1206"
+				"bgColor":"996633FF",
+				"x":"184",
+				"width":"366",
+				"y":"242",
+				"fontSize":"30",
+				"id":"do_Button_1",
+				"text":"点击关闭Page3，回到Page2",
+				"type":"do_Button",
+				"height":"221"
+			},
+			{
+				"bgColor":"FFFF00FF",
+				"x":"184",
+				"width":"366",
+				"y":"572",
+				"fontSize":"30",
+				"id":"do_Button_2",
+				"text":"点击关闭2层Page，回到Page1",
+				"type":"do_Button",
+				"height":"221"
+			},
+			{
+				"bgColor":"00FFFFFF",
+				"x":"184",
+				"width":"366",
+				"y":"923",
+				"fontSize":"30",
+				"id":"do_Button_3",
+				"text":"点击closePageToID:page1_id",
+				"type":"do_Button",
+				"height":"221"
 			}
 		],
 		"height":"1334"
