@@ -21,8 +21,8 @@
 				"views":[
 					{
 						"textAlign":"center",
-						"x":"176",
-						"width":"384",
+						"x":"130",
+						"width":"490",
 						"fontSize":"40",
 						"id":"do_Label_1",
 						"text":"do_ProgressBar组件",

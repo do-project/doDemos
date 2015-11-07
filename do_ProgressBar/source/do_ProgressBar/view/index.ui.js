@@ -32,15 +32,10 @@ listdata.addData([ {
 } ]);
 listview.bindItems(listdata);
 var timer = mm("do_Timer");
-var timer_tick = 0;
 timer.on("tick", function() {
-	if (timer_tick == 3) {
 		var simple = ui("simple");
 		simple.visible = false;
 		timer.stop();
-		return;
-	}
-	timer_tick++;
 })
 listview.on("touch", function(index) {
 	switch (index) {
@@ -52,10 +47,7 @@ listview.on("touch", function(index) {
 			simple.visible = true;
 		}
 		// 启动一个定时器模拟一个耗时操作，过三秒结束
-		timer.delay = 0;
-		// 间隔时间,定时器将每隔指定豪秒时间触发一次事件,单位毫秒
-		timer.interval = 1000;
-		timer_tick = 0;
+		timer.delay = 3000;
 		timer.start();
 		break;
 	}
