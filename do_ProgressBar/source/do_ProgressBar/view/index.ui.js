@@ -6,7 +6,7 @@ var app = sm("do_App");
 var page = sm("do_Page");
 var root = ui("$");
 
-// //
+// //返回按钮
 var close = ui("close");
 close.on("touch", function() {
 	app.closePage();
@@ -31,33 +31,31 @@ listdata.addData([ {
 	"name" : "简单使用展示"
 } ]);
 listview.bindItems(listdata);
-var timer = mm("do_Timer");
-timer.on("tick", function() {
-		var simple = ui("simple");
-		simple.visible = false;
-		timer.stop();
-})
+
+
 listview.on("touch", function(index) {
 	switch (index) {
 	case 0:
-		var simple = ui("simple");
-		if (!simple) {
-			addview("simple", "source://do_ProgressBar/view/simple/index.ui");
-		} else {
-			simple.visible = true;
-		}
-		// 启动一个定时器模拟一个耗时操作，过三秒结束
-		timer.delay = 3000;
-		timer.start();
+		addSimple();
 		break;
 	}
 });
 
-function addview(id, path) {
-	var view = ui(id);
-	if (!view) {
-		root.add(id, path, 0, 128)
+////简单使用展示
+var timer = mm("do_Timer");
+timer.on("tick", function() {
+	simple.visible = false;
+	timer.stop();
+})
+var simple;
+function addSimple() {
+	if (!simple) {
+		root.add("simple", "source://do_ProgressBar/view/simple/index.ui",0, 128);
+		simple = ui("simple");
 	} else {
-		view.visible = true;
+		simple.visible = true;
 	}
+	// 启动一个定时器模拟一个耗时操作，过三秒结束
+	timer.delay = 3000;
+	timer.start();
 }

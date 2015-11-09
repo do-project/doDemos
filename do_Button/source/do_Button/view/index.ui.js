@@ -6,23 +6,23 @@ var app = sm("do_App");
 var page = sm("do_Page");
 var root = ui("$");
 
-////
+// //
 var close = ui("close");
-close.on("touch",function(){
+close.on("touch", function() {
 	app.closePage();
 })
 page.on("back", function(data) {
 	app.closePage();
 })
-////
+// //
 var code = ui("code");
-code.on("touch",function(){
+code.on("touch", function() {
 	app.openPage({
 		source : "source://do_Button/view/codeviewer/index.ui",
 		statusBarState : "transparent"
 	});
 });
-////
+// //
 var listview = ui("listview");
 var listdata = mm("do_ListData");
 
@@ -32,39 +32,27 @@ listdata.addData([ {
 }, {
 	"index" : "2",
 	"name" : "带按下弹起事件的Button"
-}, {
-	"index" : "3",
-	"name" : "button功能2"
-}, {
-	"index" : "4",
-	"name" : "button功能2"
-}, {
-	"index" : "5",
-	"name" : "button功能2"
-}, {
-	"index" : "6",
-	"name" : "button功能2"
 } ]);
 listview.bindItems(listdata);
+var bgImageView, eventView;
+listview.on("touch",
+		function(index) {
+			switch (index) {
+			case 0:
+				addview(bgImageView, "bgImage_id",
+						"source://do_Button/view/bgImage/index.ui")
+				break;
+			case 1:
+				addview(eventView, "event_id",
+						"source://do_Button/view/event/index.ui")
+				break;
+			}
+		});
 
-listview.on("touch", function(index) {
-	if (index == 0) {
-		addview("bgImage_id", "source://do_Button/view/bgImage/index.ui")
-	} else if (index == 1) {
-		addview("event_id", "source://do_Button/view/event/index.ui")
-	} else if (index == 2) {
-
-	} else if (index == 3) {
-
-	} else if (index == 4) {
-
-	}
-});
-
-function addview(id, path) {
-	var view = ui(id);
+function addview(view, id, path) {
 	if (!view) {
 		root.add(id, path, 0, 128)
+		view = ui(id);
 	} else {
 		view.visible = true;
 	}

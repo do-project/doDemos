@@ -33,6 +33,23 @@
 						"text":"微信",
 						"type":"do_Label",
 						"fontColor":"FFFFFFFF"
+					},
+					{
+						"x":"4",
+						"y":"4",
+						"id":"close",
+						"type":"do_ALayout",
+						"views":[
+							{
+								"x":"20",
+								"width":"62",
+								"y":"22",
+								"id":"do_ImageView_1",
+								"source":"source://do_SlideListView/image/close.png",
+								"type":"do_ImageView",
+								"height":"44"
+							}
+						]
 					}
 				],
 				"height":"88"

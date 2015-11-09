@@ -12,6 +12,14 @@ page.on("back", function(data) {
 	app.closePage();
 })
 // //
+var code = ui("code");
+code.on("touch", function() {
+	app.openPage({
+		source : "source://do_App/view/codeviewer/index.ui",
+		statusBarState : "transparent"
+	});
+});
+// //
 var listview = ui("listview");
 var listdata = mm("do_ListData");
 
@@ -52,12 +60,3 @@ listview.on("touch", function(index) {
 		break;
 	}
 });
-
-function addview(id, path) {
-	var view = ui(id);
-	if (!view) {
-		root.add(id, path, 0, 128)
-	} else {
-		view.visible = true;
-	}
-}

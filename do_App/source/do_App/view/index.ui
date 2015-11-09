@@ -20,16 +20,6 @@
 				"type":"do_ALayout",
 				"views":[
 					{
-						"x":"650",
-						"width":"70",
-						"y":"9",
-						"id":"do_ImageView_1",
-						"source":"source://fake-weixin/image/chats/bar_add.png",
-						"type":"do_ImageView",
-						"enabled":"true",
-						"height":"70"
-					},
-					{
 						"textAlign":"center",
 						"x":"224",
 						"width":"294",
@@ -54,6 +44,23 @@
 								"source":"source://do_App/image/close.png",
 								"type":"do_ImageView",
 								"height":"44"
+							}
+						]
+					},
+					{
+						"x":"648",
+						"y":"4",
+						"id":"code",
+						"type":"do_ALayout",
+						"views":[
+							{
+								"x":"20",
+								"width":"62",
+								"y":"10",
+								"id":"do_ImageView_3",
+								"source":"source://do_App/image/code.png",
+								"type":"do_ImageView",
+								"height":"58"
 							}
 						]
 					}

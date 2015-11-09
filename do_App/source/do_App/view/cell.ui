@@ -48,7 +48,7 @@
 				"width":"21",
 				"y":"61",
 				"id":"next_image",
-				"source":"source://do_Button/image/right.png",
+				"source":"source://do_App/image/right.png",
 				"type":"do_ImageView",
 				"height":"34"
 			},
