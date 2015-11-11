@@ -1,0 +1,64 @@
+[
+	{
+		"photo": "source://do_ListView/image/movies/Agents_of_SHIELD.png",
+		"name": "Agents of Shield",
+		"time": "2015-11-21 18:09 中华书局",
+		"score": "8.0",
+		"buy": "预售",
+		"bgColor": "0000FFFF"
+	},
+
+	{
+		"photo": "source://do_ListView/image/movies/Band_of_Brothers.png",
+		"name": "Band of Brothers",
+		"time": "2015-11-11 09:10 夕阳影院",
+		"score": "7.2",
+		"buy": "购票",
+		"bgColor": "FF7F00FF"
+	},
+
+	{
+		"photo": "source://do_ListView/image/movies/Game_of_Thrones.png",
+		"name": "Game of Thrones",
+		"time": "2015-11-11 19:10 蘑菇头影院",
+		"score": "9.2",
+		"buy": "购票",
+		"bgColor": "FF7F00FF"
+	},
+
+	{
+		"photo": "source://do_ListView/image/movies/Hart_of_Dixie.png",
+		"name": "Hart of Dixie",
+		"time": "2015-11-09 09:10 国际部俱乐部 花儿会协会",
+		"score": "7.0",
+		"buy": "购票",
+		"bgColor": "FF7F00FF"
+	},
+
+	{
+		"photo": "source://do_ListView/image/movies/House_of_Lies.png",
+		"name": "House of Lies",
+		"time": "2015-11-11 09:10 月上西头俱乐部",
+		"score": "6.5",
+		"buy": "购票",
+		"bgColor": "FF7F00FF"
+	},
+
+	{
+		"photo": "source://do_ListView/image/movies/Kung_Fu_Panda_Legends_of_Awesomeness.png",
+		"name": "Kung Fu Panda Legneds of Awesomeness",
+		"time": "2015-12-11 22:10 大华北影院",
+		"score": "6.8",
+		"buy": "预售",
+		"bgColor": "0000FFFF"
+	},
+
+	{
+		"photo": "source://do_ListView/image/movies/Joan_of_Arcadia.png",
+		"name": "Joan of Arcadia",
+		"time": "2015-11-11 09:10 水波吧",
+		"score": "8.0",
+		"buy": "购票",
+		"bgColor": "FF7F00FF"
+	}
+]

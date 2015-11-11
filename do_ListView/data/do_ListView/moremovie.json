@@ -1,0 +1,64 @@
+[
+	{
+		"photo": "source://do_ListView/image/movies/Legend_of_the_Seeker_256.png",
+		"name": "Lengend of the Seeker 256",
+		"time": "2015-11-21 18:09 隔壁老王音响铺",
+		"score": "8.0",
+		"buy": "预售",
+		"bgColor": "0000FFFF"
+	},
+
+	{
+		"photo": "source://do_ListView/image/movies/Lois_amp_Clark_The_New_Adventures.png",
+		"name": "Lois amp Clark The new Adventures",
+		"time": "2015-11-11 09:10 三伯格影院",
+		"score": "7.2",
+		"buy": "购票",
+		"bgColor": "FF7F00FF"
+	},
+
+	{
+		"photo": "source://do_ListView/image/movies/Person_of_Interest.png",
+		"name": "Person of Interest",
+		"time": "2015-11-11 19:10 克里影院",
+		"score": "9.2",
+		"buy": "购票",
+		"bgColor": "FF7F00FF"
+	},
+
+	{
+		"photo": "source://do_ListView/image/movies/Rules_of_Engagement.png",
+		"name": "Rules of Engagement",
+		"time": "2015-11-09 09:10 柏清可协会",
+		"score": "7.0",
+		"buy": "购票",
+		"bgColor": "FF7F00FF"
+	},
+
+	{
+		"photo": "source://do_ListView/image/movies/Sons_of_Anarchy.png",
+		"name": "Sons of Anarchy",
+		"time": "2015-11-11 09:10 人间天上歌舞厅",
+		"score": "6.5",
+		"buy": "购票",
+		"bgColor": "FF7F00FF"
+	},
+
+	{
+		"photo": "source://do_ListView/image/movies/Spartacus_Gods_of_the_Arena.png",
+		"name": "Spartacus Gods of the Arena",
+		"time": "2015-12-11 22:10 欧比影院",
+		"score": "6.8",
+		"buy": "预售",
+		"bgColor": "0000FFFF"
+	},
+
+	{
+		"photo": "source://do_ListView/image/movies/The_Nine_Lives_of_Chioe_King.png",
+		"name": "The Nine Lives of Chloe King",
+		"time": "2015-11-11 09:10 大卫协会",
+		"score": "8.0",
+		"buy": "购票",
+		"bgColor": "FF7F00FF"
+	}
+]
