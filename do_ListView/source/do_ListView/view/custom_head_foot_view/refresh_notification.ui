@@ -1,0 +1,23 @@
+{
+	"RootView":{
+		"bgColor":"185476FF",
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"textAlign":"center",
+				"x":"201",
+				"width":"342",
+				"y":"17",
+				"fontSize":"30",
+				"id":"do_Label_1",
+				"text":"刷新结束,添加1条数据",
+				"type":"do_Label",
+				"fontColor":"FFFFFFFF",
+				"height":"56"
+			}
+		]
+	}
+}
