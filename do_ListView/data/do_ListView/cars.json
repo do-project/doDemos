@@ -1,0 +1,46 @@
+[
+	{
+		"photo": "http://img10.360buyimg.com/n1/jfs/t1267/338/1219791588/39046/d5bd52ee/558002c2Ncc4a058f.jpg",
+		"name": "广汽丰田 汉兰达订金499元 2015款 2.0T 自动 四驱 精英版 7座",
+		"price": 25.88,
+		"count": 1,
+		"checked": "source://do_ListView/view/cart/unchecked.png",
+		"index" :0
+	},
+
+	{
+		"photo": "http://img4.bitautoimg.com/autoalbum/files/20120809/713/0406027131_6.jpg",
+		"name": "奥迪 A4L订金499元 2016款 30 TFSI 自动 舒适型",
+		"price": 29.1,
+		"count": 1,
+		"checked": "source://do_ListView/view/cart/checked.png",
+		"index" :1
+	},
+
+	{
+		"photo": "http://img10.360buyimg.com/n1/jfs/t982/170/1308053438/34497/2cf1faf3/559436dcN9e31bae1.jpg",
+		"name": "一汽奥迪 A6L订金499元 2015款 TFSI 纪念智领版",
+		"price": 39.82,
+		"count": 1,
+		"checked": "source://do_ListView/view/cart/unchecked.png",
+		"index" :2
+	},
+
+	{
+		"photo": "http://img10.360buyimg.com/n1/jfs/t2467/221/785583006/35821/e6b0bdf2/5629ba50N51efda7c.jpg",
+		"name": "一汽奥迪 Q5订金499元 2016款 40TFSI 进取型",
+		"price": 38.84,
+		"count": 1,
+		"checked": "source://do_ListView/view/cart/unchecked.png",
+		"index" :3
+	},
+
+	{
+		"photo": "http://img10.360buyimg.com/n1/jfs/t1861/108/781331929/33583/3dceb7c4/5629b2a6N3724dc25.jpg",
+		"name": "华晨宝马 3系订金499元 2016款 316i 时尚型",
+		"price": 28.3,
+		"count": 1,
+		"checked": "source://do_ListView/view/cart/unchecked.png",
+		"index" :4
+	}
+]
