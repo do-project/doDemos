@@ -29,9 +29,12 @@ var listdata = mm("do_ListData");
 listdata.addData([ {
 	"index" : "1",
 	"name" : "InputType属性展示"
+},{
+	"index" : "2",
+	"name" : "简单表单示例"
 }]);
 listview.bindItems(listdata);
-var bgImageView, eventView;
+var formdata = {};//初始化表单数据
 listview.on("touch",
 		function(index) {
 			switch (index) {
@@ -41,5 +44,18 @@ listview.on("touch",
 					statusBarState : "transparent"
 				});
 				break;
+			case 1:
+				app.openPage({
+					source : "source://do_TextField/view/simple_form/index.ui",
+					statusBarState : "transparent",
+					animationType: "push_r2l_1",
+					data:formdata
+				});
+				break;
 			}
+			
 		});
+page.on("result", function(data) {
+	//从表单simple_form/index.ui返回的表单数据
+	formdata = data;
+})

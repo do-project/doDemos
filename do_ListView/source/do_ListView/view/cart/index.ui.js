@@ -55,7 +55,7 @@ isAll.on("touch", function() {
 	for (var i = 0; i < listdata.getCount(); i++) {
 		var cell_data = listdata.getOne(i);
 		cell_data.checked = isAllImage.source;
-		listdata.updateOne(i, cell_data)
+		listdata.updateOne(i,cell_data)
 	}
 	listview.refreshItems();
 	compute();
