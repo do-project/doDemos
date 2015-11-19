@@ -1,0 +1,76 @@
+﻿{
+  "ID": "do_DataCache",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "数据缓存",
+  "Version": "Internal",
+  "Description": "数据缓存到本地，程序退出再重新进去还能获取到数据",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150624/b14da354-48e3-4b7d-828c-947dbac9c051.png",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "14"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [],
+  "syncMethodes": [
+    {
+      "ID": "loadData",
+      "Name": "加载数据",
+      "Description": "",
+      "ReturnType": "String",
+      "ReturnDesc": "返回数据值",
+      "Paras": [
+        {
+          "ID": "key",
+          "Name": "数据键",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "saveData",
+      "Name": "缓存数据",
+      "Description": "",
+      "ReturnType": "Bool",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "key",
+          "Name": "数据键",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        },
+        {
+          "ID": "value",
+          "Name": "数据值",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    }
+  ],
+  "asyncMethodes": []
+}
