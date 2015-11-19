@@ -1,0 +1,36 @@
+{
+	"RootView":{
+		"bgColor":"FFFFFFFF",
+		"height":"90",
+		"views":[
+			{
+				"progress":"80",
+				"id":"do_ProgressBar2_1",
+				"progressBgColor":"C0C0C0FF",
+				"progressColor":"FF8000FF",
+				"fontColor":"00000000",
+				"progressWidth":"20",
+				"height":"40",
+				"style":"cycle",
+				"width":"40",
+				"type":"do_ProgressBar2",
+				"y":"22",
+				"x":"288"
+			},
+			{
+				"id":"do_Label_1",
+				"fontColor":"808080FF",
+				"text":"加载中。。。",
+				"width":"160",
+				"fontSize":"22",
+				"type":"do_Label",
+				"y":"4",
+				"x":"366"
+			}
+		],
+		"width":"750",
+		"type":"do_ALayout",
+		"y":"0",
+		"x":"0"
+	}
+}
