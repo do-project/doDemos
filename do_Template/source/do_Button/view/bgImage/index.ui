@@ -1,0 +1,28 @@
+{
+	"RootView":{
+		"bgColor":"000000AA",
+		"width":"750",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"width":"512",
+				"x":"105",
+				"y":"594",
+				"id":"do_Button_1",
+				"bgImage":"source://do_Button/view/bgImage/button_bg2.png",
+				"type":"do_Button",
+				"height":"512"
+			},
+			{
+				"width":"512",
+				"x":"105",
+				"y":"80",
+				"id":"do_Button_2",
+				"bgImage":"source://do_Button/view/bgImage/button_bg1.png",
+				"type":"do_Button",
+				"height":"512"
+			}
+		],
+		"height":"1206"
+	}
+}

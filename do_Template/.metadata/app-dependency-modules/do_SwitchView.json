@@ -1,0 +1,54 @@
+﻿{
+  "ID": "do_SwitchView",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "开关",
+  "Version": "Internal",
+  "Description": "有（开，关）两种状态，点击或拽动改变状态",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150617/211463eb-b82a-41ca-a567-cd5383e28762.png",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "checked",
+      "Name": "状态",
+      "Type": "Bool",
+      "DefaultValue": "false",
+      "EditType": "1",
+      "Group": "",
+      "Description": "设置当前状态，默认为不选中状态",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "changed",
+      "Description": "开关状态改变",
+      "ReturnType": "String",
+      "ReturnDesc": "当前状态"
+    }
+  ],
+  "syncMethodes": [],
+  "asyncMethodes": []
+}
