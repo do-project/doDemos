@@ -182,8 +182,8 @@
 				"views":[
 					{
 						"textAlign":"center",
-						"x":"189",
-						"width":"360",
+						"x":"167",
+						"width":"414",
 						"fontSize":"38",
 						"id":"do_Label_6",
 						"text":"Swtich和RadioButton",
@@ -205,23 +205,6 @@
 								"source":"source://demo_Star/image/close.png",
 								"type":"do_ImageView",
 								"height":"44"
-							}
-						]
-					},
-					{
-						"x":"648",
-						"y":"4",
-						"id":"do_ALayout_10",
-						"type":"do_ALayout",
-						"views":[
-							{
-								"x":"20",
-								"width":"62",
-								"y":"10",
-								"id":"do_ImageView_2",
-								"source":"source://demo_Star/image/code.png",
-								"type":"do_ImageView",
-								"height":"58"
 							}
 						]
 					}
