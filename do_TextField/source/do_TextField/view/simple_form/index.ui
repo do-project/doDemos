@@ -6,14 +6,14 @@
 		"type":"do_ALayout",
 		"views":[
 			{
-				"bgColor":"22282CFF",
+				"bgColor":"4B9EF9FF",
 				"width":"750",
 				"id":"do_ALayout_2",
 				"type":"do_ALayout",
 				"height":"40"
 			},
 			{
-				"bgColor":"22282CFF",
+				"bgColor":"4B9EF9FF",
 				"width":"750",
 				"y":"40",
 				"id":"do_ALayout_3",

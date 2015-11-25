@@ -8,7 +8,7 @@
 		"type":"do_ALayout",
 		"views":[
 			{
-				"bgColor":"A60000FF",
+				"bgColor":"4B9EF9FF",
 				"width":"750",
 				"y":"40",
 				"id":"bar",
@@ -53,7 +53,7 @@
 				"height":"1206"
 			},
 			{
-				"bgColor":"A60000FF",
+				"bgColor":"4B9EF9FF",
 				"width":"750",
 				"id":"do_ALayout_1",
 				"type":"do_ALayout",
