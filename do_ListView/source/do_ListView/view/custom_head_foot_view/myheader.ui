@@ -34,7 +34,7 @@
 				"id":"do_Label_1",
 				"text":"下拉刷新",
 				"type":"do_Label",
-				"fontColor":"FFFFFFFF",
+				"fontColor":"C0C0C0FF",
 				"height":"60"
 			},
 			{

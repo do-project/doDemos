@@ -7,33 +7,33 @@
 		"type":"do_ALayout",
 		"views":[
 			{
-				"bgColor":"D9D9D900",
-				"x":"20",
-				"width":"730",
-				"y":"155",
+				"bgColor":"E5E5E5FF",
+				"width":"750",
+				"y":"97",
 				"id":"do_ALayout_1",
 				"type":"do_ALayout",
 				"height":"1"
 			},
 			{
-				"x":"184",
-				"width":"524",
-				"y":"45",
+				"x":"92",
+				"width":"594",
+				"y":"16",
 				"fontSize":"30",
 				"id":"name_label",
 				"type":"do_Label",
+				"fontColor":"080808FF",
 				"height":"66"
 			},
 			{
-				"bgColor":"EEEEEEFF",
+				"bgColor":"FFFFFF00",
 				"textAlign":"center",
-				"width":"134",
-				"x":"10",
-				"y":"10",
-				"fontSize":"40",
+				"width":"80",
+				"x":"9",
+				"y":"9",
+				"fontSize":"30",
 				"id":"index_label",
 				"type":"do_Label",
-				"height":"134"
+				"fontColor":"BFBFBFFF"
 			},
 			{
 				"bgColor":"C0C0C0FF",
@@ -44,22 +44,15 @@
 				"height":"1"
 			},
 			{
-				"x":"720",
-				"width":"21",
-				"y":"61",
+				"x":"705",
+				"width":"20",
+				"y":"34",
 				"id":"next_image",
 				"source":"source://do_SlideListView/image/right.png",
 				"type":"do_ImageView",
 				"height":"34"
-			},
-			{
-				"bgColor":"C0C0C0FF",
-				"width":"750",
-				"id":"do_Label_3",
-				"type":"do_Label",
-				"height":"1"
 			}
 		],
-		"height":"156"
+		"height":"98"
 	}
 }

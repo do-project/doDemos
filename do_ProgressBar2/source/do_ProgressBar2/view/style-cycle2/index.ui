@@ -1,93 +1,83 @@
 {
 	"RootView":{
-		"height":"1334",
+		"width":"750",
+		"x":"0",
+		"y":"0",
+		"type":"do_ALayout",
 		"views":[
 			{
 				"bgColor":"2E16A8FF",
-				"id":"do_ALayout_2",
-				"height":"40",
 				"width":"750",
-				"type":"do_ALayout"
+				"id":"do_ALayout_2",
+				"type":"do_ALayout",
+				"height":"40"
 			},
 			{
 				"bgColor":"2E16A8FF",
+				"width":"750",
+				"y":"40",
 				"id":"do_ALayout_3",
-				"height":"88",
+				"type":"do_ALayout",
 				"views":[
 					{
-						"id":"do_ImageView_1",
-						"enabled":"true",
-						"height":"70",
-						"source":"source://fake-weixin/image/chats/bar_add.png",
-						"width":"70",
-						"type":"do_ImageView",
-						"y":"9",
-						"x":"650"
-					},
-					{
+						"textAlign":"center",
+						"width":"294",
+						"x":"224",
+						"fontSize":"38",
 						"id":"do_Label_1",
 						"text":"style-cycle2",
-						"fontColor":"FFFFFFFF",
-						"height":"88",
-						"width":"294",
-						"textAlign":"center",
-						"fontSize":"40",
 						"type":"do_Label",
-						"x":"224"
+						"fontColor":"FFFFFFFF",
+						"height":"88"
 					},
 					{
+						"x":"4",
+						"y":"4",
 						"id":"close",
+						"type":"do_ALayout",
 						"views":[
 							{
-								"id":"do_ImageView_2",
-								"height":"44",
-								"source":"source://do_ProgressBar2/image/close.png",
 								"width":"62",
-								"type":"do_ImageView",
+								"x":"20",
 								"y":"22",
-								"x":"20"
+								"id":"do_ImageView_2",
+								"source":"source://do_ProgressBar2/image/close.png",
+								"type":"do_ImageView",
+								"height":"44"
 							}
-						],
-						"type":"do_ALayout",
-						"y":"4",
-						"x":"4"
+						]
 					}
 				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"40"
+				"height":"88"
 			},
 			{
+				"width":"748",
+				"x":"2",
+				"y":"130",
 				"id":"do_ALayout_5",
-				"height":"634",
+				"type":"do_ALayout",
 				"views":[
 					{
-						"headerView":"source://do_ProgressBar2/view/style-cycle2/cell.ui",
-						"id":"do_WebView_1",
-						"height":"626",
+						"isHeaderVisible":"true",
 						"width":"750",
+						"id":"do_WebView_1",
 						"type":"do_WebView",
-						"isHeaderVisible":"true"
+						"headerView":"source://do_ProgressBar2/view/style-cycle2/cell.ui",
+						"height":"626"
 					},
 					{
+						"width":"304",
+						"x":"210",
+						"y":"206",
+						"fontSize":"35",
 						"id":"do_Button_1",
 						"text":"请下拉",
-						"width":"304",
-						"fontSize":"35",
-						"type":"do_Button",
-						"y":"206",
-						"x":"210"
+						"type":"do_Button"
 					}
 				],
-				"width":"748",
-				"type":"do_ALayout",
-				"y":"130",
-				"x":"2"
+				"height":"634"
 			}
 		],
-		"width":"750",
-		"type":"do_ALayout",
-		"y":"0",
-		"x":"0"
+		"height":"1334"
 	}
 }

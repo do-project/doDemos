@@ -1,82 +1,82 @@
 {
 	"RootView":{
-		"id":"ALayout_1",
 		"bgColor":"FFFFFFFF",
-		"height":"1334",
+		"width":"750",
+		"id":"ALayout_1",
+		"type":"do_ALayout",
 		"views":[
 			{
 				"bgColor":"1F7F7FFF",
-				"id":"do_ALayout_2",
-				"height":"40",
 				"width":"750",
-				"type":"do_ALayout"
+				"id":"do_ALayout_2",
+				"type":"do_ALayout",
+				"height":"40"
 			},
 			{
 				"bgColor":"1F7F7FFF",
+				"width":"750",
+				"y":"40",
 				"id":"do_ALayout_3",
-				"height":"88",
+				"type":"do_ALayout",
 				"views":[
 					{
+						"textAlign":"center",
+						"width":"490",
+						"x":"130",
+						"fontSize":"38",
 						"id":"do_Label_1",
 						"text":"do_ProgressBar2组件",
-						"fontColor":"FFFFFFFF",
-						"height":"88",
-						"width":"490",
-						"textAlign":"center",
-						"fontSize":"40",
 						"type":"do_Label",
-						"x":"130"
+						"fontColor":"FFFFFFFF",
+						"height":"88"
 					},
 					{
+						"x":"4",
+						"y":"4",
 						"id":"close",
+						"type":"do_ALayout",
 						"views":[
 							{
-								"id":"do_ImageView_1",
-								"height":"44",
-								"source":"source://do_ProgressBar2/image/close.png",
 								"width":"62",
-								"type":"do_ImageView",
+								"x":"20",
 								"y":"22",
-								"x":"20"
+								"id":"do_ImageView_1",
+								"source":"source://do_ProgressBar2/image/close.png",
+								"type":"do_ImageView",
+								"height":"44"
 							}
-						],
-						"type":"do_ALayout",
-						"y":"4",
-						"x":"4"
+						]
 					},
 					{
+						"x":"648",
+						"y":"4",
 						"id":"code",
+						"type":"do_ALayout",
 						"views":[
 							{
-								"id":"do_ImageView_2",
-								"height":"58",
-								"source":"source://do_ProgressBar2/image/code.png",
 								"width":"62",
-								"type":"do_ImageView",
+								"x":"20",
 								"y":"10",
-								"x":"20"
+								"id":"do_ImageView_2",
+								"source":"source://do_ProgressBar2/image/code.png",
+								"type":"do_ImageView",
+								"height":"58"
 							}
-						],
-						"type":"do_ALayout",
-						"y":"4",
-						"x":"648"
+						]
 					}
 				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"40"
+				"height":"88"
 			},
 			{
-				"id":"listview",
-				"height":"1206",
 				"templates":"source://do_ProgressBar2/view/cell.ui",
 				"width":"750",
+				"y":"128",
+				"id":"listview",
 				"selectedColor":"C0C0C0FF",
 				"type":"do_ListView",
-				"y":"128"
+				"height":"1206"
 			}
 		],
-		"width":"750",
-		"type":"do_ALayout"
+		"height":"1334"
 	}
 }

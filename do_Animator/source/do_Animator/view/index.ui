@@ -23,7 +23,7 @@
 						"textAlign":"center",
 						"x":"130",
 						"width":"490",
-						"fontSize":"40",
+						"fontSize":"38",
 						"id":"do_Label_1",
 						"text":"do_Animator组件",
 						"type":"do_Label",

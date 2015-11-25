@@ -1,64 +1,58 @@
 {
 	"RootView":{
-		"height":"156",
+		"bgColor":"00000000",
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"type":"do_ALayout",
 		"views":[
 			{
-				"bgColor":"D9D9D900",
+				"bgColor":"E5E5E5FF",
+				"width":"750",
+				"y":"97",
 				"id":"do_ALayout_1",
-				"height":"1",
-				"width":"730",
 				"type":"do_ALayout",
-				"y":"155",
-				"x":"20"
+				"height":"1"
 			},
 			{
-				"id":"name_label",
-				"height":"66",
-				"width":"524",
+				"x":"92",
+				"width":"594",
+				"y":"16",
 				"fontSize":"30",
+				"id":"name_label",
 				"type":"do_Label",
-				"y":"45",
-				"x":"184"
+				"fontColor":"080808FF",
+				"height":"66"
 			},
 			{
-				"bgColor":"EEEEEEFF",
-				"id":"index_label",
-				"height":"134",
-				"width":"134",
+				"bgColor":"FFFFFF00",
 				"textAlign":"center",
-				"fontSize":"40",
+				"width":"80",
+				"x":"9",
+				"y":"9",
+				"fontSize":"30",
+				"id":"index_label",
 				"type":"do_Label",
-				"y":"10",
-				"x":"10"
+				"fontColor":"BFBFBFFF"
 			},
 			{
 				"bgColor":"C0C0C0FF",
-				"id":"do_Label_3",
-				"height":"1",
 				"width":"750",
+				"y":"155",
+				"id":"do_Label_2",
 				"type":"do_Label",
-				"y":"155"
+				"height":"1"
 			},
 			{
-				"id":"do_ImageView_1",
-				"height":"34",
-				"source":"source://do_ProgressBar/image/right.png",
-				"width":"21",
+				"x":"705",
+				"width":"20",
+				"y":"34",
+				"id":"next_image",
+				"source":"source://do_ProgressBar2/image/right.png",
 				"type":"do_ImageView",
-				"y":"61",
-				"x":"720"
-			},
-			{
-				"bgColor":"C0C0C0FF",
-				"id":"do_Label_4",
-				"height":"1",
-				"width":"750",
-				"type":"do_Label"
+				"height":"34"
 			}
 		],
-		"width":"750",
-		"type":"do_ALayout",
-		"y":"0",
-		"x":"0"
+		"height":"98"
 	}
 }

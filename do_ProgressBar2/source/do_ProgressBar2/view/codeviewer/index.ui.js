@@ -14,5 +14,5 @@ page.on("back", function(data) {
 })
 // //
 var webview = ui("webview");
-webview.url = "https://github.com/do-project/doDemos/tree/master/do_ProgressBar";
+webview.url = "https://github.com/do-project/doDemos/tree/master/do_ProgressBar2";
 

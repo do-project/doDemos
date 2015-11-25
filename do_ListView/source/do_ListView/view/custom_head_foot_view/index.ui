@@ -18,7 +18,7 @@
 						"textAlign":"center",
 						"x":"266",
 						"width":"216",
-						"fontSize":"40",
+						"fontSize":"38",
 						"id":"do_Label_2",
 						"text":"海外热映",
 						"type":"do_Label",
@@ -46,7 +46,7 @@
 			},
 			{
 				"isHeaderVisible":"true",
-				"bgColor":"000000FF",
+				"bgColor":"FFFFFFFF",
 				"isFooterVisible":"true",
 				"templates":"source://do_ListView/view/custom_head_foot_view/cell.ui",
 				"width":"750",

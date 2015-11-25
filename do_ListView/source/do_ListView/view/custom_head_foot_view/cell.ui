@@ -1,6 +1,6 @@
 {
 	"RootView":{
-		"bgColor":"FFFFFFFF",
+		"bgColor":"00000000",
 		"x":"0",
 		"width":"750",
 		"y":"0",
@@ -16,52 +16,51 @@
 				"height":"2"
 			},
 			{
-				"x":"200",
+				"x":"111",
 				"width":"428",
-				"y":"37",
+				"y":"22",
 				"fontSize":"30",
 				"id":"name_label",
 				"type":"do_Label",
-				"height":"52"
+				"height":"37"
 			},
 			{
-				"x":"200",
+				"x":"114",
 				"width":"292",
-				"y":"112",
+				"y":"70",
 				"maxLines":"2",
 				"fontSize":"24",
 				"id":"time_label",
 				"type":"do_Label",
 				"fontColor":"9B9B9BFF",
-				"height":"72"
+				"height":"36"
 			},
 			{
 				"textAlign":"center",
-				"x":"641",
-				"width":"55",
-				"y":"37",
+				"x":"632",
+				"width":"40",
+				"y":"27",
 				"fontSize":"30",
 				"id":"score_label",
 				"type":"do_Label",
 				"fontColor":"FF7F00FF",
-				"height":"52"
+				"height":"40"
 			},
 			{
 				"border":"00000000,1,10",
-				"width":"200",
-				"x":"-12",
-				"y":"10",
+				"width":"80",
+				"x":"14",
+				"y":"21",
 				"id":"photo_imageview",
 				"type":"do_ImageView",
 				"radius":"10",
-				"cacheType":"always",
-				"height":"180"
+				"cacheType":"always"
 			},
 			{
 				"textAlign":"center",
-				"x":"697",
+				"x":"678",
 				"width":"28",
-				"y":"49",
+				"y":"27",
 				"fontSize":"24",
 				"id":"do_Label_1",
 				"text":"分",
@@ -70,26 +69,15 @@
 				"height":"40"
 			},
 			{
-				"border":"00000000,0,2",
-				"x":"630",
-				"width":"88",
-				"y":"112",
-				"id":"buy_layout",
-				"type":"do_ALayout",
-				"views":[
-					{
-						"bgColor":"FFFFFFFF",
-						"width":"86",
-						"x":"1",
-						"y":"1",
-						"id":"buy_button",
-						"type":"do_Button",
-						"height":"50"
-					}
-				],
-				"height":"52"
+				"x":"633",
+				"width":"74",
+				"y":"74",
+				"fontSize":"27",
+				"id":"buy_button",
+				"type":"do_Label",
+				"height":"32"
 			}
 		],
-		"height":"200"
+		"height":"124"
 	}
 }

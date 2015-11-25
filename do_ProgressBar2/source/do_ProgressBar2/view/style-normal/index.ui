@@ -1,191 +1,181 @@
 {
 	"RootView":{
-		"height":"1334",
+		"width":"750",
+		"x":"0",
+		"y":"0",
+		"type":"do_ALayout",
 		"views":[
 			{
 				"bgColor":"2E16A8FF",
-				"id":"do_ALayout_1",
-				"height":"40",
 				"width":"750",
-				"type":"do_ALayout"
+				"id":"do_ALayout_1",
+				"type":"do_ALayout",
+				"height":"40"
 			},
 			{
 				"bgColor":"2E16A8FF",
+				"width":"750",
+				"y":"40",
 				"id":"do_ALayout_2",
-				"height":"88",
+				"type":"do_ALayout",
 				"views":[
 					{
-						"id":"do_ImageView_1",
-						"enabled":"true",
-						"height":"70",
-						"source":"source://fake-weixin/image/chats/bar_add.png",
-						"width":"70",
-						"type":"do_ImageView",
-						"y":"9",
-						"x":"650"
-					},
-					{
+						"textAlign":"center",
+						"width":"294",
+						"x":"224",
+						"fontSize":"38",
 						"id":"do_Label_1",
 						"text":"style-normal",
-						"fontColor":"FFFFFFFF",
-						"height":"88",
-						"width":"294",
-						"textAlign":"center",
-						"fontSize":"40",
 						"type":"do_Label",
-						"x":"224"
+						"fontColor":"FFFFFFFF",
+						"height":"88"
 					},
 					{
+						"x":"4",
+						"y":"4",
 						"id":"close",
+						"type":"do_ALayout",
 						"views":[
 							{
-								"id":"do_ImageView_2",
-								"height":"44",
-								"source":"source://do_ProgressBar2/image/close.png",
 								"width":"62",
-								"type":"do_ImageView",
+								"x":"20",
 								"y":"22",
-								"x":"20"
+								"id":"do_ImageView_2",
+								"source":"source://do_ProgressBar2/image/close.png",
+								"type":"do_ImageView",
+								"height":"44"
 							}
-						],
-						"type":"do_ALayout",
-						"y":"4",
-						"x":"4"
+						]
 					}
 				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"40"
+				"height":"88"
 			},
 			{
+				"width":"750",
+				"y":"282",
 				"id":"do_ALayout_3",
-				"height":"524",
+				"type":"do_ALayout",
 				"views":[
 					{
-						"id":"do_Label_7",
-						"fontColor":"808080FF",
-						"text":"135人",
 						"textAlign":"center",
-						"type":"do_Label",
-						"fontSize":"22",
+						"x":"600",
 						"y":"131",
-						"x":"600"
+						"fontSize":"22",
+						"id":"do_Label_7",
+						"text":"135人",
+						"type":"do_Label",
+						"fontColor":"808080FF"
 					},
 					{
-						"id":"do_ImageView_3",
-						"height":"30",
-						"source":"source://do_ProgressBar2/image/right.png",
 						"width":"20",
-						"type":"do_ImageView",
+						"x":"701",
 						"y":"155",
-						"x":"701"
+						"id":"do_ImageView_3",
+						"source":"source://do_ProgressBar2/image/right.png",
+						"type":"do_ImageView",
+						"height":"30"
 					},
 					{
+						"width":"228",
+						"x":"11",
+						"y":"131",
+						"fontSize":"30",
 						"id":"do_Label_6",
 						"text":"群成员",
-						"width":"228",
-						"fontSize":"30",
-						"type":"do_Label",
-						"y":"131",
-						"x":"11"
+						"type":"do_Label"
 					},
 					{
+						"textAlign":"center",
+						"width":"150",
+						"x":"577",
+						"y":"432",
 						"id":"do_Label_5",
 						"text":"单身-44人",
-						"width":"150",
-						"textAlign":"center",
-						"type":"do_Label",
-						"y":"432",
-						"x":"577"
+						"type":"do_Label"
 					},
 					{
+						"textAlign":"center",
+						"width":"150",
+						"x":"396",
+						"y":"432",
 						"id":"do_Label_4",
 						"text":"90后-71人",
-						"width":"150",
-						"textAlign":"center",
-						"type":"do_Label",
-						"y":"432",
-						"x":"396"
+						"type":"do_Label"
 					},
 					{
+						"textAlign":"center",
+						"width":"150",
+						"x":"215",
+						"y":"432",
 						"id":"do_Label_3",
 						"text":"海淀-38人",
-						"width":"150",
-						"textAlign":"center",
-						"type":"do_Label",
-						"y":"432",
-						"x":"215"
+						"type":"do_Label"
 					},
 					{
+						"textAlign":"center",
+						"width":"150",
+						"x":"27",
+						"y":"432",
 						"id":"do_Label_2",
 						"text":"男-84人",
-						"width":"150",
-						"textAlign":"center",
-						"type":"do_Label",
-						"y":"432",
-						"x":"27"
+						"type":"do_Label"
 					},
 					{
+						"progressWidth":"5",
 						"progressColor":"FF8040FF",
 						"progressBgColor":"F0F0F0FF",
-						"id":"do_ProgressBar2_4",
-						"progress":"32",
-						"text":"32%",
-						"progressWidth":"5",
-						"height":"150",
 						"width":"150",
-						"type":"do_ProgressBar2",
+						"x":"574",
+						"progress":"32",
 						"y":"270",
-						"x":"574"
+						"id":"do_ProgressBar2_4",
+						"text":"32%",
+						"type":"do_ProgressBar2",
+						"height":"150"
 					},
 					{
+						"progressWidth":"5",
 						"progressColor":"0000FFFF",
 						"progressBgColor":"F0F0F0FF",
-						"id":"do_ProgressBar2_3",
-						"progress":"52",
-						"text":"52%",
-						"progressWidth":"5",
-						"height":"150",
 						"width":"150",
-						"type":"do_ProgressBar2",
+						"x":"396",
+						"progress":"52",
 						"y":"270",
-						"x":"396"
+						"id":"do_ProgressBar2_3",
+						"text":"52%",
+						"type":"do_ProgressBar2",
+						"height":"150"
 					},
 					{
+						"progressWidth":"5",
 						"progressColor":"00FFFFFF",
 						"progressBgColor":"F0F0F0FF",
-						"id":"do_ProgressBar2_2",
-						"progress":"28",
-						"text":"28%",
-						"progressWidth":"5",
-						"height":"150",
 						"width":"150",
-						"type":"do_ProgressBar2",
+						"x":"217",
+						"progress":"28",
 						"y":"269",
-						"x":"217"
+						"id":"do_ProgressBar2_2",
+						"text":"28%",
+						"type":"do_ProgressBar2",
+						"height":"150"
 					},
 					{
-						"progress":"62",
+						"progressWidth":"5",
 						"progressColor":"800080FF",
 						"progressBgColor":"F0F0F0FF",
+						"width":"150",
+						"x":"27",
+						"progress":"62",
+						"y":"268",
 						"id":"do_ProgressBar2_1",
 						"text":"62%",
-						"progressWidth":"5",
-						"height":"150",
-						"width":"150",
 						"type":"do_ProgressBar2",
-						"y":"268",
-						"x":"27"
+						"height":"150"
 					}
 				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"282"
+				"height":"524"
 			}
 		],
-		"width":"750",
-		"type":"do_ALayout",
-		"y":"0",
-		"x":"0"
+		"height":"1334"
 	}
 }

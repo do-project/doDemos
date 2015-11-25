@@ -8,7 +8,7 @@
 		"type":"do_ALayout",
 		"views":[
 			{
-				"bgColor":"FFFFFFFF",
+				"bgColor":"A60000FF",
 				"width":"750",
 				"y":"40",
 				"id":"bar",
@@ -18,7 +18,7 @@
 						"textAlign":"center",
 						"x":"266",
 						"width":"216",
-						"fontSize":"40",
+						"fontSize":"38",
 						"id":"do_Label_2",
 						"text":"购物车",
 						"type":"do_Label",
@@ -53,7 +53,7 @@
 				"height":"1206"
 			},
 			{
-				"bgColor":"FFFFFFFF",
+				"bgColor":"A60000FF",
 				"width":"750",
 				"id":"do_ALayout_1",
 				"type":"do_ALayout",

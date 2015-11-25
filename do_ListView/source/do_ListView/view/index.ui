@@ -30,17 +30,6 @@
 						"height":"70"
 					},
 					{
-						"textAlign":"center",
-						"x":"188",
-						"width":"368",
-						"fontSize":"40",
-						"id":"do_Label_1",
-						"text":"do_ListView组件",
-						"type":"do_Label",
-						"fontColor":"FFFFFFFF",
-						"height":"88"
-					},
-					{
 						"x":"648",
 						"y":"4",
 						"id":"code",

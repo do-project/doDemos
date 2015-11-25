@@ -12,20 +12,10 @@
 				"type":"do_ALayout",
 				"views":[
 					{
-						"x":"650",
-						"width":"70",
-						"y":"9",
-						"id":"do_ImageView_1",
-						"source":"source://fake-weixin/image/chats/bar_add.png",
-						"type":"do_ImageView",
-						"enabled":"true",
-						"height":"70"
-					},
-					{
 						"textAlign":"center",
 						"x":"174",
 						"width":"376",
-						"fontSize":"40",
+						"fontSize":"38",
 						"id":"do_Label_1",
 						"text":"Page1(状态栏不透明)",
 						"type":"do_Label",

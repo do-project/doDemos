@@ -1,64 +1,64 @@
 {
 	"RootView":{
 		"bgColor":"FFFFFFFF",
+		"width":"750",
 		"id":"ALayout_1",
-		"height":"1334",
+		"type":"do_ALayout",
 		"views":[
 			{
 				"bgColor":"1F7F7FFF",
-				"id":"do_ALayout_2",
-				"height":"40",
 				"width":"750",
-				"type":"do_ALayout"
+				"id":"do_ALayout_2",
+				"type":"do_ALayout",
+				"height":"40"
 			},
 			{
 				"bgColor":"1F7F7FFF",
+				"width":"750",
+				"y":"40",
 				"id":"do_ALayout_3",
-				"height":"88",
+				"type":"do_ALayout",
 				"views":[
 					{
+						"textAlign":"center",
+						"width":"294",
+						"x":"224",
+						"fontSize":"38",
 						"id":"do_Label_1",
 						"text":"源代码",
-						"fontColor":"FFFFFFFF",
-						"height":"88",
-						"width":"294",
-						"textAlign":"center",
-						"fontSize":"40",
 						"type":"do_Label",
-						"x":"224"
+						"fontColor":"FFFFFFFF",
+						"height":"88"
 					},
 					{
+						"x":"4",
+						"y":"4",
 						"id":"close",
+						"type":"do_ALayout",
 						"views":[
 							{
-								"id":"do_ImageView_2",
-								"height":"44",
-								"source":"source://do_ProgressBar2/image/close.png",
 								"width":"62",
-								"type":"do_ImageView",
+								"x":"20",
 								"y":"22",
-								"x":"20"
+								"id":"do_ImageView_2",
+								"source":"source://do_ProgressBar2/image/close.png",
+								"type":"do_ImageView",
+								"height":"44"
 							}
-						],
-						"type":"do_ALayout",
-						"y":"4",
-						"x":"4"
+						]
 					}
 				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"40"
+				"height":"88"
 			},
 			{
-				"id":"webview",
-				"height":"1206",
+				"isShowLoadingProgress":"true",
 				"width":"750",
-				"type":"do_WebView",
 				"y":"128",
-				"isShowLoadingProgress":"true"
+				"id":"webview",
+				"type":"do_WebView",
+				"height":"1206"
 			}
 		],
-		"width":"750",
-		"type":"do_ALayout"
+		"height":"1334"
 	}
 }

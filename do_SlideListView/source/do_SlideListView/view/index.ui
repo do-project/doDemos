@@ -33,7 +33,7 @@
 						"textAlign":"center",
 						"x":"188",
 						"width":"368",
-						"fontSize":"40",
+						"fontSize":"38",
 						"id":"do_Label_1",
 						"text":"do_SlideListView组件",
 						"type":"do_Label",

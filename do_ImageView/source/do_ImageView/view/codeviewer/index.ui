@@ -23,7 +23,7 @@
 						"textAlign":"center",
 						"x":"224",
 						"width":"294",
-						"fontSize":"40",
+						"fontSize":"38",
 						"id":"do_Label_1",
 						"text":"源代码",
 						"type":"do_Label",
@@ -41,7 +41,7 @@
 								"width":"62",
 								"y":"22",
 								"id":"do_ImageView_2",
-								"source":"source://do_App/image/close.png",
+								"source":"source://do_ImageView/image/close.png",
 								"type":"do_ImageView",
 								"height":"44"
 							}

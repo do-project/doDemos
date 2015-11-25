@@ -23,7 +23,7 @@
 						"textAlign":"center",
 						"x":"224",
 						"width":"294",
-						"fontSize":"40",
+						"fontSize":"38",
 						"id":"do_Label_1",
 						"text":"do_ImageView组件",
 						"type":"do_Label",
@@ -57,7 +57,7 @@
 								"x":"20",
 								"width":"62",
 								"y":"10",
-								"id":"do_ImageView_3",
+								"id":"do_ImageView_1",
 								"source":"source://do_ImageView/image/code.png",
 								"type":"do_ImageView",
 								"height":"58"
