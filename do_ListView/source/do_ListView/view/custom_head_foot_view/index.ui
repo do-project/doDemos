@@ -46,7 +46,7 @@
 			},
 			{
 				"isHeaderVisible":"true",
-				"bgColor":"FFFFFFFF",
+				"bgColor":"000000FF",
 				"isFooterVisible":"true",
 				"templates":"source://do_ListView/view/custom_head_foot_view/cell.ui",
 				"width":"750",

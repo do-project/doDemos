@@ -16,51 +16,52 @@
 				"height":"2"
 			},
 			{
-				"x":"111",
+				"x":"200",
 				"width":"428",
-				"y":"22",
+				"y":"37",
 				"fontSize":"30",
 				"id":"name_label",
 				"type":"do_Label",
-				"height":"37"
+				"height":"52"
 			},
 			{
-				"x":"114",
+				"x":"200",
 				"width":"292",
-				"y":"70",
+				"y":"112",
 				"maxLines":"2",
 				"fontSize":"24",
 				"id":"time_label",
 				"type":"do_Label",
 				"fontColor":"9B9B9BFF",
-				"height":"36"
+				"height":"72"
 			},
 			{
 				"textAlign":"center",
-				"x":"632",
-				"width":"40",
-				"y":"27",
+				"x":"641",
+				"width":"55",
+				"y":"37",
 				"fontSize":"30",
 				"id":"score_label",
 				"type":"do_Label",
 				"fontColor":"FF7F00FF",
-				"height":"40"
+				"height":"52"
 			},
 			{
 				"border":"00000000,1,10",
-				"width":"80",
-				"x":"14",
-				"y":"21",
+				"width":"200",
+				"x":"-12",
+				"y":"10",
 				"id":"photo_imageview",
 				"type":"do_ImageView",
 				"radius":"10",
-				"cacheType":"always"
+				"cacheType":"always",
+				"height":"180"
 			},
 			{
 				"textAlign":"center",
-				"x":"678",
+				"x":"697",
 				"width":"28",
-				"y":"27",
+				"y":"49",
 				"fontSize":"24",
 				"id":"do_Label_1",
 				"text":"分",
@@ -69,15 +70,26 @@
 				"height":"40"
 			},
 			{
-				"x":"637",
-				"width":"74",
-				"y":"73",
-				"fontSize":"27",
-				"id":"buy_button",
-				"type":"do_Label",
-				"height":"32"
+				"border":"00000000,0,2",
+				"x":"630",
+				"width":"88",
+				"y":"112",
+				"id":"buy_layout",
+				"type":"do_ALayout",
+				"views":[
+					{
+						"bgColor":"FFFFFFFF",
+						"width":"86",
+						"x":"1",
+						"y":"1",
+						"id":"buy_button",
+						"type":"do_Button",
+						"height":"50"
+					}
+				],
+				"height":"52"
 			}
 		],
-		"height":"124"
+		"height":"200"
 	}
 }
