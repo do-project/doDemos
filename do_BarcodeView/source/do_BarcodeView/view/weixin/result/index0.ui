@@ -15,6 +15,7 @@
 			{
 				"bgColor":"000000FF",
 				"width":"750",
+				"y":"40",
 				"id":"do_ALayout_3",
 				"type":"do_ALayout",
 				"views":[
@@ -29,27 +30,44 @@
 						"height":"88"
 					},
 					{
+						"width":"124",
 						"y":"4",
 						"id":"close",
 						"type":"do_ALayout",
 						"views":[
 							{
-								"x":"25",
 								"width":"50",
-								"y":"22",
+								"x":"25",
+								"y":"25",
 								"id":"do_ImageView_2",
 								"source":"source://do_BarcodeView/image/close.png",
 								"type":"do_ImageView",
 								"height":"40"
 							}
-						]
+						],
+						"height":"82"
 					},
 					{
-						"x":"650",
-						"y":"4",
-						"id":"code",
+						"x":"634",
+						"width":"114",
+						"y":"10",
+						"id":"do_ALayout_4",
 						"type":"do_ALayout",
-						"views":[]
+						"views":[
+							{
+								"textAlign":"right",
+								"x":"14",
+								"width":"94",
+								"y":"16",
+								"fontSize":"22",
+								"id":"do_Label_2",
+								"text":"。。。",
+								"type":"do_Label",
+								"fontColor":"FFFFFFFF",
+								"height":"52"
+							}
+						],
+						"height":"74"
 					}
 				],
 				"height":"88"
@@ -57,9 +75,87 @@
 			{
 				"width":"750",
 				"y":"128",
-				"id":"do_WebView_1",
-				"type":"do_WebView",
+				"id":"do_ImageView_3",
+				"source":"source://do_BarcodeView/image/barcodeview/advice.png",
+				"type":"do_ImageView",
 				"height":"1206"
+			},
+			{
+				"width":"750",
+				"y":"570",
+				"id":"do_ALayout_5",
+				"type":"do_ALayout",
+				"views":[
+					{
+						"visible":"false",
+						"bgColor":"F6F6F6FF",
+						"width":"750",
+						"id":"do_ALayout_6",
+						"type":"do_ALayout",
+						"views":[
+							{
+								"bgColor":"00000000",
+								"textAlign":"center",
+								"width":"750",
+								"y":"10",
+								"fontSize":"25",
+								"id":"do_Label_3",
+								"text":"网页由developer.deviceone.net提供",
+								"type":"do_Label",
+								"fontColor":"808080FF",
+								"height":"60"
+							},
+							{
+								"bgColor":"C0C0C0FF",
+								"width":"750",
+								"y":"380",
+								"id":"do_ALayout_7",
+								"type":"do_ALayout",
+								"height":"1"
+							},
+							{
+								"bgColor":"00000000",
+								"templates":"source://do_BarcodeView/view/weixin/result/cell.ui",
+								"width":"750",
+								"y":"108",
+								"id":"do_SegmentView_1",
+								"type":"do_SegmentView",
+								"height":"250"
+							},
+							{
+								"bgColor":"00000000",
+								"templates":"source://do_BarcodeView/view/weixin/result/cell.ui",
+								"width":"750",
+								"y":"404",
+								"id":"do_SegmentView_2",
+								"type":"do_SegmentView",
+								"height":"250"
+							},
+							{
+								"width":"750",
+								"y":"660",
+								"id":"do_ALayout_8",
+								"type":"do_ALayout",
+								"views":[
+									{
+										"bgColor":"FFFFFFFF",
+										"textAlign":"center",
+										"width":"750",
+										"fontSize":"35",
+										"id":"do_Label_4",
+										"text":"取消",
+										"type":"do_Label",
+										"fontColor":"000000FF",
+										"height":"100"
+									}
+								],
+								"height":"100"
+							}
+						],
+						"height":"764"
+					}
+				],
+				"height":"764"
 			}
 		],
 		"height":"1334"
