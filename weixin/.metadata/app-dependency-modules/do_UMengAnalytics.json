@@ -1,0 +1,211 @@
+﻿{
+  "ID": "do_UMengAnalytics",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "友盟统计分析",
+  "Version": "Internal",
+  "Description": "",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150624/798551ed-7b56-4d67-8079-3a3153e1a7c8.jpg",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "14"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [],
+  "syncMethodes": [
+    {
+      "ID": "beginPageLog",
+      "Name": "进入页面的统计",
+      "Description": "建议放在page的resume事件中",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "pageName",
+          "Name": "页面名称",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "endPageLog",
+      "Name": "离开页面的统计",
+      "Description": "建议放在page的pause事件中",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "pageName",
+          "Name": "页面名称",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "eventLog",
+      "Name": "单次事件统计",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "id",
+          "Name": "计次的唯一标识",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        },
+        {
+          "ID": "data",
+          "Name": "参数集",
+          "Type": "Node",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "eventValueLog",
+      "Name": "单次事件计算",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "id",
+          "Name": "计次的唯一标识",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        },
+        {
+          "ID": "data",
+          "Name": "参数集",
+          "Type": "Node",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": ""
+        },
+        {
+          "ID": "counter",
+          "Name": "计算的次数",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "readConfig",
+      "Name": "读取在线参数",
+      "Description": "",
+      "ReturnType": "String",
+      "ReturnDesc": "在线参数值",
+      "Paras": [
+        {
+          "ID": "configID",
+          "Name": "配置ID",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "reportPolicy",
+      "Name": "初始化",
+      "Description": "需要且只需要执行一次，在app.lua或app.js里执行",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "type",
+          "Name": "发送策略",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "BATCH",
+          "Description": "支持两个枚举值，BATCH:启动时发送, SEND_INTERVAL:按间隔发送"
+        }
+      ]
+    },
+    {
+      "ID": "setBackgroundTask",
+      "Name": "是否支持后台模式",
+      "Description": "只支持iOS",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "value",
+          "Name": "",
+          "Type": "Bool",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "setCrashReportEnabled",
+      "Name": "是否统计后异常信息",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "value",
+          "Name": "",
+          "Type": "Bool",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "setEncryptLog",
+      "Name": "是否加密传输日志",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "value",
+          "Name": "",
+          "Type": "Bool",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    }
+  ],
+  "asyncMethodes": []
+}

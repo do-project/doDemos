@@ -1,0 +1,19 @@
+{
+	"RootView":{
+		"height":"1331",
+		"views":[
+			{
+				"id":"do_ListView_1",
+				"height":"1094",
+				"templates":"source://weixin/view/weixin-simple/index2cell0.ui",
+				"width":"750",
+				"type":"do_ListView",
+				"isHeaderVisible":"true"
+			}
+		],
+		"width":"749",
+		"type":"do_ALayout",
+		"y":"0",
+		"x":"0"
+	}
+}
