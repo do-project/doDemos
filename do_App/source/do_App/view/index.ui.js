@@ -32,6 +32,9 @@ listdata.addData([ {
 }, {
 	"index" : "3",
 	"name" : "openPage状态栏参数设置"
+} , {
+	"index" : "4",
+	"name" : "openPage动画样式展示"
 } ]);
 listview.bindItems(listdata);
 
@@ -55,6 +58,12 @@ listview.on("touch", function(index) {
 	case 2:
 		app.openPage({
 			source : "source://do_App/view/openpage_statusbar/index.ui",
+			statusBarState : "transparent",
+		});
+		break;
+	case 3:
+		app.openPage({
+			source : "source://do_App/view/open_animation/index.ui",
 			statusBarState : "transparent",
 		});
 		break;
