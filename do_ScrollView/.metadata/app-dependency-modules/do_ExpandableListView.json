@@ -1,0 +1,179 @@
+﻿{
+  "ID": "do_ExpandableListView",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "List分组视图",
+  "Version": "Internal",
+  "Description": "一个可分组可展开的List视图",
+  "Icon": "",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "14"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "childTemplate",
+      "Name": "子项模板UI文件",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "child对应的模板UI文件,如： source://view/child.ui",
+      "Design": {
+        "Type": "Richtext",
+        "Data": []
+      }
+    },
+    {
+      "ID": "groupTemplate",
+      "Name": "组模板UI文件",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "group对应的模板UI文件,如： source://view/group.ui",
+      "Design": {
+        "Type": "Richtext",
+        "Data": []
+      }
+    },
+    {
+      "ID": "isShowbar",
+      "Name": "是否支持显示滚动条效果",
+      "Type": "Bool",
+      "DefaultValue": "true",
+      "EditType": "0",
+      "Group": "",
+      "Description": "为true的时候，当内容超出视图的边界，会出现滚动条标识。",
+      "Design": {
+        "Type": "Boolean",
+        "Data": []
+      }
+    },
+    {
+      "ID": "selectedColor",
+      "Name": "按下child中的cell显示的背景色",
+      "Type": "String",
+      "DefaultValue": "ffffff00",
+      "EditType": "0",
+      "Group": "",
+      "Description": "",
+      "Design": {
+        "Type": "Color",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "childTouch",
+      "Description": "点击child中的cell触发",
+      "ReturnType": "Node",
+      "ReturnDesc": "当前group的索引值和cell的索引值,如：{'groupIndex':1,'childIndex':5}"
+    },
+    {
+      "ID": "groupCollapse",
+      "Description": "group收缩触发",
+      "ReturnType": "Number",
+      "ReturnDesc": "当前group中cell的索引值"
+    },
+    {
+      "ID": "groupExpand",
+      "Description": "group展开触发",
+      "ReturnType": "Number",
+      "ReturnDesc": "当前group中cell的索引值"
+    },
+    {
+      "ID": "groupTouch",
+      "Description": "点击group中的cell触发",
+      "ReturnType": "Number",
+      "ReturnDesc": "当前cell的索引值"
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "bindItems",
+      "Name": "绑定item的数据",
+      "Description": "可绑定listData实例",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "groupData",
+          "Name": "组数据",
+          "Type": "Node",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": ""
+        },
+        {
+          "ID": "childData",
+          "Name": "子项数据",
+          "Type": "Node",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "collapseGroup",
+      "Name": "收缩组",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "indexs",
+          "Name": "位置",
+          "Type": "Node",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "同时收缩一组或多组，indexs表示视图的第几组，从0开始计数"
+        }
+      ]
+    },
+    {
+      "ID": "expandGroup",
+      "Name": "展开组",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "indexs",
+          "Name": "位置",
+          "Type": "Node",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "同时展开一组或多组，indexs表示视图的第几组，从0开始计数"
+        }
+      ]
+    },
+    {
+      "ID": "refreshItems",
+      "Name": "刷新item数据",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": []
+}
