@@ -43,7 +43,6 @@
 								"id":"close",
 								"source":"source://do_ImageView/image/close.png",
 								"type":"do_ImageView",
-								"enabled":"true",
 								"height":"44"
 							}
 						]
