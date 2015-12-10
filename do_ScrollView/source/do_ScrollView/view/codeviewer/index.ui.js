@@ -13,6 +13,6 @@ page.on("back", function(data) {
 	app.closePage();
 })
 // //
-var webview = ui("webview");
+var webview = ui("do_WebView_1");
 webview.url = "https://github.com/do-project/doDemos/tree/master/do_ScrollView";
 
