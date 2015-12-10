@@ -20,7 +20,7 @@ page.on("loaded", function(data, e) {
 	var code = ui("code");
 	code.on("touch", function() {
 		app.openPage({
-			source : "source://do_App/view/codeviewer/index.ui",
+			source : "source://do_TencentQQ/view/codeviewer/index.ui",
 			statusBarState : "transparent"
 		});
 	});

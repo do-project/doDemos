@@ -61,6 +61,7 @@
 								"id":"code ",
 								"source":"source://do_TencentQQ/image/code.png",
 								"type":"do_ImageView",
+								"enabled":"true",
 								"height":"58"
 							}
 						]
