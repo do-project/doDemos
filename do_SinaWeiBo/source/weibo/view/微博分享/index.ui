@@ -4,15 +4,15 @@
 		"height":"1334",
 		"views":[
 			{
-				"bgColor":"4B9EF9FF",
 				"id":"do_ALayout_2",
+				"bgColor":"4B9EF9FF",
 				"height":"40",
 				"width":"750",
 				"type":"do_ALayout"
 			},
 			{
-				"bgColor":"4B9EF9FF",
 				"id":"do_ALayout_3",
+				"bgColor":"4B9EF9FF",
 				"height":"88",
 				"views":[
 					{
@@ -27,13 +27,13 @@
 					},
 					{
 						"id":"do_Label_1",
-						"text":"微信分享",
 						"fontColor":"000000FF",
+						"text":"微博分享",
 						"height":"88",
 						"width":"294",
 						"textAlign":"center",
-						"fontSize":"40",
 						"type":"do_Label",
+						"fontSize":"40",
 						"x":"224"
 					},
 					{
@@ -64,8 +64,8 @@
 				"visible":"false",
 				"views":[
 					{
-						"bgColor":"FFFFFFFF",
 						"id":"do_ALayout_9",
+						"bgColor":"FFFFFFFF",
 						"height":"216",
 						"views":[
 							{
@@ -132,19 +132,19 @@
 							}
 						],
 						"width":"700",
-						"border":"FFFFFFFF,0,15",
 						"type":"do_ALayout",
+						"border":"FFFFFFFF,0,15",
 						"y":"20",
 						"x":"24"
 					},
 					{
-						"bgColor":"FFFFFFFF",
 						"id":"do_Button_1",
+						"bgColor":"FFFFFFFF",
 						"text":"取消",
 						"width":"696",
-						"fontSize":"40",
-						"border":"FFFFFFFF,0,15",
 						"type":"do_Button",
+						"border":"FFFFFFFF,0,15",
+						"fontSize":"40",
 						"y":"258",
 						"x":"26"
 					}
