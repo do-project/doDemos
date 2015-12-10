@@ -1,0 +1,164 @@
+﻿{
+  "ID": "do_Bluetooth",
+  "IsContainer": "0",
+  "Type": "MM",
+  "Name": "蓝牙",
+  "Version": "Internal",
+  "Description": "使用蓝牙设备进行数据传输,设备必须支持蓝牙4.0",
+  "Icon": "",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.3"
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [
+    {
+      "ID": "progress",
+      "Description": "接收文件的进度",
+      "ReturnType": "Node",
+      "ReturnDesc": "返回值包含两个节点{\"currentSize\":\"1221\" ,\"totalSize\":\"23234245\"}，单位为kB"
+    },
+    {
+      "ID": "receive",
+      "Description": "接收数据",
+      "ReturnType": "Node",
+      "ReturnDesc": "接收到的数据有两部分type和content,如果接收的数据是字符串,type指定字符串的编码方式,支持UTF-8,GBK;如果接收的是16进制字符串,type为HEX;如下{ \\\"type\\\": HEX, \\\"content\\\": \\\"ffffee\\\" }"
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "close",
+      "Name": "关闭蓝牙连接",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    },
+    {
+      "ID": "setReceive",
+      "Name": "设置接收参数",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "stopFlag",
+          "Name": "接收数据结束标识",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "是一个枚举,有两种类型,length或者flag"
+        },
+        {
+          "ID": "stopValue",
+          "Name": "接收数据结束标识的值",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "如果参数receiveStop是length,则此值为接收的长度;如果参数receiveStop是flag,则此值为接收数据的结束标志"
+        },
+        {
+          "ID": "type",
+          "Name": "接收数据类型",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "如果接收的数据是字符串,receiveType指定字符串的编码方式,支持UTF-8,GBK;如果接收的是16进制字符串,receiveType为HEX;如果是文件,receiveType就是全路径,source://data.zip,或者data://1.png"
+        }
+      ]
+    }
+  ],
+  "asyncMethodes": [
+    {
+      "ID": "connect",
+      "Name": "连接外围设备",
+      "Description": "连接指定UUID服务的蓝牙设备",
+      "ReturnType": "Bool",
+      "ReturnDesc": "true成功false失败",
+      "Paras": [
+        {
+          "ID": "UUIDs",
+          "Name": "服务数组",
+          "Type": "Node",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "格式类似:{ \\\"服务UUID1\\\": [\\\"特征UUID1\\\", \\\"特征UUID2\\\"], \\\"服务UUID2\\\": [ \\\"特征UUID1\\\", \\\"特征UUID2\\\" ] }"
+        }
+      ]
+    },
+    {
+      "ID": "openCentral",
+      "Name": "打开中心设备",
+      "Description": "打开中心设备，搜索外围设备的服务",
+      "ReturnType": "Bool",
+      "ReturnDesc": "true 成功  false 失败",
+      "Paras": []
+    },
+    {
+      "ID": "openPeripheral",
+      "Name": "打开外围设备",
+      "Description": "打开外围设备，广播外围设备的服务",
+      "ReturnType": "Bool",
+      "ReturnDesc": "true 成功  false 失败",
+      "Paras": [
+        {
+          "ID": "UUIDs",
+          "Name": "UUIDs",
+          "Type": "Node",
+          "Required": 1,
+          "DefaultValue": "服务数组",
+          "Description": "UUID的格式AA413A04-1E67-4570-87B0-A466A5E850C7，mac下生成方法：终端输入命令uuidgen.格式类似；{\\\"服务UUID1\\\":[\\\"特征UUID1\\\",\\\"特征UUID2\\\"],\\\"服务UUID2\\\":[\\\"特征UUID1\\\",\\\"特征UUID2\\\"]}"
+        }
+      ]
+    },
+    {
+      "ID": "send",
+      "Name": "发送数据",
+      "Description": "外围设备向中心设备发送数据",
+      "ReturnType": "Bool",
+      "ReturnDesc": "true 成功  false 失败",
+      "Paras": [
+        {
+          "ID": "type",
+          "Name": "发送数据的格式",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "如果发送的数据是字符串,type指定字符串的编码方式,支持UTF-8,GBK;如果发送的是16进制字符串,type为HEX;如果发送的数据是文件,type为file"
+        },
+        {
+          "ID": "content",
+          "Name": "发送内容",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "如果发送的是文件,content是文件全路径"
+        },
+        {
+          "ID": "UUID",
+          "Name": "特征UUID",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "发送数据的某个特征的UUID"
+        }
+      ]
+    }
+  ]
+}
