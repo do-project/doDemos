@@ -26,6 +26,9 @@ var listdata = mm("do_ListData");
 listdata.addData([ {
 	"index" : "1",
 	"name" : "正圆图片示例"
+},{
+	"index" : "2",
+	"name" : "scale屬性"
 }]);
 listview.bindItems(listdata);
 
@@ -36,6 +39,12 @@ listview.on("touch", function(index) {
 	case 0:
 		app.openPage({
 			source : "source://do_ImageView/view/cycleimage/index.ui",
+			statusBarState : "transparent"
+		});
+		break;
+	case 1:
+		app.openPage({
+			source : "source://do_ImageView/view/scaletype/scaletype.ui",
 			statusBarState : "transparent"
 		});
 		break;
