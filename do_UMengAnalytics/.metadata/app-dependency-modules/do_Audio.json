@@ -114,7 +114,7 @@
           "Type": "String",
           "Required": 1,
           "DefaultValue": "",
-          "Description": "要保存的录音文件路径，支持数据区data://，指定到目录"
+          "Description": "要保存的录音文件路径,支持数据区data://"
         },
         {
           "ID": "type",

@@ -129,7 +129,7 @@
       "DefaultValue": "left",
       "EditType": "0",
       "Group": "",
-      "Description": "对齐方式为以下3种：left 左对齐（默认）；center 居中；right 右对齐",
+      "Description": "对齐方式为以下3种：left 左对齐（默认）；center 居中；right 右对齐。仅支持android平台",
       "Design": {
         "Type": "List",
         "Data": [
@@ -155,7 +155,7 @@
       "DefaultValue": "normal",
       "EditType": "0",
       "Group": "",
-      "Description": "包含3种类型：normal：常规underline ：下划线strikethrough ：删除线；windows平台不支持",
+      "Description": "包含3种类型：normal：常规underline ：下划线strikethrough ：删除线",
       "Design": {
         "Type": "List",
         "Data": [

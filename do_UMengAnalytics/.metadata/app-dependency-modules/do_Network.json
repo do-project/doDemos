@@ -49,7 +49,7 @@
       "Name": "获取物理地址",
       "Description": "当前设备的物理地址",
       "ReturnType": "String",
-      "ReturnDesc": "返回当前设备的物理地址，windows平台返回的地址与直接在手机上查看的不一致，但也表示的是唯一地址；iOS平台不支持",
+      "ReturnDesc": "返回当前设备的物理地址，windows平台返回的地址与直接在手机上查看的不一致，但也表示的是唯一地址",
       "Paras": []
     },
     {

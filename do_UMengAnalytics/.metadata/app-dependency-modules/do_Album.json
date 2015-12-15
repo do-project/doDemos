@@ -124,7 +124,7 @@
           "Type": "Bool",
           "Required": 0,
           "DefaultValue": "false",
-          "Description": "只有在maxCount设置为1时该参数设置成true才有效；如果这个值为true的话，照片选择结束后会出现一个中间的取景界面，有一个矩形框让用户对照片进行裁剪"
+          "Description": "只有在maxCount设置为1时该参数设置成true才有效；如果这个值为true的话，照片选择结束后会出现一个中间的取景界面，有一个矩形框让用户对照片进行裁剪；windows不支持"
         }
       ]
     }

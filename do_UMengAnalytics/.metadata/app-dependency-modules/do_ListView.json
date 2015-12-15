@@ -142,7 +142,7 @@
       "ID": "scroll",
       "Description": "滑动事件",
       "ReturnType": "String",
-      "ReturnDesc": "返回{firstVisiblePosition,lastVisiblePosition}，其中firstVisiblePosition表示在组件高度范围内第一个可见cell的位置，lastVisiblePosition表示在组件高度范围内最后一个可见cell的位置"
+      "ReturnDesc": "iOS和Android平台返回{firstVisiblePosition,lastVisiblePosition}，其中firstVisiblePosition表示在组件高度范围内第一个可见cell的位置，lastVisiblePosition表示在组件高度范围内最后一个可见cell的位置；windows平台返回offset表示滚动的位移"
     },
     {
       "ID": "touch",
