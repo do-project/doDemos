@@ -113,6 +113,23 @@
       "Paras": []
     },
     {
+      "ID": "scrollTo",
+      "Name": "滚动到指定位置",
+      "Description": "滚动方向跟ScrollView的方向一致",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "offset",
+          "Name": "指定位置",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "0",
+          "Description": ""
+        }
+      ]
+    },
+    {
       "ID": "toBegin",
       "Name": "滚到到最前",
       "Description": "当前滚动视图是横向则滚动到最左边，如果是纵向则滚到最顶部",

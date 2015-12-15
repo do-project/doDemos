@@ -54,19 +54,6 @@
       }
     },
     {
-      "ID": "isDivisionLineVisible",
-      "Name": "是否显示分割线",
-      "Type": "Bool",
-      "DefaultValue": "true",
-      "EditType": "0",
-      "Group": "",
-      "Description": "缺省true显示分割线",
-      "Design": {
-        "Type": "Boolean",
-        "Data": []
-      }
-    },
-    {
       "ID": "isFooterVisible",
       "Name": "是否显示footerview",
       "Type": "Bool",
@@ -155,7 +142,7 @@
       "ID": "scroll",
       "Description": "滑动事件",
       "ReturnType": "String",
-      "ReturnDesc": "返回{firstVisiblePosition,lastVisiblePosition}，其中firstVisiblePosition表示在组件高度范围内第一个可见cell的位置，lastVisiblePosition表示在组件高度范围内最后一个可见cell的位置"
+      "ReturnDesc": "iOS和Android平台返回{firstVisiblePosition,lastVisiblePosition}，其中firstVisiblePosition表示在组件高度范围内第一个可见cell的位置，lastVisiblePosition表示在组件高度范围内最后一个可见cell的位置；windows平台返回offset表示滚动的位移"
     },
     {
       "ID": "touch",
@@ -212,6 +199,14 @@
           "Required": 0,
           "DefaultValue": "0",
           "Description": "表示listview的第几行，从0开始计数，缺省值是 0"
+        },
+        {
+          "ID": "isSmooth",
+          "Name": "是否有滚动效果",
+          "Type": "Bool",
+          "Required": 0,
+          "DefaultValue": "false",
+          "Description": "缺省是false表示直接跳转到某一行，没有任何平滑过渡的效果。为true表示平滑到那一行；其中为false的时候是不会触发scroll事件的，为true会触发"
         }
       ]
     }

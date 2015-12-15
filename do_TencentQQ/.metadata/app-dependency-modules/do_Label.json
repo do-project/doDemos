@@ -4,7 +4,7 @@
   "Type": "UI",
   "Name": "标签框",
   "Version": "Internal",
-  "Description": "文本标签框，用于显示文本文字，设置字体样式、大小、内容对齐",
+  "Description": "文本标签框",
   "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150617/20a3d20c-2884-418d-b677-d2cdf62f74c8.png",
   "IOS": {
     "Support": 1,
@@ -34,7 +34,7 @@
       "DefaultValue": "000000FF",
       "EditType": "1",
       "Group": "",
-      "Description": "设置字体显示颜色，值格式为：8位16进制字符，前6位是RGB颜色值，后两位是透明度（Alpha），例如：000000FF",
+      "Description": "获取或设置控件前景色，为8位16进制整数，前6位为rgb颜色值，后两位为透明度",
       "Design": {
         "Type": "Color",
         "Data": []
@@ -60,7 +60,7 @@
       "DefaultValue": "normal",
       "EditType": "1",
       "Group": "",
-      "Description": "包含4种类型：normal：常规bold：粗体italic：斜体bold_italic：粗斜体",
+      "Description": "字体的风格支持4种：normal：普通体 bold：粗体italic：斜体underline：下划线字体",
       "Design": {
         "Type": "List",
         "Data": [
@@ -87,12 +87,12 @@
       "ID": "maxHeight",
       "Name": "最大高度",
       "Type": "Number",
-      "DefaultValue": "",
+      "DefaultValue": "100",
       "EditType": "0",
       "Group": "",
-      "Description": "设置文本框显示最大高度值，只有在设置Height属性值为-1时有效，否则不起作用",
+      "Description": "label的height为\"auto\"的时候，label会根据text内容自动适配变高，但是不会高于maxHeight",
       "Design": {
-        "Type": "UInteger",
+        "Type": "Text",
         "Data": []
       }
     },
@@ -100,10 +100,10 @@
       "ID": "maxLines",
       "Name": "最多行数",
       "Type": "Number",
-      "DefaultValue": "1",
+      "DefaultValue": "3",
       "EditType": "0",
       "Group": "",
-      "Description": "最大行数，说明：设置文本内容显示最大行数，如显示内容超过了最大行值则结尾用省略号...表示；缺省为1行，如果为0表示不限行数",
+      "Description": "label的最多行数，超过用...表示",
       "Design": {
         "Type": "UInteger",
         "Data": []
@@ -113,12 +113,12 @@
       "ID": "maxWidth",
       "Name": "最大宽度",
       "Type": "Number",
-      "DefaultValue": "",
+      "DefaultValue": "100",
       "EditType": "0",
       "Group": "",
-      "Description": "label的width为\"－1\"的时候，label会根据text内容自动适配变宽，但是不会宽于maxWidth",
+      "Description": "label的width为\"auto\"的时候，label会根据text内容自动适配变宽，但是不会宽于maxWidth",
       "Design": {
-        "Type": "UInteger",
+        "Type": "Text",
         "Data": []
       }
     },
@@ -129,9 +129,9 @@
       "DefaultValue": "",
       "EditType": "1",
       "Group": "",
-      "Description": "获取或设置与此控件关联的文本。",
+      "Description": "获取或设置与此控件关联的文本",
       "Design": {
-        "Type": "Richtext",
+        "Type": "Text",
         "Data": []
       }
     },
@@ -142,17 +142,17 @@
       "DefaultValue": "left",
       "EditType": "0",
       "Group": "",
-      "Description": "对齐方式为以下3种：left 左对齐（默认）；center 居中；right 右对齐。",
+      "Description": "对齐方式为以下3种：left 左对齐（默认）；center 居中；right 右对齐",
       "Design": {
         "Type": "List",
         "Data": [
           {
-            "id": "left",
-            "value": "左对齐"
-          },
-          {
             "id": "center",
             "value": "居中"
+          },
+          {
+            "id": "left",
+            "value": "左对齐"
           },
           {
             "id": "right",
@@ -168,7 +168,7 @@
       "DefaultValue": "normal",
       "EditType": "0",
       "Group": "",
-      "Description": "包含3种类型：normal：常规underline ：下划线strikethrough ：删除线",
+      "Description": "包含3种类型：\\r\\nnormal：常规\\r\\nunderline ：下划线\\r\\nstrikethrough ：删除线",
       "Design": {
         "Type": "List",
         "Data": [
