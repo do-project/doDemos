@@ -12,7 +12,7 @@
   },
   "Android": {
     "Support": 1,
-    "MinVersion": "14"
+    "MinVersion": "4.0"
   },
   "Windows": {
     "Support": 1,
