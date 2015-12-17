@@ -7,12 +7,14 @@
 		"type":"do_ALayout",
 		"views":[
 			{
+				"bgColor":"FFFFFF00",
 				"textAlign":"center",
 				"width":"400",
 				"x":"175",
 				"fontSize":"22",
 				"id":"do_Label_1",
 				"type":"do_Label",
+				"fontStyle":"bold",
 				"height":"89"
 			}
 		],

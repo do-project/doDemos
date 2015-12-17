@@ -6,6 +6,7 @@
 		"type":"do_ALayout",
 		"views":[
 			{
+				"bgColor":"FFFFFF00",
 				"textAlign":"center",
 				"x":"161",
 				"width":"428",
