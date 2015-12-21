@@ -1,0 +1,93 @@
+﻿{
+  "ID": "do_RichLabel",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "富文本标签框",
+  "Version": "Internal",
+  "Description": "富文本签框，用于显示HTML标签内容，设置字体大小、高亮、超链接，默认只支持HTML标准基础标签，例如：<h1>...<h6>,<p>,<a>,<font>,<br>,<b>等；支持自定义<a>标签点击事件，\"href\"要以\"#\"打头，点击时会触发\"linkTouch\"事件，例如：\"<a href=\"#my\">DeviceOne</a>\"；其他情况则不触发事件，如<a>标签\"href\"属性内容以http:或者https开头，会自动使用外部浏览器打开；以mail:打头，会自动使用外部邮箱打开；如果是tel:打头，会自动使用电话拨号打开",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150730/32e27a0d-8f11-4ab5-b983-b56bf7d8731a.png",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "14"
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "maxHeight",
+      "Name": "最大高度",
+      "Type": "Number",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "label的height为\"－1\"的时候，label会根据text内容自动适配变高，但是不会高于maxHeight",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    },
+    {
+      "ID": "maxLines",
+      "Name": "最多行数",
+      "Type": "Number",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "最大行数，缺省是1，为0的时候表示任意行，说明：设置文本内容显示最大行数，如显示内容超过了最大行值则结尾用省略号\"...\"表示",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    },
+    {
+      "ID": "maxWidth",
+      "Name": "最大宽度",
+      "Type": "Number",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "设置文本框显示最大宽度值，只有在设置\"Width\"属性值为\"-1\"时有效，否则不起作用",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    },
+    {
+      "ID": "text",
+      "Name": "文本显示内容",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": " 显示标签文本，说明：设置HTML标签显示富文本内容",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "linkTouch",
+      "Description": "链接点击事件",
+      "ReturnType": "Node",
+      "ReturnDesc": "返回<aherf></a>标签里的所有字段，如果href里是http:或者https开头，会自动使用外部浏览器打开；如果是mail:打头，会自动使用外部邮箱打开；如果是tel:打头，会自动使用电话拨号打开；其他情况触发linktouch事件：比如<a href='#aaa' id='xx'> 点击我</a> ，则用户点击“点击我”这个link的时候会触发一个linkTouch事件，返回的data是一个JSON对象类型{value:'点击我' href:'#aaa',id:'xx'}"
+    }
+  ],
+  "syncMethodes": [],
+  "asyncMethodes": []
+}
