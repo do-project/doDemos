@@ -1,0 +1,37 @@
+{
+	"RootView":{
+		"bgColor":"FFFFFF00",
+		"width":"750",
+		"id":"AlayoutRoot",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"width":"262",
+				"x":"157",
+				"y":"29",
+				"fontSize":"30",
+				"id":"lbtext",
+				"type":"do_Label",
+				"height":"64"
+			},
+			{
+				"x":"30",
+				"y":"10",
+				"id":"image",
+				"type":"do_ImageView",
+				"cacheType":"always",
+				"height":"100"
+			},
+			{
+				"bgColor":"EEEEEEFF",
+				"width":"725",
+				"x":"25",
+				"y":"119",
+				"id":"do_ALayout_4",
+				"type":"do_ALayout",
+				"height":"2"
+			}
+		],
+		"height":"120"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"RootView":{
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"id":"me_main",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"212",
+				"y":"198",
+				"id":"do_Label_1",
+				"text":"我",
+				"type":"do_Label"
+			}
+		],
+		"height":"1180"
+	}
+}

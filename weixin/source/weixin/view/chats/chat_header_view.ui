@@ -1,0 +1,19 @@
+{
+	"RootView":{
+		"bgColor":"000000FF",
+		"width":"750",
+		"type":"do_ALayout",
+		"isStretch":"false",
+		"views":[
+			{
+				"x":"325",
+				"y":"295",
+				"id":"sight_view",
+				"source":"source://weixin/image/chats/sight_main.png",
+				"type":"do_ImageView",
+				"height":"100"
+			}
+		],
+		"height":"400"
+	}
+}

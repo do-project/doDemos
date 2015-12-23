@@ -1,81 +1,211 @@
 {
 	"RootView":{
 		"bgColor":"FFFFFFFF",
-		"id":"ALayout_1",
-		"height":"1334",
+		"width":"750",
+		"id":"main_ui",
+		"type":"do_ALayout",
 		"views":[
 			{
-				"bgColor":"4B9EF9FF",
-				"id":"do_ALayout_2",
-				"height":"40",
+				"bgColor":"F6F6F6FF",
 				"width":"750",
-				"type":"do_ALayout"
-			},
-			{
-				"bgColor":"4B9EF9FF",
-				"id":"do_ALayout_3",
-				"height":"88",
+				"y":"1220",
+				"id":"bottom_bar",
+				"type":"do_ALayout",
 				"views":[
 					{
-						"id":"do_Label_1",
-						"text":"仿微信",
-						"fontColor":"FFFFFFFF",
-						"height":"88",
-						"width":"490",
-						"textAlign":"center",
-						"fontSize":"40",
-						"type":"do_Label",
-						"x":"130"
-					},
-					{
-						"id":"close",
+						"width":"188",
+						"id":"do_Button_1",
+						"type":"do_ALayout",
+						"isStretch":"false",
 						"views":[
 							{
+								"width":"60",
+								"x":"64",
+								"y":"20",
 								"id":"do_ImageView_1",
-								"height":"44",
-								"source":"source://weixin/image/close.png",
-								"width":"62",
+								"source":"source://weixin/image/tabbar_mainframeHL.png",
 								"type":"do_ImageView",
-								"y":"22",
-								"x":"20"
+								"height":"60"
+							},
+							{
+								"textAlign":"center",
+								"width":"60",
+								"x":"64",
+								"y":"86",
+								"fontSize":"24",
+								"id":"do_Label_1",
+								"text":"微信",
+								"type":"do_Label",
+								"fontColor":"09BB07FF",
+								"height":"28"
+							},
+							{
+								"border":"FF0000FF,1,15",
+								"visible":"false",
+								"bgColor":"FF0000FF",
+								"width":"30",
+								"x":"109",
+								"y":"11",
+								"id":"do_Label_5",
+								"type":"do_Label",
+								"height":"30"
 							}
 						],
-						"type":"do_ALayout",
-						"y":"4",
-						"x":"4"
+						"height":"114"
 					},
 					{
-						"id":"code",
+						"x":"188",
+						"width":"188",
+						"id":"do_Button_2",
+						"type":"do_ALayout",
+						"isStretch":"false",
 						"views":[
 							{
+								"width":"60",
+								"x":"64",
+								"y":"20",
 								"id":"do_ImageView_2",
-								"height":"58",
-								"source":"source://weixin/image/code.png",
-								"width":"62",
+								"source":"source://weixin/image/tabbar_contacts.png",
 								"type":"do_ImageView",
-								"y":"10",
-								"x":"20"
+								"height":"60"
+							},
+							{
+								"textAlign":"center",
+								"width":"80",
+								"x":"54",
+								"y":"86",
+								"fontSize":"24",
+								"id":"do_Label_2",
+								"text":"通讯录",
+								"type":"do_Label",
+								"fontColor":"9F9F9FFF",
+								"height":"28"
+							},
+							{
+								"border":"FF0000FF,1,15",
+								"visible":"false",
+								"bgColor":"FF0000FF",
+								"width":"30",
+								"id":"do_Label_7",
+								"type":"do_Label",
+								"height":"30"
 							}
 						],
+						"height":"114"
+					},
+					{
+						"x":"376",
+						"width":"188",
+						"id":"do_Button_3",
 						"type":"do_ALayout",
-						"y":"4",
-						"x":"648"
+						"isStretch":"false",
+						"views":[
+							{
+								"width":"60",
+								"x":"64",
+								"y":"20",
+								"id":"do_ImageView_3",
+								"source":"source://weixin/image/tabbar_discover.png",
+								"type":"do_ImageView",
+								"height":"60"
+							},
+							{
+								"textAlign":"center",
+								"width":"60",
+								"x":"64",
+								"y":"86",
+								"fontSize":"24",
+								"id":"do_Label_3",
+								"text":"发现",
+								"type":"do_Label",
+								"fontColor":"9F9F9FFF",
+								"height":"28"
+							},
+							{
+								"border":"FF0000FF,1,15",
+								"bgColor":"FF0000FF",
+								"textAlign":"center",
+								"width":"30",
+								"x":"109",
+								"y":"11",
+								"fontSize":"24",
+								"id":"do_Label_8",
+								"text":"8",
+								"type":"do_Label",
+								"fontColor":"FFFFFFFF",
+								"height":"30"
+							}
+						],
+						"height":"114"
+					},
+					{
+						"x":"564",
+						"width":"186",
+						"id":"do_Button_4",
+						"type":"do_ALayout",
+						"isStretch":"false",
+						"views":[
+							{
+								"width":"60",
+								"x":"64",
+								"y":"20",
+								"id":"do_ImageView_4",
+								"source":"source://weixin/image/tabbar_me.png",
+								"type":"do_ImageView",
+								"height":"60"
+							},
+							{
+								"textAlign":"center",
+								"width":"60",
+								"x":"64",
+								"y":"86",
+								"fontSize":"24",
+								"id":"do_Label_4",
+								"text":"我",
+								"type":"do_Label",
+								"fontColor":"9F9F9FFF",
+								"height":"28"
+							},
+							{
+								"border":"FF0000FF,1,15",
+								"visible":"false",
+								"bgColor":"FF0000FF",
+								"width":"30",
+								"x":"109",
+								"y":"11",
+								"id":"do_Label_9",
+								"type":"do_Label",
+								"height":"30"
+							}
+						],
+						"height":"114"
 					}
 				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"40"
+				"height":"114"
 			},
 			{
-				"id":"listview",
-				"height":"1204",
-				"templates":"source://weixin/view/cell.ui",
 				"width":"750",
-				"type":"do_ListView",
-				"y":"130"
+				"y":"40",
+				"id":"viewshower",
+				"type":"do_ViewShower",
+				"height":"1180"
+			},
+			{
+				"bgColor":"C0C0C0FF",
+				"width":"750",
+				"y":"1220",
+				"id":"line",
+				"type":"do_ALayout",
+				"height":"1"
+			},
+			{
+				"bgColor":"22282CFF",
+				"width":"750",
+				"id":"status_bar",
+				"type":"do_ALayout",
+				"height":"40"
 			}
 		],
-		"width":"750",
-		"type":"do_ALayout"
+		"height":"1334"
 	}
 }

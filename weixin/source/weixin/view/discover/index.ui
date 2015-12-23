@@ -1,0 +1,19 @@
+{
+	"RootView":{
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"id":"discover_main",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"211",
+				"y":"204",
+				"id":"do_Label_1",
+				"text":"发现",
+				"type":"do_Label"
+			}
+		],
+		"height":"1180"
+	}
+}
