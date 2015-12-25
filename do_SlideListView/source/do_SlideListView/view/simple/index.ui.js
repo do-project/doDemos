@@ -14,7 +14,15 @@ page.on("back", function(data) {
 	app.closePage();
 })
 // //
-
+page.on("removeCell", function(data) {
+	for(var i = 0;i<listdata.getCount();i++){
+		if(listdata.getOne(i).id==data){
+			listdata.removeData([i]);
+			listview.refreshItems();
+			break;
+		}
+	}
+})
 var json_path = "data://do_SlideListView/chat.json";// 本地缓存的数据
 
 if (storage.fileExist(json_path)) {
