@@ -1,0 +1,422 @@
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+测试测试测试测试测试测试
+
+
+DeviceOne抽象Android，IOS，Winphone的SDK抽象了一套统一的javascirpt/lua库，把所有组件分三种类型，这三种组件都有自己的属性，事件，方法，其他所有组件都是这三种组件的子类，继承了父类的属性，事件和方法。应用开发者只需要了解基本的javascipt/lua知识和我们提供的这套API规范，就可以开始开发移动应用了。
+本文档所有示例代码都是用javascript编写，但是用lua完全规则是一样的，只是语法有自身的差异。
+API概述
+1.基本结构
+2. UI/SM/MM的简介
+3. 属性
+4. 方法
+5. 事件
+6. require函数
+7. 自定义Class/扩展现有Class
+1.基本结构
+
+  deviceone(Object)
+        ├── UI(class)
+        │       ├── ALayout
+        │       ├── Button
+        │       ├── ImageView
+        │       └── ......
+        ├── SM(class)
+        │       ├── Global
+        │       ├── App
+        │       ├── Page
+        │       ├── Device
+        │       └── .....
+        └── MM(class)
+        │       ├── Http
+        │       ├── Animation
+        │       └── ......
+        ├── Class
+        ├── foreach
+        ├── foreachi
+        └── merge
+deviceone: 命名空间
+UI : 界面View
+SM : 单实例模块
+MM : 多实例模块
+Class : 类继承实现(工具函数)
+foreach : 遍历Object(工具函数)
+foreachi : 遍历Array(工具函数)
+merge : 合并多个Object(工具函数)
+2. UI/SM/MM的简介
+
+UI(UserInterface) : 页面上的控件,只要能放在页面展示出来的,就是UI. 如 Button 、 ImageView、 Label 等.
+
+SM(SingletonModle) : 单例的组件,主要实现对原生单例API的封装. 如 Global 、 App、 Page、 Storage 、 Device 等.
+
+MM(MultitonModle) : 多实例组件, 对原生的多实例API的封装. 如 SQLite 、 Http 、 Animation 等.
+
+我们提供了3个对应的工厂方法以获取或构建UI/SM/MM的实例.
+ui : 通过UI对象的id来获取对象，目前不支持动态创建对象
+    var button = ui("button-id");
+        var imageview = ui("imageview-id");
+        var listview = ui("listview-id");
+        var label = ui("label-id");
+        ...
+sm : 通过SM组件的名称来获取对象
+    var camera = sm("do_Camera");
+        var app = sm("do_App");
+        ...
+mm : 通过MM组件的名称，id以及作用域来创建或者获取对象
+//创建一个作用域在App级别的do_Http组件的对象，它的id是http_id1,
+//如果在这个作用域里已经有这个id的对象，则不会创建新的，而是返回已有的对象
+        var http = mm("do_Http","http_id1","app");
+        var animation = mm("do_Animation","anim_id1","page");
+        ...
+3. 属性
+
+UI/MM 都定义了属性. 属性的访问都有以下的两种访问方式.
+以属性名访问
+    var button = ui("button-id");   //获取实例
+        var txt = buttton.text;         //获取Text属性
+        button.text = "设置Text属性"     //设置Text属性
+        var bgc = button.bgColor;       //获取bgColor属性
+        button.bgColor = "#FFFFFFEE"    //设置bgColor属性
+以get/set方法访问属性
+    var button = ui("button-id");          //获取实例
+        var txt = buttton.get("text");         //获取Text属性
+        button.set("text", "设置Text属性")      //设置Text属性
+        var bgc = buttton.get("bgColor");      //获取bgColor属性
+        button.set("bgColor", "#FFFFFFEE");    //设置bgColor属性
+        /*** get/set 方法可批量 获取/设置 ***/
+        var g = button.get(["text", "bgColor"]); // g == {text : "获取Text属性", bgColor : "#FFFFFFEE"};
+        button.set({text : "设置Text属性", bgColor : "#FFFFFFEE"});
+MM的属性访问方式与UI完全一致.
+
+UI类型的属性还分为二种类型，OnlyDesign和Always
+Always:表示可以通过脚本代码来设置，如上面的示例代码，也能通过设计器的属性设置界面来设置。
+OnlyDesign:表示只能通过设计器的属性设置界面来设置，不能通过代码来动态修改。
+4. 方法
+
+UI/SM/MM 都具有方法.并且,方法包含两种类型 : 同步方法/异步方法
+同步方法：同步方法一般执行非耗时操作,立即返回执行结果.如 UI/MM 的 get/set 都属于同步方法.
+    var global = sm("do_Global");
+            global.setMemory("str0", {demo : [1,2,3,4]});
+            var str0 = global.getMemory("str0");
+            //setMemory/getMemory 执行结束立即返回结果, 都是同步方法.
+            //更多详见各个模块的API.
+
+- 异步方法：异步方法一般是因为需要执行耗时操作,操作结束后会调用注册的回调函数,并将结果以回调函数的第一参数返回.异步方法的最后一个参数是一个回调函数(function);
+    var storage = sm("do_Storage");
+        storage.getFiles("data://demo/", function(data){
+        //data == ["aaa.txt","bbb.json", "ccc.x"];
+        });
+        //更多详见各个模块的API.
+所有方法的调用都有两种调用格式
+多参数平铺调用(以上的示例都是这样的)
+
+参数哈希式(双参数式)
+
+    //假设 : 函数 Do.demo 有4个参数 a, b, c, d 和 回调 f , 并且 c, d 两个参数可选:
+        //0. 参数平铺:
+        //            Do.demo( a, b , c , d , f)
+        //            Do.demo( a, b , c , f)
+        //            Do.demo( a, b , f)
+        //1. 散列式:
+        //            Do.demo( { a : a , b : b , c : c , d : d} , f)
+        //            Do.demo( { a : a , b : b , c : c } , f)
+        //            Do.demo( { a : a , b : b } , f)
+        //以App.openPage 具体说明一下
+        var app = sm("do_App");
+        app.openPage(
+        "source://view/index.ui",  //要打开的页面路径
+        { demo : [1,2,3,4] },      //要传递的数据
+        "fade",                    //过场动画类型
+        false,                     //是否全屏打开页面
+        "default",                 //打开页面后的键盘模式
+        "",                        //脚本类型
+        function(data ,e){
+        /*do something*/
+        });
+        /*****************************************************************
+    *以上就是全参数式, 这样的写法参数的顺序要严格按照 API 给定的顺序输入.
+    *如果是异步方法, 最后一个参数应是回调函数.
+    *****************************************************************/
+        //上面的例子中, 除了第一个参数( 要打开的页面路径 ) 外, 其他参数都可选.
+        app.openPage("source://view/index.ui", function(data){
+        /*do something*/
+        });
+        //上面的的例子简洁了许多. 但是如果需求是要求写入大量的参数,明显这种方式的可读性还是很差的.
+        //所以我们也为这样的需求量身定做了第二套调用方案:
+        app.openPage( {
+        source : "source://view/index.ui",
+        data : "",
+        animationType : "",
+        isFullScreen :  false,
+        keyboardMode : "default",
+        scriptType : ""
+        },
+        function(data ,e){
+        /*do something*/
+        });
+        // 这种方案增强了代码的可读性,第一个参数是一个hash表, (如果是异步方法 第二个是一个回调函数)
+        // 注意, 回调函数不能放在第一个参数当中...
+        //可以根据自己的喜好和习惯自行选择.
+5. 事件
+
+UI/SM/MM 都定义了事件. 每个组件所支持的事件都在组件API上做了阐述.
+如 do_Button : touch/touchUp/touchDown
+
+do_Page : loaded
+
+....
+
+UI/SM/MM 事件的订阅/触发/注销 都是同样的规则.
+订阅事件 [ .on() ]：订阅的事件可以是API支持的事件(touch/touchUp), 也可以是自定义的事件( touch001 / touch002 )
+    var button = ui("button-id");
+        //订阅button 的touch事件.(点击页面此Button时触发, 或通过fire 方法手动触发.)
+        button.on("touch", function(){
+        /*do something*/
+        this.bgColor = "#FF00FFFF";
+        // this == button;
+        });
+        //订阅button 的touch事件.( 只能通过 fire 触发 );
+        buttoon.on("touch001", function(){
+        /*do something*/
+        this.bgColor = "#FF0000AA";
+        });
+        var page = sm("do_Page");
+        //订阅当前页面的 loaded 事件( 页面加载完成时候触发,或通过fire方法手动触发.);
+        page.on("loaded", function(){
+        /*do something*/
+        var data = this.getData()// this == page;
+        });
+        //订阅当前页面的 xxxxx 事件( 只能通过 fire 触发 );
+        page.on("xxxxx", function(data){
+        /*do something*/
+        });
+        //其他详见各组件的API.
+触发已订阅的事件[ .fire() ] ：如果是组件支持的事件, 组件会根据自身当前状态自动触发(Button:touch / Page:loaded …).如果不是组件所支持的事件, 需要调用 fire 方法手动触发.
+    button.fire("touch");
+        button.fire("touch001", { demo : "手动触发touch001"});
+        page.fire("xxxxx", { demo : 1, demo2 : false , demo3: "xx?xx"});
+        //fire方法传递两个参数,第一个参数是事件名称, 第二个参数是需要传递的数据(此参数可忽略).
+        //事件响应时,第二个参数的值,会传递到订阅时( on方法 )的回调函数的第一个参数上.
+注销已经订阅的事件[ .off() ] ：调用 off方法即可
+    button.off("touch");
+        page.off("xxxxx");
+6. require函数
+
+js版本中的require：js中的require函数的实现参照了CommonJS的风格,但是并不是完全的CommonJS Modules 的实现.
+    /******** source/default/script/demo.js************************************/
+        exports.add0 = function(a, b, c) {
+        return a + b + c || 0;
+        }
+        module.exports.add1 = function() {
+        var sum = 0, i = 0, args = arguments, l = args.length;
+        while (i < l)  {
+        sum += args[i++];
+        }
+        return sum;
+        };
+        //导出了两个函数 add0 和 add1
+        /******* source/default/view/index.ui.js ************************************/
+        var demo = require("demo");
+        var t0 = demo.add0(1,2,3);
+        var t1 = demo.add1(1,2,3,4,5,6);
+        //require中的参数,就是对应的script目录下的文件名(不加.js);
+7. 自定义Class/扩展现有Class
+
+deviceone.Class 提供了一个JavaScript/Lua 的类实现;
+
+主要实现了类属性和继承，deviceone.UI/deviceone.SM/deviceone.MM都是基于此函数实现的.
+
+此外还提供了 deviceone.merge/deviceone.foreachi/deviceone.foreach 三个工具函数.
+    var d1 = require("deviceone")
+        var Demo1 = d1.Class(Object, function(a,b){
+        this.a = a
+        this.b = b
+        }) //定义一个类Demo1, 继承自Object
+        Demo1.fz.getA = function(){
+        return this.a;
+        } //定义一个实例方法getA;
+        /*******************************************************************************/
+        *fz : 是 prototype 的一个别名, 此处使用prototype 也可, 但Lua 版本并不支持, 所以强烈建议使用  fz.
+        *********************************************************************************/
+        Demo1.fz.getB = function(){
+        return this.b;
+        } //定义一个实例方法getB;
+        var Demo2 = d1.Class(Demo1, function(a,c){
+        this.a = a
+        this.c = c
+        }) //定义一个类Demo2, 继承自Demo1
+        Demo2.fz.getC = function(){
+        return this.c;
+        } //定义一个实例方法getC;
+        var demo1 = Demo1("demo1-AAA", "BBB") //得到实例
+        var demo2 = Demo2("demo2-AAA", "CCC")
+        var a1 = demo1.getA() // "demo1-AAA";
+        var a2 = demo2.getA() // "demo2-AAA";
+        var b1 = demo1.getB() // "BBB";
+        var c2 = demo2.getC() // "CCC";
+        /*** 使用 merge 批量定义方法 ****/
+        d1.merge( Demo2.fz , {
+        func2 : function(){},
+        func3 : function(){},
+        func4 : function(){},
+        func5 : function(){},
+        func6 : function(){},
+        })
+        var demo2 = Demo2("demo2-AAA", "DDDD")
+        demo2.func2()
+        demo2.func3()
+        demo2.func4()
+        demo2.func5()
+        demo2.func6()
+        /******initialize********/
+        //在子类中调用父类的初始化函数.
+        var Demo3 = d1.Class(Demo1, function(){
+        Demo1.initialize.apply(this,arguments);
+        }) //定义一个类Demo3, 继承自Demo1,调用Demo1的构造函数.
+        /******property********/
+        var Demo4 = d1.Class(Object);
+        Object.defineProperties(Demo4.fz, {
+        mmm : {
+        get : function(){
+        d1.print("get mmm");
+        },
+        set : function(v){
+        d1.print("set mmm : " + v);
+        }
+        }
+        });//ECMA的标准工具.
+        var demo4 = Demo4()
+        var am = demo4.mmm
+        demo4.mmm = 9999
+扩展UI/SM/MM
+    var d1 = require("deviceone");
+        //给do_App增加一个memory方法.
+        d1.SM.do_App.fz.memory = function(){
+        var l = arguments.length;
+        if(l == 1 )   return this.getMemory.apply(this,arguments)
+        else if(l == 2)  return this.setMemory.apply(this,arguments)
+        else  ;// throw Error;
+        }
+        //然后就可以调用 memory 方法了..
+        var  app = d1.sm("do_App")
+        app.memory("key")           // .getMemory("key")
+        app.memory("key", "value")  // .setMemory("key", "value")
+        //UI
+        d1.UI.do_ALayout.fz.func1 = function(){}
+        d1.UI.do_Button.fz.func1 = function(){}
+        .....
+        //SM
+        d1.SM.do_Global.fz.func1 = function(){}
+        d1.SM.do_App.fz.func1 = function(){}
+        d1.SM.do_Page.fz.func1 = function(){}
+        .....
+        //MM
+        d1.MM.do_Http.fz.func1 = function(){}
+        .....
+        //给所有的UI/SM/MM增加一个toStr方法;
+        d1.UI.fz.toStr = function(){};
+        d1.SM.fz.toStr = function(){};
+        d1.MM.fz.toStr = function(){};
+        //d1.UI 是所有UI组件的超类.
+        //d1.SM 是所有SM组件的超类.
+        //d1.MM 是所有MM组件的超类.
+        
+        下载、配置模板
+
+到developer.deviceone.net注册一个账号。登陆后，选择开发者中心，点击创建组件，手动填写ID和组件的名称，选择组件类型（包括UI，SM和MM）。UI为可视化组件，SM为功能组件，MM为多实例组件。点击创建，这样你就有自己创建的组件了，然后点击配置，在这里配置组件的相关信息。
+基本信息组件: 后面的容器类型，可以选择 不可包含其他控件、只能包含一个子控件、包含任意多子控件还有其他的图片，描述等等。
+属性定义: 只有属性类型是选择的，其他的可以任意填写，点击保存，组件就拥有一个属性了。创建属性之后，就有对应的属性了，你可以进行编辑，设置他的访问限制和编辑方式等等
+方法定义:为组件添加一个方法，选择他是同步还是异步方法，点击编辑可以完善更多内容
+事件定义:可以添加一个事件，自定义名称，添加完成后点击编辑，可以完善更多内容
+Key定义:第三方的一个秘钥的定义，例如百度地图定位的秘钥定义
+开发模板:上面创建的方法和属性、定义，在开发模板里面就可以看到了，包括Android，IOS，winphone三个版本
+资源库:下载模板后用vs打开，选中项目，生成dll和pri、pdb等等文件,全部压缩后上传到资源，选择winphone版本，写上版本号。这样，你的组件就可以发布到应用商店，供自己和其他人下载使用了,如下图
+完成:发布到商店，就能够在应用商店找到这个应用了，历史，可以看到你曾经发布的一些组件，帮助文档，根据你的组件生产的相应的帮助文档
+2.配图
+
+创建组件，可以创建新的组件，下面是已经创建好的组件
+2.jpg
+配置可以配置这个组件的具体内容，详情看上述表格
+3.jpg
+没有属性、方法，事件可以添加
+4.jpg
+6.jpg
+有属性、方法、事件的可以编辑和修改其内容
+5.jpg
+- 可以设置更多的内容
+7.jpg
+- 下载模板中选择winphone的，点击下载即可
+8.jpg
+- 选中winphone版本，填写版本号，上传生成的资源包
+9.jpg
+- 完成可以发布到商店，在商店下载，点击历史可以看到组件发布的历史信息
+3.具体代码（可供参考）
+
+属性定义
+
+ c# public override void OnInit() { base.OnInit(); this.RegistProperty(new doProperty("direction", PropertyDataType.String, "vertical", false)); this.RegistProperty(new doProperty("isShowbar", PropertyDataType.Bool, "false", false)); this.RegistProperty(new doProperty("headerView", PropertyDataType.String, "", false)); //所有的属性都会有一个默认值，当参数为空是，就可以调用默认值 } ) 
+
+方法定义
+
+public bool InvokeSyncMethod(string _methodName, doJsonNode _dictParas, doIScriptEngine _scriptEngine, doInvokeResult _invokeResult)
+    {
+        if ("toBegin".Equals(_methodName))
+        {
+            this.toBegin(_dictParas, _scriptEngine, _invokeResult);
+            return true;
+        }
+        if ("toEnd".Equals(_methodName))
+        {
+            this.toEnd(_dictParas, _scriptEngine, _invokeResult);
+            return true;
+        }
+        return false;
+        //如果是横向，则滚到左边。如果是纵向，则滚到顶部。这是scrollview的开始滚动和结束滚动的方法
+    }
+####事件定义
+以下是button的三个事件
+
+ public void LoadView(doUIModule _doUIModule)
+    {
+        this.model = (do_Button_MAbstract)_doUIModule;
+        btn.Click += btn_Click;
+        btn.Tapped += btn_Tapped;
+        this.HorizontalAlignment = Windows.UI.Xaml.HorizontalAlignment.Left;
+        this.VerticalAlignment = Windows.UI.Xaml.VerticalAlignment.Top;
+        this.Content = btn;
+        btn.MinWidth = 0;
+        btn.MinHeight = 0;
+    }
+    void btn_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+    {
+        doInvokeResult _invokeResult = new doInvokeResult(this.model.UniqueKey);
+        this.model.EventCenter.FireEvent("touchUp", _invokeResult);
+        this.model.EventCenter.FireEvent("touch", _invokeResult);
+    }
+    void btn_Click(object sender, RoutedEventArgs e)
+    {
+        doInvokeResult _invokeResult = new doInvokeResult(this.model.UniqueKey);
+        this.model.EventCenter.FireEvent("touchDown", _invokeResult);
+    }
