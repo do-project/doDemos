@@ -24,7 +24,11 @@ page.on("loaded", function(data, e) {
     },{
     	"index" : "4",
     	"name" : "居中裁剪"
-    }]);
+    },{
+    	"index" : "提示",
+    	"name" : "ios网络图片不支持宽高为-1"
+    }
+    ]);
     listview.bindItems(listdata);
     listview.refreshItems({});
     var root = ui("$");
@@ -55,6 +59,7 @@ page.on("loaded", function(data, e) {
     			statusBarState : "transparent"
     		});
     		break;
+    
     	}
     });
 
