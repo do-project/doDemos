@@ -28,7 +28,10 @@ page.on("loaded", function(data, e) {
 		"name" : "base64转换上传的方式"
 	}, {
 		"index" : "2",
-		"name" : "upload的方式"
+		"name" : "uploadfile的方式"
+	}, {
+		"index" : "3",
+		"name" : "uploadfiles的方式"
 	}]);
 	listview.bindItems(listdata);
 	listview.on("touch", function(index) {
@@ -41,7 +44,14 @@ page.on("loaded", function(data, e) {
 			break;
 		case 1:
 			app.openPage({
-				source : "source://view/do_Http/http/upload.ui",
+				source : "source://view/do_Http/uploadfile/upload.ui",
+				statusBarState : "transparent",
+				
+			});
+			break;
+		case 2:
+			app.openPage({
+				source : "source://view/do_Http/uploadfiles/uploadfiles.ui",
 				statusBarState : "transparent",
 				
 			});

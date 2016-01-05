@@ -1,6 +1,5 @@
 {
 	"RootView":{
-		"bgColor":"00000000",
 		"x":"0",
 		"width":"750",
 		"y":"0",
@@ -23,12 +22,13 @@
 					{
 						"textAlign":"center",
 						"x":"224",
-						"width":"463",
+						"width":"294",
 						"fontSize":"38",
 						"id":"do_Label_1",
-						"text":"base64转换上传文件格式",
+						"text":"from",
 						"type":"do_Label",
-						"fontColor":"FFFFFFFF"
+						"fontColor":"FFFFFFFF",
+						"height":"88"
 					},
 					{
 						"x":"4",
@@ -48,13 +48,13 @@
 							}
 						]
 					}
-				]
+				],
+				"height":"88"
 			},
 			{
 				"templates":"source://view/cell.ui",
-				"x":"1",
 				"width":"750",
-				"y":"120",
+				"y":"128",
 				"id":"do_ListView_1",
 				"type":"do_ListView",
 				"height":"1214"
