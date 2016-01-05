@@ -1,7 +1,7 @@
 //related to scaletype.ui
 var nf = sm("do_Notification");
 var page = sm("do_Page");
-var close = ui("close");
+var close = ui("close1");
 var listview = ui("do_ListView_1");
 var listdata = mm("do_ListData");
 

@@ -28,7 +28,7 @@ listdata.addData([ {
 	"name" : "正圆图片示例"
 },{
 	"index" : "2",
-	"name" : "scale屬性"
+	"name" : "scale属性"
 }]);
 listview.bindItems(listdata);
 

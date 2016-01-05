@@ -1,65 +1,66 @@
 {
 	"RootView":{
-		"x":"0",
-		"width":"750",
-		"y":"0",
-		"type":"do_ALayout",
+		"height":"1334",
 		"views":[
 			{
-				"bgColor":"4B9EF9FF",
-				"width":"750",
-				"id":"do_ALayout_1",
-				"type":"do_ALayout",
-				"height":"40"
-			},
-			{
-				"bgColor":"4B9EF9FF",
-				"width":"750",
-				"y":"40",
-				"id":"do_ALayout_2",
-				"type":"do_ALayout",
-				"views":[
-					{
-						"textAlign":"center",
-						"x":"224",
-						"width":"294",
-						"fontSize":"38",
-						"id":"do_Label_1",
-						"text":"scale属性",
-						"type":"do_Label",
-						"fontColor":"FFFFFFFF",
-						"height":"88"
-					},
-					{
-						"x":"4",
-						"y":"4",
-						"id":"do_ALayout_3",
-						"type":"do_ALayout",
-						"views":[
-							{
-								"x":"20",
-								"width":"62",
-								"y":"22",
-								"id":"close",
-								"source":"source://do_ImageView/image/close.png",
-								"type":"do_ImageView",
-								"height":"44"
-							}
-						]
-					}
-				],
-				"height":"88"
-			},
-			{
+				"id":"do_ListView_1",
+				"height":"1206",
 				"templates":"source://do_ImageView/view/cell.ui",
 				"width":"750",
-				"y":"128",
-				"id":"do_ListView_1",
-				"type":"do_ListView",
 				"selectedColor":"C0C0C0FF",
-				"height":"1206"
+				"type":"do_ListView",
+				"y":"128"
+			},
+			{
+				"bgColor":"4B9EF9FF",
+				"id":"do_ALayout_4",
+				"height":"40",
+				"width":"750",
+				"type":"do_ALayout"
+			},
+			{
+				"bgColor":"4B9EF9FF",
+				"id":"do_ALayout_5",
+				"height":"88",
+				"views":[
+					{
+						"id":"do_Label_2",
+						"text":"scale分享",
+						"fontColor":"FFFFFFFF",
+						"height":"88",
+						"width":"294",
+						"textAlign":"center",
+						"fontSize":"38",
+						"type":"do_Label",
+						"x":"224"
+					},
+					{
+						"id":"close1",
+						"views":[
+							{
+								"id":"do_ImageView_1",
+								"enabled":"true",
+								"height":"44",
+								"source":"source://do_ImageView/image/close.png",
+								"width":"62",
+								"type":"do_ImageView",
+								"y":"22",
+								"x":"20"
+							}
+						],
+						"type":"do_ALayout",
+						"y":"4",
+						"x":"4"
+					}
+				],
+				"width":"750",
+				"type":"do_ALayout",
+				"y":"40"
 			}
 		],
-		"height":"1334"
+		"width":"750",
+		"type":"do_ALayout",
+		"y":"0",
+		"x":"0"
 	}
 }

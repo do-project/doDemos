@@ -6,5 +6,8 @@ var d1 = require("deviceone");
 var app = d1.sm("do_App");
 
 app.on("loaded", function () {
-    this.openPage("source://do_ScrollView/view/index.ui");
+	this.openPage({
+		source : "source://do_ScrollView/view/index.ui",
+		statusBarState : "transparent"
+	});
 });

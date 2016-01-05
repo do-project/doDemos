@@ -1,222 +1,225 @@
 {
 	"RootView":{
-		"width":"750",
 		"id":"do_ALayout_7",
-		"type":"do_ALayout",
+		"height":"1334",
 		"views":[
 			{
-				"bgColor":"4B9EF9FF",
-				"width":"750",
-				"y":"30",
-				"id":"do_ALayout_1",
-				"type":"do_ALayout",
-				"views":[
-					{
-						"textAlign":"center",
-						"x":"224",
-						"width":"294",
-						"fontSize":"38",
-						"id":"do_Label_1",
-						"text":"center",
-						"type":"do_Label",
-						"fontColor":"FFFFFFFF"
-					},
-					{
-						"x":"4",
-						"id":"do_ALayout_2",
-						"type":"do_ALayout",
-						"views":[
-							{
-								"x":"20",
-								"width":"62",
-								"y":"22",
-								"id":"close",
-								"source":"source://do_ImageView/image/close.png",
-								"type":"do_ImageView",
-								"enabled":"true",
-								"height":"44"
-							}
-						]
-					}
-				]
-			},
-			{
-				"width":"750",
-				"y":"120",
 				"id":"do_ALayout_3",
-				"type":"do_ALayout",
+				"height":"300",
 				"views":[
 					{
-						"width":"748",
-						"fontSize":"20",
 						"id":"do_Label_2",
 						"text":"1、图片的宽高等于组件宽高2、图片宽高为-1,3、图片宽高大于组件宽高",
-						"type":"do_Label",
-						"height":"50"
+						"height":"50",
+						"width":"748",
+						"fontSize":"20",
+						"type":"do_Label"
 					},
 					{
 						"bgColor":"0000FFFF",
-						"width":"200",
-						"x":"10",
-						"y":"50",
-						"scale":"center",
 						"id":"do_ImageView_2",
-						"source":"data://scaletype/6.jpg",
-						"type":"do_ImageView",
-						"height":"200"
-					},
-					{
-						"bgColor":"0000FFFF",
-						"x":"220",
-						"width":"-1",
-						"y":"50",
 						"scale":"center",
-						"id":"do_ImageView_3",
+						"height":"200",
 						"source":"data://scaletype/6.jpg",
-						"type":"do_ImageView",
-						"height":"-1"
-					},
-					{
-						"bgColor":"0000FFFF",
-						"x":"430",
 						"width":"200",
-						"y":"50",
-						"scale":"center",
-						"id":"do_ImageView_4",
-						"source":"data://scaletype/3.jpg",
 						"type":"do_ImageView",
-						"height":"200"
+						"y":"50",
+						"x":"10"
+					},
+					{
+						"bgColor":"0000FFFF",
+						"id":"do_ImageView_3",
+						"scale":"center",
+						"height":"-1",
+						"source":"data://scaletype/6.jpg",
+						"width":"-1",
+						"type":"do_ImageView",
+						"y":"50",
+						"x":"220"
+					},
+					{
+						"bgColor":"0000FFFF",
+						"id":"do_ImageView_4",
+						"scale":"center",
+						"height":"200",
+						"source":"data://scaletype/3.jpg",
+						"width":"200",
+						"type":"do_ImageView",
+						"y":"50",
+						"x":"430"
 					}
 				],
-				"height":"300"
-			},
-			{
-				"bgColor":"4B9EF9FF",
 				"width":"750",
-				"id":"do_ALayout_4",
 				"type":"do_ALayout",
-				"height":"30"
+				"y":"120"
 			},
 			{
-				"width":"750",
-				"y":"440",
 				"id":"do_ALayout_5",
-				"type":"do_ALayout",
+				"height":"300",
 				"views":[
 					{
-						"width":"748",
 						"id":"do_Label_3",
 						"text":"1、图片的宽=-1,高等于组件高，2、图片高=-1宽等于组件宽，,3、图片宽高小于组件宽高",
-						"type":"do_Label",
-						"height":"50"
+						"height":"50",
+						"width":"748",
+						"type":"do_Label"
 					},
 					{
 						"bgColor":"0000FFFF",
-						"width":"-1",
-						"x":"10",
-						"y":"50",
-						"scale":"center",
 						"id":"do_ImageView_5",
+						"scale":"center",
+						"height":"200",
 						"source":"data://scaletype/6.jpg",
+						"width":"-1",
 						"type":"do_ImageView",
-						"height":"200"
+						"y":"50",
+						"x":"10"
 					},
 					{
 						"bgColor":"0000FFFF",
-						"x":"220",
-						"width":"200",
-						"y":"50",
-						"scale":"center",
 						"id":"do_ImageView_6",
+						"scale":"center",
+						"height":"-1",
 						"source":"data://scaletype/6.jpg",
+						"width":"200",
 						"type":"do_ImageView",
-						"height":"-1"
+						"y":"50",
+						"x":"220"
 					},
 					{
 						"bgColor":"0000FFFF",
-						"x":"430",
-						"width":"220",
-						"y":"50",
-						"scale":"center",
 						"id":"do_ImageView_7",
+						"scale":"center",
+						"height":"220",
 						"source":"data://scaletype/4.jpg",
+						"width":"220",
 						"type":"do_ImageView",
-						"height":"220"
+						"y":"50",
+						"x":"430"
 					}
 				],
-				"height":"300"
+				"width":"750",
+				"type":"do_ALayout",
+				"y":"440"
 			},
 			{
-				"width":"750",
-				"y":"740",
 				"id":"do_ALayout_6",
-				"type":"do_ALayout",
+				"height":"400",
 				"views":[
 					{
-						"width":"748",
 						"id":"do_Label_4",
 						"text":"1、网络图片宽高=-1，2、网络图片高=-1宽等于组件宽,3、图片宽大于组件宽，高小组件高",
-						"type":"do_Label",
-						"height":"50"
+						"height":"50",
+						"width":"748",
+						"type":"do_Label"
 					},
 					{
 						"bgColor":"0000FFFF",
-						"width":"-1",
-						"x":"10",
-						"y":"50",
-						"scale":"center",
 						"id":"do_ImageView_8",
-						"source":"http://img3.imgtn.bdimg.com/it/u=1684642630,2291077943&fm=21&gp=0.jpg",
-						"type":"do_ImageView",
-						"height":"-1"
-					},
-					{
-						"bgColor":"0000FFFF",
-						"x":"232",
-						"width":"300",
-						"y":"52",
 						"scale":"center",
-						"id":"do_ImageView_9",
+						"height":"-1",
 						"source":"http://img3.imgtn.bdimg.com/it/u=1684642630,2291077943&fm=21&gp=0.jpg",
+						"width":"-1",
 						"type":"do_ImageView",
-						"height":"-1"
-					},
-					{
-						"bgColor":"0000FFFF",
-						"x":"530",
-						"width":"220",
 						"y":"50",
+						"x":"10"
+					},
+					{
+						"bgColor":"0000FFFF",
+						"id":"do_ImageView_9",
 						"scale":"center",
-						"id":"do_ImageView_10",
-						"source":"data://scaletype/7.jpg",
+						"height":"-1",
+						"source":"http://img3.imgtn.bdimg.com/it/u=1684642630,2291077943&fm=21&gp=0.jpg",
+						"width":"300",
 						"type":"do_ImageView",
-						"height":"220"
+						"y":"52",
+						"x":"232"
+					},
+					{
+						"bgColor":"0000FFFF",
+						"id":"do_ImageView_10",
+						"scale":"center",
+						"height":"220",
+						"source":"data://scaletype/7.jpg",
+						"width":"220",
+						"type":"do_ImageView",
+						"y":"50",
+						"x":"530"
 					}
 				],
-				"height":"400"
+				"width":"750",
+				"type":"do_ALayout",
+				"y":"740"
 			},
 			{
 				"bgColor":"0000FFFF",
-				"x":"10",
-				"width":"650",
-				"y":"1181",
-				"scale":"center",
 				"id":"do_ImageView_11",
+				"scale":"center",
+				"height":"150",
 				"source":"http://img1.imgtn.bdimg.com/it/u=633520533,1699628968&fm=21&gp=0.jpg",
+				"width":"650",
 				"type":"do_ImageView",
-				"height":"150"
+				"y":"1181",
+				"x":"10"
 			},
 			{
-				"x":"3",
-				"width":"699",
-				"y":"1141",
-				"fontSize":"20",
 				"id":"do_Label_7",
 				"text":"网络图片高大于组件高，宽小于组件宽",
+				"height":"43",
+				"width":"699",
+				"fontSize":"20",
 				"type":"do_Label",
-				"height":"43"
+				"y":"1141",
+				"x":"3"
+			},
+			{
+				"bgColor":"4B9EF9FF",
+				"id":"do_ALayout_9",
+				"height":"40",
+				"width":"750",
+				"type":"do_ALayout"
+			},
+			{
+				"bgColor":"4B9EF9FF",
+				"id":"do_ALayout_10",
+				"height":"88",
+				"views":[
+					{
+						"id":"do_Label_8",
+						"text":"center",
+						"fontColor":"FFFFFFFF",
+						"height":"88",
+						"width":"294",
+						"textAlign":"center",
+						"fontSize":"38",
+						"type":"do_Label",
+						"x":"224"
+					},
+					{
+						"id":"close1",
+						"views":[
+							{
+								"id":"do_ImageView_12",
+								"enabled":"true",
+								"height":"44",
+								"source":"source://do_ImageView/image/close.png",
+								"width":"62",
+								"type":"do_ImageView",
+								"y":"22",
+								"x":"20"
+							}
+						],
+						"type":"do_ALayout",
+						"y":"4",
+						"x":"4"
+					}
+				],
+				"width":"750",
+				"type":"do_ALayout",
+				"y":"40"
 			}
 		],
-		"height":"1334"
+		"width":"750",
+		"type":"do_ALayout"
 	}
 }
