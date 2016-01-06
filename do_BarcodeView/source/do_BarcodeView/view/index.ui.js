@@ -29,10 +29,10 @@ var listdata = mm("do_ListData");
 listdata.addData([ {
 	"index" : "1",
 	"name" : "二维码扫描页面"}
-//		,{
-//	"index" : "2",
-//	"name" : "仿微信扫一扫页面"
-//} 
+		,{
+	"index" : "2",
+	"name" : "仿微信扫一扫页面"
+} 
 ]);
 listview.bindItems(listdata);
 var bgImageView, eventView;
@@ -42,6 +42,12 @@ listview.on("touch",
 			case 0:
 				app.openPage({
 					source : "source://do_BarcodeView/view/barcode/index.ui",
+					statusBarState : "transparent"
+				});
+				break;
+			case 1:
+				app.openPage({
+					source : "source://do_BarcodeView/view/weixin/index.ui",
 					statusBarState : "transparent"
 				});
 				break;

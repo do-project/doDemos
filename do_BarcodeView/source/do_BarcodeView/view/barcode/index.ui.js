@@ -32,11 +32,11 @@ flash.on("touch",function(){
 	var R = i%2;
 	if(R == 1){
 		flash.source = "source://do_BarcodeView/image/barcodeview/flash_"+R+".png";
-		device.flash("on");
+		barcode.flash("on");
 	}
 	else if(R == 0){
 		flash.source = "source://do_BarcodeView/image/barcodeview/flash_"+R+".png";
-		device.flash("off");
+		barcode.flash("off");
 	}
 })
 
