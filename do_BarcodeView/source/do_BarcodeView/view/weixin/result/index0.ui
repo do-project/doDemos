@@ -78,9 +78,10 @@
 				"id":"do_ImageView_3",
 				"source":"source://do_BarcodeView/image/barcodeview/advice.png",
 				"type":"do_ImageView",
-				"height":"1206"
+				"height":"806"
 			},
 			{
+				"bgColor":"ABABABFF",
 				"width":"750",
 				"y":"570",
 				"id":"do_ALayout_5",
