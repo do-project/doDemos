@@ -1,0 +1,93 @@
+﻿{
+  "ID": "do_Device",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "设备的信息环境类",
+  "Version": "Internal",
+  "Description": "能获取设备的多种信息，能监控设备按钮的操作事件，能控制设备的一些辅助功能",
+  "Icon": "",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "iOS 7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [],
+  "syncMethodes": [
+    {
+      "ID": "beep",
+      "Name": "短音提示",
+      "Description": "设备会播放一个“嘟”的提示音",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    },
+    {
+      "ID": "flash",
+      "Name": "开关闪光灯",
+      "Description": "开关手机系统闪光灯",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "status",
+          "Name": "闪光灯状态",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "变化闪光灯状态，可以为“on”或者“off”2个状态，分别表示开关闪光灯"
+        }
+      ]
+    },
+    {
+      "ID": "getInfo",
+      "Name": "获取设备信息",
+      "Description": "",
+      "ReturnType": "Node",
+      "ReturnDesc": "返回值是一个JSON键值对，键值分别为“设备信息名称”和“设备信息值”，比如\"OS\\\":\\\"Android\\\",\\\"OSVersion\\\":\\\"4.1\\\",不同的操作系统可能有少部分信息获取不到，请参考参数描述。",
+      "Paras": [
+        {
+          "ID": "name",
+          "Name": "设备信息名称",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "all",
+          "Description": "根据设备信息名称获取设备信息值。缺省为“all”，表示返回所有的信息.除了“all”之外，name还可以为以下这些值：deviceId：设备唯一标识 deviceName：设备名称OS：操作系统版本OSVersion：操作系统版本号sdkVersion：获取手机操作系统SDK版本号resolutionH：水平分辨率resolutionV：垂直分辨率dpiH：水平像素密度dpiV：垂直像素密度screenH：水平屏幕宽度（dip)screenV：垂直屏幕宽度（dip)phoneType：手机机型phoneNumber：手机号码 communicationType：运营商类型simSerialNumber：SIM卡的序列号IMSI：IMSI(国际移动用户识别码)"
+        }
+      ]
+    },
+    {
+      "ID": "vibrate",
+      "Name": "设备振动",
+      "Description": "设备震动，缺省是一秒",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "duration",
+          "Name": "振动持续时间",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "1000",
+          "Description": "振动持续时间，单位是毫秒"
+        }
+      ]
+    }
+  ],
+  "asyncMethodes": []
+}

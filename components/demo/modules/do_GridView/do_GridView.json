@@ -1,0 +1,151 @@
+﻿{
+  "ID": "do_GridView",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "Grid视图",
+  "Version": "Internal",
+  "Description": "GridView是一个二维网格滚动视图",
+  "Icon": "",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "hSpacing",
+      "Name": "两列之间的间距",
+      "Type": "Number",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "两列之间的间距，单位为px",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    },
+    {
+      "ID": "isShowbar",
+      "Name": "是否支持显示滚动条效果",
+      "Type": "Bool",
+      "DefaultValue": "true",
+      "EditType": "0",
+      "Group": "",
+      "Description": "为true的时候，当gridview内容超出gridview的边界，会出现滚动条标识。",
+      "Design": {
+        "Type": "Boolean",
+        "Data": []
+      }
+    },
+    {
+      "ID": "numColumns",
+      "Name": "GridView对应的列数",
+      "Type": "Number",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "设置这个GridView显示多少列，-1 表示自动适应",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    },
+    {
+      "ID": "selectedColor",
+      "Name": "Cell选中的背景颜色",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "",
+      "Design": {
+        "Type": "Color",
+        "Data": []
+      }
+    },
+    {
+      "ID": "templates",
+      "Name": "Cell对应的UI文件组",
+      "Type": "Node",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "一个GridView可以有多个cell模板，这个属性是一个json array，每一个元素都是一个source ui文件，这些ui文件没有自己的逻辑代码，和gridview所在的page共用一个脚本环境。\\r\\n这个属性的格式类似如下：\\r\\n[\\\"source://view/cell1.ui\\\",\\\"source://view/cell2.ui\\\",\\\"source://view/cell3.ui]",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    },
+    {
+      "ID": "vSpacing",
+      "Name": "两行之间的间距",
+      "Type": "Number",
+      "DefaultValue": "",
+      "EditType": "0",
+      "Group": "",
+      "Description": "两行之间的间距，单位为px",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "longTouch",
+      "Description": "长按cell触发",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    },
+    {
+      "ID": "touch",
+      "Description": "点击cell触发",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "bindItems",
+      "Name": "绑定item的数据",
+      "Description": "可绑定listData和hashDatad实例",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "data",
+          "Name": "数据",
+          "Type": "Node",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID": "refreshItems",
+      "Name": "刷新item数据",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": []
+}

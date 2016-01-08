@@ -1,0 +1,17 @@
+{
+	"RootView":{
+		"width":"400",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"10",
+				"width":"400",
+				"y":"10",
+				"source":"source://componets/image/p/1.jpg",
+				"type":"do_ImageView",
+				"height":"300"
+			}
+		],
+		"height":"300"
+	}
+}

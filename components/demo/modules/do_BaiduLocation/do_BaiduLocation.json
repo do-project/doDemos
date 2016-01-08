@@ -1,0 +1,76 @@
+﻿{
+  "ID": "do_BaiduLocation",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "定位服务",
+  "Version": "Internal",
+  "Description": "利用设备当前的GPS信息（GPS定位），基站信息（基站定位）和Wi-Fi信息（Wi-Fi定位）完成定位，根据设备当前的实际情况（如是否开启GPS，是否连接网络，是否扫描到Wi-Fi信息等）生成定位依据，并根据开发者设置的实际定位策略（包括三种：高精度模式，低功耗模式，仅用设备模式）进行定位",
+  "Icon": "",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [],
+  "syncMethodes": [
+    {
+      "ID": "stop",
+      "Name": "停止定位",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": [
+    {
+      "ID": "getLocation",
+      "Name": "获取当前位置信息",
+      "Description": "\"获取当前位置信息",
+      "ReturnType": "Node",
+      "ReturnDesc": "{\\\"type\\\":\\\"BD-0911\\\",\\\"latitude\\\":\\\"纬度​\\\"，\\\"longitude\\\":\\\"经度\\\", \\\"address\\\":\\\"上地九街\\\"}",
+      "Paras": [
+        {
+          "ID": "model",
+          "Name": "定位模式",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "gps",
+          "Description": "accuracy:高精度定位模式：这种定位模式下，会同时使用网络定位和GPS定位，优先返回最高精度的定位结果\\r\\n lowpower：低功耗定位模式：这种定位模式下，不会使用GPS，只会使用网络定位（Wi-Fi和基站定位)\\r\\n gps: 仅用设备定位模式：这种定位模式下，不需要连接网络，只使用GPS进行定位，这种模式下不支持室内环境的定位"
+        },
+        {
+          "ID": "type",
+          "Name": "坐标类型",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "bd-0911",
+          "Description": "gcj-02:中国国家测绘局制订的地理信息系统的坐标系统  bd-0911:百度坐标系，如果要用百度地图，需要使用这个坐标系"
+        },
+        {
+          "ID": "scanSpan",
+          "Name": "扫描间隔时间",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "5000",
+          "Description": "扫描间隔，单位是毫秒，scanSpan < 1000 则为 app主动请求定位；scanSpan>=1000,则为定时定位模式，定时定位模式中，会按照app设定的时间定位进行位置更新，定时回调定位结果。此种定位模式适用于希望获得连续定位结果的情况。 对于单次定位类应用，或者偶尔需要一下位置信息的app，可采用app主动请求定位这种模式"
+        }
+      ]
+    }
+  ]
+}

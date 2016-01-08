@@ -1,0 +1,191 @@
+﻿{
+  "ID": "do_TextField",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "单行文本编辑框",
+  "Version": "Internal",
+  "Description": "通常只允许输入一行",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150617/a56789e9-4e45-4e31-8821-7d061075405f.png",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "iOS 7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "clearAll",
+      "Name": "输入框中显示叉号",
+      "Type": "Bool",
+      "DefaultValue": "false",
+      "EditType": "0",
+      "Group": "",
+      "Description": "默认值为false，设置成true时在文本框右侧显示一个叉号标记，点击叉号可以删除所有文本内容",
+      "Design": {
+        "Type": "Boolean",
+        "Data": []
+      }
+    },
+    {
+      "ID": "fontColor",
+      "Name": "字体前景色",
+      "Type": "String",
+      "DefaultValue": "000000FF",
+      "EditType": "1",
+      "Group": "",
+      "Description": "获取或设置字体前景色，为8位16进制整数，前6位为rgb颜色值，后两位为透明度。",
+      "Design": {
+        "Type": "Color",
+        "Data": []
+      }
+    },
+    {
+      "ID": "fontSize",
+      "Name": "字体大小",
+      "Type": "Number",
+      "DefaultValue": "17",
+      "EditType": "1",
+      "Group": "",
+      "Description": "字体大小",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    },
+    {
+      "ID": "fontStyle",
+      "Name": "字体风格",
+      "Type": "String",
+      "DefaultValue": "normal",
+      "EditType": "1",
+      "Group": "",
+      "Description": "包括4中类型：normal：常规  bold：粗体  italic：斜体  underline：下划线",
+      "Design": {
+        "Type": "List",
+        "Data": [
+          {
+            "id": "normal",
+            "value": "常规"
+          },
+          {
+            "id": "bold",
+            "value": "粗体"
+          },
+          {
+            "id": "italic",
+            "value": "斜体"
+          },
+          {
+            "id": "underline",
+            "value": "下划线"
+          }
+        ]
+      }
+    },
+    {
+      "ID": "hint",
+      "Name": "提示信息",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "text为空时显示的文字提示信息",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    },
+    {
+      "ID": "inputType",
+      "Name": "输入类型",
+      "Type": "String",
+      "DefaultValue": "ENG",
+      "EditType": "0",
+      "Group": "",
+      "Description": "输入类型，不设置这个属性的时候会使用系统默认键盘支持所有字符，可设置的值包括以下4种:\"ASC\" ：支持ASCII的默认键盘  \"PHONENUMBER\" ：标准电话键盘，支持＋＊＃字符  \"URL\" ：URL键盘，支持.com按钮，只支持URL字符  \"ENG\" :英文键盘",
+      "Design": {
+        "Type": "List",
+        "Data": [
+          {
+            "id": "ASC",
+            "value": "默认键盘"
+          },
+          {
+            "id": "PHONENUMBER",
+            "value": "标准电话键盘"
+          },
+          {
+            "id": "URL",
+            "value": "URL键盘"
+          },
+          {
+            "id": "ENG",
+            "value": "英文键盘"
+          }
+        ]
+      }
+    },
+    {
+      "ID": "password",
+      "Name": "隐藏输入字符",
+      "Type": "Bool",
+      "DefaultValue": "false",
+      "EditType": "0",
+      "Group": "",
+      "Description": "默认值为false，设置为true时将输入的字符显示为**",
+      "Design": {
+        "Type": "Boolean",
+        "Data": []
+      }
+    },
+    {
+      "ID": "text",
+      "Name": "文本内容",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "获取或设置与此控件关联的文本",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "focusIn",
+      "Description": "进入编辑状态",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    },
+    {
+      "ID": "focusOut",
+      "Description": "离开编辑状态",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    },
+    {
+      "ID": "textChanged",
+      "Description": "文字变化时触发",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    }
+  ],
+  "syncMethodes": [],
+  "asyncMethodes": []
+}

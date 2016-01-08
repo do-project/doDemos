@@ -1,0 +1,124 @@
+﻿{
+  "ID": "do_Album",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "相册",
+  "Version": "Internal",
+  "Description": "可以通过相册选择图片，并且可以指定保存过后图片的质量，宽高",
+  "Icon": "",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "14"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [],
+  "syncMethodes": [],
+  "asyncMethodes": [
+    {
+      "ID": "save",
+      "Name": "保存图片到相册",
+      "Description": "把一个图片文件保存到系统相册；width和height均为-1时保持图片的原始宽高不变, 以quality压缩；width或height有任一为-1，保持图片的原始宽高比不变 ,以不为-1的那个值做为基准, 保持原图的宽高比, 并以quality压缩",
+      "ReturnType": "Bool",
+      "ReturnDesc": "保存成功返回true，保存失败返回false",
+      "Paras": [
+        {
+          "ID": "path",
+          "Name": "",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "要保存的图片文件路径,支持数据区data://"
+        },
+        {
+          "ID": "name",
+          "Name": "图片名称",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "保存到相册后的图片的名称，不设置就是\\\"default.jpg\\\""
+        },
+        {
+          "ID": "width",
+          "Name": "宽度",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "选择后的图片的宽度，不填默认图片宽度"
+        },
+        {
+          "ID": "height",
+          "Name": "高度",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "选择后的图片的高度，不填默认图片高度"
+        },
+        {
+          "ID": "quality",
+          "Name": "清晰度",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "100",
+          "Description": "清晰度1-100,缺省是100表示原始的图片质量"
+        }
+      ]
+    },
+    {
+      "ID": "select",
+      "Name": "从相册选择照片",
+      "Description": "可以单选或者复选一个或多个图片，根据用户传递的参数， 裁减选定的图片缺省会另存到data://temp/do_Album/目录下，然后返回给用户这些图片的url,目前最多支持一次多选9张；width和height均为-1时保持图片的原始宽高不变, 以quality压缩；width或height有任一为-1，保持图片的原始宽高比不变 ,以不为-1的那个值做为基准, 保持原图的宽高比, 并以quality压缩",
+      "ReturnType": "Node",
+      "ReturnDesc": "[\\\"file1\\\",\\\"file2\\\"...]",
+      "Paras": [
+        {
+          "ID": "maxCount",
+          "Name": "总共最多选几张",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "多选时可设置最多选几张"
+        },
+        {
+          "ID": "width",
+          "Name": "宽度",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "选择后的图片的宽度，不填默认图片宽度"
+        },
+        {
+          "ID": "height",
+          "Name": "高度",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "选择后的图片的高度，不填默认图片高度"
+        },
+        {
+          "ID": "quality",
+          "Name": "清晰度",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "100",
+          "Description": "清晰度1-100,缺省是100表示原始的图片质量"
+        }
+      ]
+    }
+  ]
+}

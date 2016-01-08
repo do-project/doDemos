@@ -1,0 +1,148 @@
+﻿{
+  "ID": "do_TextBox",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "多行文本编辑框",
+  "Version": "Internal",
+  "Description": "通常只能输入多行数据",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150617/e96012c5-0f63-40fc-8f06-39d2e4e82be7.png",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "iOS 7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "fontColor",
+      "Name": "字体颜色",
+      "Type": "String",
+      "DefaultValue": "000000FF",
+      "EditType": "1",
+      "Group": "",
+      "Description": "",
+      "Design": {
+        "Type": "Color",
+        "Data": []
+      }
+    },
+    {
+      "ID": "fontSize",
+      "Name": "字体大小",
+      "Type": "Number",
+      "DefaultValue": "17",
+      "EditType": "1",
+      "Group": "",
+      "Description": "",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    },
+    {
+      "ID": "fontStyle",
+      "Name": "字体样式",
+      "Type": "String",
+      "DefaultValue": "normal",
+      "EditType": "1",
+      "Group": "",
+      "Description": "支持4种样式：normal：常规  bold：粗体  italic：斜体  underline：下划线",
+      "Design": {
+        "Type": "List",
+        "Data": [
+          {
+            "id": "normal",
+            "value": "常规"
+          },
+          {
+            "id": "bold",
+            "value": "粗体"
+          },
+          {
+            "id": "italic",
+            "value": "斜体"
+          },
+          {
+            "id": "underline",
+            "value": "下划线"
+          }
+        ]
+      }
+    },
+    {
+      "ID": "hint",
+      "Name": "text为空提示文本",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    },
+    {
+      "ID": "maxLength",
+      "Name": "最大长度",
+      "Type": "Number",
+      "DefaultValue": "100",
+      "EditType": "0",
+      "Group": "",
+      "Description": "",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    },
+    {
+      "ID": "text",
+      "Name": "文本内容",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "focusIn",
+      "Description": "进入编辑状态",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    },
+    {
+      "ID": "focusOut",
+      "Description": "离开编辑状态",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    },
+    {
+      "ID": "textChanged",
+      "Description": "文字变化时触发",
+      "ReturnType": "String",
+      "ReturnDesc": ""
+    }
+  ],
+  "syncMethodes": [],
+  "asyncMethodes": []
+}

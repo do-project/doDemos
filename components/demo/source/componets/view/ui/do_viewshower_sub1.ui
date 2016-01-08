@@ -1,0 +1,37 @@
+{
+	"RootView":{
+		"bgColor":"FFFFFFFF",
+		"width":"700",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"x":"10",
+				"width":"700",
+				"y":"10",
+				"source":"source://componets/image/2.png",
+				"type":"do_ImageView",
+				"height":"300"
+			},
+			{
+				"width":"700",
+				"y":"300",
+				"id":"do_alayout_2",
+				"type":"do_ALayout",
+				"views":[
+					{
+						"bgColor":"000000FF",
+						"width":"700",
+						"fontSize":"20",
+						"id":"do_label_2",
+						"text":"高效的脚本引擎",
+						"type":"do_Label",
+						"fontColor":"FFFFFFFF",
+						"height":"50"
+					}
+				],
+				"height":"50"
+			}
+		],
+		"height":"350"
+	}
+}

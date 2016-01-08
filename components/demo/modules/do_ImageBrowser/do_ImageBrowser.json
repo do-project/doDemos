@@ -1,0 +1,59 @@
+﻿{
+  "ID": "do_ImageBrowser",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "图片预览",
+  "Version": "Internal",
+  "Description": "图片路径可以http://链接或本地data://，支持放大后缩放原图，多图片支持左右滑动预览",
+  "Icon": "",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "14"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [],
+  "syncMethodes": [
+    {
+      "ID": "show",
+      "Name": "预览",
+      "Description": "打开预览，图片2张以上需要底部显示引导圆点",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "data",
+          "Name": "",
+          "Type": "Node",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "预览图片传递数据结构[{ source : '', init : ''} , {source :'' , init : ''} , ..... ]"
+        },
+        {
+          "ID": "index",
+          "Name": "",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "设置当前预览图片索引值，默认为0"
+        }
+      ]
+    }
+  ],
+  "asyncMethodes": []
+}

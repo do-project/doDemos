@@ -1,0 +1,65 @@
+﻿{
+  "ID": "do_Network",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "网络状态类",
+  "Version": "Internal",
+  "Description": "能获取当前手机端的网络状态，当网络状态发生变化时可以回调",
+  "Icon": "",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "iOS 7.0"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "14"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [
+    {
+      "ID": "changed",
+      "Description": "网络状态发生变化的回调方法",
+      "ReturnType": "String",
+      "ReturnDesc": "返回以下枚举类型的一种：'wifi'-wifi网络，'2G/3G/4G'-2G、3G或者4G，'none'-没有网络连接，'unknown'-未知网络连接"
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "getIP",
+      "Name": "获取移动终端ip地址",
+      "Description": "移动设备的ip地址有可能随时变化，获取当前的ip地址",
+      "ReturnType": "String",
+      "ReturnDesc": "当前的ip地址",
+      "Paras": []
+    },
+    {
+      "ID": "getOperators",
+      "Name": "获取设备的运营商",
+      "Description": "当前设备使用的sim卡运营商",
+      "ReturnType": "String",
+      "ReturnDesc": "China Mobile'-中国移动，'China Unicom'-中国联通，'China Telecom'-中国电信，'others'-其他运营商，'none'-没检测到sim卡",
+      "Paras": []
+    },
+    {
+      "ID": "getStatus",
+      "Name": "获取当前网络状态",
+      "Description": "获取手机端当前处于的网络环境",
+      "ReturnType": "String",
+      "ReturnDesc": "以下枚举类型的一种：'wifi'-wifi网络，'2G/3G/4G'-2G、3G或者4G，'none'-没有网络连接，'unknown'-未知网络连接",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": []
+}
