@@ -19,7 +19,7 @@ page.on("loaded", function(data, e) {
 	})	
 	code.on("touch", function() {
 		app.openPage({
-			source : "source://do_ScrollView/view/codeviewer/index.ui",
+			source : "source://do_ScrollView/view/codeviewer/myself.ui",
 			statusBarState : "transparent"
 		});
 	});
@@ -30,9 +30,9 @@ page.on("loaded", function(data, e) {
 		switch (index) {
 		case 0:
 			app.openPage({
-				source : "source://do_ScrollView/view/pullAnimation/pullAnimation.ui",
-				statusBarState : "transparent",
-				animationType: "push_r2l"
+				source : "source://do_ScrollView/view/pullAnimation/myself.ui",
+				statusBarState : "transparent",//pullAnimation
+				animationType: "fade"
 			});
 			break;
 
