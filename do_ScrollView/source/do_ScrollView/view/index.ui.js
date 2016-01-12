@@ -30,7 +30,7 @@ page.on("loaded", function(data, e) {
 		switch (index) {
 		case 0:
 			app.openPage({
-				source : "source://do_ScrollView/view/pullAnimation/myself.ui",
+				source : "source://do_ScrollView/view/pullAnimation/frame.ui",
 				statusBarState : "transparent",
 				animationType: "fade"
 			});
