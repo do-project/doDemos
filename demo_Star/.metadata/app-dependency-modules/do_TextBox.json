@@ -172,8 +172,8 @@
     {
       "ID": "focusIn",
       "Description": "进入编辑状态",
-      "ReturnType": "String",
-      "ReturnDesc": ""
+      "ReturnType": "Node",
+      "ReturnDesc": "返回键盘高度，{keybordHeight:'25'}"
     },
     {
       "ID": "focusOut",
@@ -203,6 +203,23 @@
           "Required": 1,
           "DefaultValue": "false",
           "Description": "为true时有焦点，false时无焦点"
+        }
+      ]
+    },
+    {
+      "ID": "setSelection",
+      "Name": "设置光标位置",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "position",
+          "Name": "光标位置",
+          "Type": "Number",
+          "Required": 1,
+          "DefaultValue": "0",
+          "Description": "表示在已有字符的第几个位置，从0开始，比如文本框内有5个字符，position设置为3，光标即在第4个字符之前"
         }
       ]
     }

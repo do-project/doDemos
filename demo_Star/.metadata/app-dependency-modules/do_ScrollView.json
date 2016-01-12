@@ -28,6 +28,19 @@
   },
   "Properties": [
     {
+      "ID": "canScrollToTop",
+      "Name": "是否滚动到屏幕顶部",
+      "Type": "Bool",
+      "DefaultValue": "true",
+      "EditType": "0",
+      "Group": "UI",
+      "Description": "属性设置成true时可以通过点击手机状态栏返回内容的顶部；仅支持iOS平台",
+      "Design": {
+        "Type": "Boolean",
+        "Data": []
+      }
+    },
+    {
       "ID": "direction",
       "Name": "滚动方向",
       "Type": "String",
@@ -111,6 +124,23 @@
       "ReturnType": "",
       "ReturnDesc": "",
       "Paras": []
+    },
+    {
+      "ID": "scrollTo",
+      "Name": "滚动到指定位置",
+      "Description": "滚动方向跟ScrollView的方向一致",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "offset",
+          "Name": "指定位置",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "0",
+          "Description": ""
+        }
+      ]
     },
     {
       "ID": "toBegin",

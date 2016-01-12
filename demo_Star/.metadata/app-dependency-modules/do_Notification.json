@@ -32,7 +32,7 @@
     {
       "ID": "toast",
       "Name": "弹出toast窗口",
-      "Description": "支持类似Android的toast的方式，弹出一个提示框，但是很短时间内会自动消隐",
+      "Description": "支持类似Android的toast的方式，弹出一个提示框，但是很短时间内会自动消隐，x和y都不赋值，即显示默认位置",
       "ReturnType": "",
       "ReturnDesc": "",
       "Paras": [
@@ -40,6 +40,22 @@
           "ID": "text",
           "Name": "toast窗口的正文",
           "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": ""
+        },
+        {
+          "ID": "x",
+          "Name": "toast窗口的x坐标位置",
+          "Type": "Number",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": ""
+        },
+        {
+          "ID": "y",
+          "Name": "toast窗口的y坐标位置",
+          "Type": "Number",
           "Required": 0,
           "DefaultValue": "",
           "Description": ""

@@ -35,7 +35,19 @@ listdata.addData([ {
 }, {
 	"index" : "3",
 	"name" : "RadioButton和SwitchView的实现"
-} ]);
+}, {
+	"index" : "4",
+	"name" : "加载页面"
+}, {
+	"index" : "5",
+	"name" : "组件动画及可下拉页面展示"
+}, {
+	"index" : "6",
+	"name" : "下拉列表"
+}, {
+	"index" : "7",
+	"name" : "圆形头像图标"
+}]);
 listview.bindItems(listdata);
 
 var payView, popmenu;
@@ -59,7 +71,34 @@ listview.on("touch", function(index) {
 			animationType: "push_r2l_1",
 		});
 		break;
-
+	case 3:
+		app.openPage({
+			source : "source://demo_Star/view/loading/index.ui",
+			statusBarState : "transparent",
+			animationType: "push_r2l_1",
+		});
+		break;
+	case 4:
+		app.openPage({
+			source : "source://demo_Star/view/pullAnimation/index.ui",
+			statusBarState : "transparent",
+			animationType: "push_r2l_1",
+		});
+		break;
+	case 5:
+		app.openPage({
+			source : "source://demo_Star/view/down_list/index.ui",
+			statusBarState : "transparent",
+			animationType: "push_r2l_1",
+		});
+		break;
+	case 6:
+		app.openPage({
+			source : "source://demo_Star/view/round_picture/index.ui",
+			statusBarState : "transparent",
+			animationType: "push_r2l_1",
+		});
+		break;
 	}
 
 });
@@ -72,3 +111,5 @@ function addview(view, id, path) {
 		view.visible = true;
 	}
 }
+
+

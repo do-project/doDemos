@@ -230,6 +230,32 @@
       }
     },
     {
+      "ID": "textAlign",
+      "Name": "文本对齐方式",
+      "Type": "String",
+      "DefaultValue": "left",
+      "EditType": "0",
+      "Group": "",
+      "Description": "对齐方式为以下3种：left 左对齐（默认）；center 居中；right 右对齐。",
+      "Design": {
+        "Type": "List",
+        "Data": [
+          {
+            "id": "left",
+            "value": "左对齐"
+          },
+          {
+            "id": "center",
+            "value": "居中"
+          },
+          {
+            "id": "right",
+            "value": "右对齐"
+          }
+        ]
+      }
+    },
+    {
       "ID": "textFlag",
       "Name": "字体标示",
       "Type": "String",
@@ -266,8 +292,8 @@
     {
       "ID": "focusIn",
       "Description": "进入编辑状态",
-      "ReturnType": "String",
-      "ReturnDesc": ""
+      "ReturnType": "Node",
+      "ReturnDesc": "返回键盘高度，{keybordHeight:'25'}"
     },
     {
       "ID": "focusOut",
@@ -297,6 +323,23 @@
           "Required": 1,
           "DefaultValue": "false",
           "Description": "为true时有焦点，false时无焦点"
+        }
+      ]
+    },
+    {
+      "ID": "setSelection",
+      "Name": "设置光标位置",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "position",
+          "Name": "光标位置",
+          "Type": "Number",
+          "Required": 1,
+          "DefaultValue": "0",
+          "Description": "表示在已有字符的第几个位置，从0开始，比如文本框内有5个字符，position设置为3，光标即在第4个字符之前"
         }
       ]
     }

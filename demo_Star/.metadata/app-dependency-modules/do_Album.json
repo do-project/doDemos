@@ -12,7 +12,7 @@
   },
   "Android": {
     "Support": 1,
-    "MinVersion": "14"
+    "MinVersion": "4.0"
   },
   "Windows": {
     "Support": 1,
@@ -82,7 +82,7 @@
     {
       "ID": "select",
       "Name": "从相册选择照片",
-      "Description": "可以根据用户传递的参数单选一张图片或者复选多张图片，目前最多支持一次多选9张；裁减选定的图片缺省会另存到data://temp/do_Album/目录下，然后返回给用户这些图片保存后的url；width和height均为-1时保持图片的原始宽高不变, 以quality压缩；width或height有任一为小于等于0，保持图片的原始宽高比不变 ,以不小于等于0的那个值做为基准, 保持原图的宽高比，并以quality压缩；若不选择照片则不显示确定按钮，显示取消按钮、预览按钮变灰，点击没反应且回调为空",
+      "Description": "可以根据用户传递的参数单选一张图片或者复选多张图片，目前最多支持一次多选9张；选定的图片缺省会另存到data://temp/do_Album/目录下，然后返回给用户这些图片保存后的url；width和height均为-1时保持图片的原始宽高不变, 以quality压缩；width或height有任一为小于等于0，保持图片的原始宽高比不变 ,以不小于等于0的那个值做为基准, 保持原图的宽高比，并以quality压缩；若不选择照片则不显示确定按钮，显示取消按钮、预览按钮变灰，点击没反应且回调为空",
       "ReturnType": "Node",
       "ReturnDesc": "['file1','file2'...]",
       "Paras": [
@@ -117,6 +117,14 @@
           "Required": 0,
           "DefaultValue": "",
           "Description": "清晰度1-100,缺省是100表示原始的图片质量"
+        },
+        {
+          "ID": "iscut",
+          "Name": "是否启动中间取景界面",
+          "Type": "Bool",
+          "Required": 0,
+          "DefaultValue": "false",
+          "Description": "只有在maxCount设置为1时该参数设置成true才有效；如果这个值为true的话，照片选择结束后会出现一个中间的取景界面，有一个矩形框让用户对照片进行裁剪；windows不支持"
         }
       ]
     }
