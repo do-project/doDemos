@@ -1,0 +1,59 @@
+﻿{
+  "ID": "M0011_share",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "系统分享",
+  "Version": "Internal",
+  "Description": "调用系统的分享功能",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20150818/M0011_share/iconfont-fenxiang.png",
+  "IOS": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [],
+  "syncMethodes": [
+    {
+      "ID": "share",
+      "Name": "系统分享",
+      "Description": "调用系统分享",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "title",
+          "Name": "标题",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "felix",
+          "Description": "分享的标题"
+        },
+        {
+          "ID": "content",
+          "Name": "内容",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "felix",
+          "Description": "分享内容"
+        }
+      ]
+    }
+  ],
+  "asyncMethodes": []
+}
