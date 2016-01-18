@@ -1,248 +1,248 @@
 {
 	"RootView":{
 		"bgColor":"FFFFFFFF",
-		"width":"750",
-		"type":"do_ALayout",
+		"height":"1334",
 		"views":[
 			{
-				"bgColor":"000000FF",
-				"width":"750",
 				"id":"do_ALayout_4",
-				"type":"do_ALayout",
-				"height":"40"
+				"bgColor":"000000FF",
+				"height":"40",
+				"width":"750",
+				"type":"do_ALayout"
 			},
 			{
-				"visible":"false",
-				"bgColor":"00000092",
-				"width":"750",
-				"y":"128",
 				"id":"do_ALayout_7",
-				"type":"do_ALayout",
+				"bgColor":"00000092",
+				"height":"1006",
+				"visible":"false",
 				"views":[
 					{
-						"textAlign":"center",
-						"width":"500",
-						"x":"130",
-						"y":"320",
-						"fontSize":"30",
 						"id":"do_Label_2",
-						"text":"未发现二维码/条码",
-						"type":"do_Label",
 						"fontColor":"FFFFFFFF",
-						"height":"88"
+						"text":"未发现二维码/条码",
+						"height":"88",
+						"width":"500",
+						"textAlign":"center",
+						"type":"do_Label",
+						"fontSize":"30",
+						"y":"320",
+						"x":"130"
 					},
 					{
-						"textAlign":"center",
-						"width":"500",
-						"x":"130",
-						"y":"402",
 						"id":"do_Label_3",
-						"text":"轻触屏幕继续扫描",
-						"type":"do_Label",
 						"fontColor":"C0C0C0FF",
-						"height":"88"
+						"text":"轻触屏幕继续扫描",
+						"height":"88",
+						"width":"500",
+						"textAlign":"center",
+						"type":"do_Label",
+						"y":"402",
+						"x":"130"
 					}
 				],
-				"height":"1006"
+				"width":"750",
+				"type":"do_ALayout",
+				"y":"128"
 			},
 			{
-				"x":"0",
-				"width":"750",
-				"y":"0",
 				"id":"do_ALayout_8",
-				"type":"do_ALayout",
+				"height":"1334",
 				"views":[
 					{
-						"width":"750",
-						"scanArea":"125,200,500,500",
 						"id":"do_BarcodeView_1",
-						"type":"do_BarcodeView",
-						"height":"1334"
+						"height":"1334",
+						"scanArea":"125,200,500,500",
+						"width":"750",
+						"type":"do_BarcodeView"
 					},
 					{
-						"textAlign":"center",
-						"x":"130",
-						"width":"500",
-						"y":"736",
-						"fontSize":"25",
 						"id":"do_Label_4",
+						"fontColor":"FFFFFFFF",
 						"text":"将二维码/条码放入框内，即可自动扫描",
+						"width":"500",
+						"textAlign":"center",
 						"type":"do_Label",
-						"fontColor":"FFFFFFFF"
+						"fontSize":"25",
+						"y":"736",
+						"x":"130"
 					},
 					{
-						"bgColor":"000000FF",
-						"width":"750",
-						"y":"40",
 						"id":"do_ALayout_10",
-						"type":"do_ALayout",
-						"views":[
-							{
-								"x":"25",
-								"width":"50",
-								"y":"22",
-								"id":"do_ImageView_1",
-								"source":"source://do_BarcodeView/image/close.png",
-								"type":"do_ImageView",
-								"enabled":"true",
-								"height":"40"
-							},
-							{
-								"textAlign":"center",
-								"x":"224",
-								"width":"294",
-								"fontSize":"34",
-								"id":"title",
-								"text":"二维码/条码",
-								"type":"do_Label",
-								"fontColor":"FFFFFFFF",
-								"height":"88"
-							}
-						],
-						"height":"88"
-					},
-					{
-						"visible":"false",
-						"width":"750",
-						"y":"128",
-						"id":"do_ALayout_11",
-						"type":"do_ALayout",
-						"views":[
-							{
-								"textAlign":"center",
-								"x":"130",
-								"width":"500",
-								"y":"320",
-								"fontSize":"30",
-								"id":"do_Label_6",
-								"text":"未发现二维码/条码",
-								"type":"do_Label",
-								"fontColor":"FFFFFFFF",
-								"height":"88"
-							},
-							{
-								"textAlign":"center",
-								"x":"130",
-								"width":"500",
-								"y":"402",
-								"id":"do_Label_7",
-								"text":"轻触屏幕继续扫描",
-								"type":"do_Label",
-								"fontColor":"C0C0C0FF",
-								"height":"88"
-							}
-						],
-						"height":"1006"
-					},
-					{
 						"bgColor":"000000FF",
-						"width":"750",
-						"id":"do_ALayout_12",
-						"type":"do_ALayout",
-						"height":"40"
-					},
-					{
-						"bgColor":"00000090",
-						"width":"750",
-						"y":"1134",
-						"id":"do_ALayout_6",
-						"type":"do_ALayout",
+						"height":"88",
 						"views":[
 							{
-								"width":"52",
-								"x":"68",
-								"y":"58",
-								"id":"iv0",
-								"source":"source://do_BarcodeView/image/barcodeview/s0.png",
-								"type":"do_ImageView",
+								"id":"close",
 								"enabled":"true",
-								"height":"52"
-							},
-							{
-								"bgColor":"00000000",
-								"width":"57",
-								"x":"70",
-								"y":"118",
-								"fontSize":"25",
-								"id":"label0",
-								"text":"扫码",
-								"type":"do_Label",
-								"fontColor":"00EA3AFF",
-								"height":"35"
-							},
-							{
-								"bgColor":"00000000",
-								"width":"57",
-								"x":"242",
-								"y":"118",
-								"fontSize":"25",
-								"id":"label1",
-								"text":"封面",
-								"type":"do_Label",
-								"fontColor":"C0C0C0FF",
-								"height":"35"
-							},
-							{
-								"width":"52",
-								"x":"240",
-								"y":"58",
-								"id":"iv1",
-								"source":"source://do_BarcodeView/image/barcodeview/d1.png",
+								"height":"40",
+								"source":"source://do_BarcodeView/image/close.png",
+								"width":"50",
 								"type":"do_ImageView",
-								"enabled":"true",
-								"height":"52"
+								"y":"22",
+								"x":"25"
 							},
 							{
-								"bgColor":"00000000",
-								"width":"57",
-								"x":"435",
-								"y":"118",
-								"fontSize":"25",
-								"id":"label2",
-								"text":"街景",
+								"id":"title",
+								"fontColor":"FFFFFFFF",
+								"text":"二维码/条码",
+								"height":"88",
+								"width":"294",
+								"textAlign":"center",
 								"type":"do_Label",
-								"fontColor":"C0C0C0FF",
-								"height":"35"
-							},
-							{
-								"width":"52",
-								"x":"429",
-								"y":"58",
-								"id":"iv2",
-								"source":"source://do_BarcodeView/image/barcodeview/d2.png",
-								"type":"do_ImageView",
-								"enabled":"true",
-								"height":"52"
-							},
-							{
-								"bgColor":"00000000",
-								"width":"57",
-								"x":"616",
-								"y":"118",
-								"fontSize":"25",
-								"id":"label3",
-								"text":"翻译",
-								"type":"do_Label",
-								"fontColor":"C0C0C0FF",
-								"height":"35"
-							},
-							{
-								"width":"52",
-								"x":"618",
-								"y":"58",
-								"id":"iv3",
-								"source":"source://do_BarcodeView/image/barcodeview/d3.png",
-								"type":"do_ImageView",
-								"enabled":"true",
-								"height":"52"
+								"fontSize":"34",
+								"x":"224"
 							}
 						],
-						"height":"200"
+						"width":"750",
+						"type":"do_ALayout",
+						"y":"40"
+					},
+					{
+						"id":"do_ALayout_11",
+						"height":"1006",
+						"visible":"false",
+						"views":[
+							{
+								"id":"do_Label_6",
+								"fontColor":"FFFFFFFF",
+								"text":"未发现二维码/条码",
+								"height":"88",
+								"width":"500",
+								"textAlign":"center",
+								"type":"do_Label",
+								"fontSize":"30",
+								"y":"320",
+								"x":"130"
+							},
+							{
+								"id":"do_Label_7",
+								"fontColor":"C0C0C0FF",
+								"text":"轻触屏幕继续扫描",
+								"height":"88",
+								"width":"500",
+								"textAlign":"center",
+								"type":"do_Label",
+								"y":"402",
+								"x":"130"
+							}
+						],
+						"width":"750",
+						"type":"do_ALayout",
+						"y":"128"
+					},
+					{
+						"id":"do_ALayout_12",
+						"bgColor":"000000FF",
+						"height":"40",
+						"width":"750",
+						"type":"do_ALayout"
+					},
+					{
+						"id":"do_ALayout_6",
+						"bgColor":"00000090",
+						"height":"200",
+						"views":[
+							{
+								"id":"iv0",
+								"enabled":"true",
+								"height":"52",
+								"source":"source://do_BarcodeView/image/barcodeview/s0.png",
+								"width":"52",
+								"type":"do_ImageView",
+								"y":"58",
+								"x":"68"
+							},
+							{
+								"id":"label0",
+								"bgColor":"00000000",
+								"fontColor":"00EA3AFF",
+								"text":"扫码",
+								"height":"35",
+								"width":"57",
+								"type":"do_Label",
+								"fontSize":"25",
+								"y":"118",
+								"x":"70"
+							},
+							{
+								"id":"label1",
+								"bgColor":"00000000",
+								"fontColor":"C0C0C0FF",
+								"text":"封面",
+								"height":"35",
+								"width":"57",
+								"type":"do_Label",
+								"fontSize":"25",
+								"y":"118",
+								"x":"242"
+							},
+							{
+								"id":"iv1",
+								"enabled":"true",
+								"height":"52",
+								"source":"source://do_BarcodeView/image/barcodeview/d1.png",
+								"width":"52",
+								"type":"do_ImageView",
+								"y":"58",
+								"x":"240"
+							},
+							{
+								"id":"label2",
+								"bgColor":"00000000",
+								"fontColor":"C0C0C0FF",
+								"text":"街景",
+								"height":"35",
+								"width":"57",
+								"type":"do_Label",
+								"fontSize":"25",
+								"y":"118",
+								"x":"435"
+							},
+							{
+								"id":"iv2",
+								"enabled":"true",
+								"height":"52",
+								"source":"source://do_BarcodeView/image/barcodeview/d2.png",
+								"width":"52",
+								"type":"do_ImageView",
+								"y":"58",
+								"x":"429"
+							},
+							{
+								"id":"label3",
+								"bgColor":"00000000",
+								"fontColor":"C0C0C0FF",
+								"text":"翻译",
+								"height":"35",
+								"width":"57",
+								"type":"do_Label",
+								"fontSize":"25",
+								"y":"118",
+								"x":"616"
+							},
+							{
+								"id":"iv3",
+								"enabled":"true",
+								"height":"52",
+								"source":"source://do_BarcodeView/image/barcodeview/d3.png",
+								"width":"52",
+								"type":"do_ImageView",
+								"y":"58",
+								"x":"618"
+							}
+						],
+						"width":"750",
+						"type":"do_ALayout",
+						"y":"1134"
 					}
 				],
-				"height":"1334"
+				"width":"750",
+				"type":"do_ALayout",
+				"y":"0",
+				"x":"0"
 			}
 		],
-		"height":"1334"
+		"width":"750",
+		"type":"do_ALayout"
 	}
 }
