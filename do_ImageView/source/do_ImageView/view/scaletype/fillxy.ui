@@ -1,244 +1,234 @@
 {
 	"RootView":{
-		"height":"1334",
+		"width":"750",
+		"type":"do_ALayout",
 		"views":[
 			{
+				"width":"750",
+				"y":"120",
 				"id":"do_ALayout_4",
-				"height":"270",
+				"type":"do_ALayout",
 				"views":[
 					{
-						"id":"do_ImageView_3",
 						"bgColor":"0000FFFF",
-						"height":"220",
-						"source":"data://scaletype/1.jpg",
 						"width":"220",
-						"type":"do_ImageView",
+						"x":"10",
 						"y":"50",
-						"x":"10"
+						"id":"do_ImageView_3",
+						"source":"data://scaletype/1.jpg",
+						"type":"do_ImageView",
+						"height":"220"
 					},
 					{
+						"width":"750",
 						"id":"do_Label_3",
-						"text":"1、图片宽高小于组件宽高  2、图片宽高大于组件宽高3、图片宽等于组件宽，高自适应",
-						"height":"50",
-						"width":"750",
-						"fontStyle":"bold",
-						"type":"do_Label"
-					},
-					{
-						"id":"do_ImageView_4",
-						"bgColor":"0000FFFF",
-						"height":"200",
-						"source":"data://scaletype/2.jpg",
-						"width":"200",
-						"type":"do_ImageView",
-						"y":"51",
-						"x":"232"
-					},
-					{
-						"id":"do_ImageView_9",
-						"bgColor":"0000FFFF",
-						"height":"-1",
-						"source":"data://scaletype/1.jpg",
-						"width":"200",
-						"type":"do_ImageView",
-						"y":"54",
-						"x":"438"
-					}
-				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"120"
-			},
-			{
-				"id":"do_ALayout_1",
-				"height":"270",
-				"views":[
-					{
-						"id":"do_ImageView_1",
-						"bgColor":"0000FFFF",
-						"height":"200",
-						"source":"data://scaletype/1.jpg",
-						"width":"200",
-						"type":"do_ImageView",
-						"y":"50",
-						"x":"10"
-					},
-					{
-						"id":"do_Label_2",
-						"text":"1、图片宽高等于组件宽高  2、图片宽大于组件宽，高等于组件高，3、图片宽自适应，高等于组件组件高",
-						"height":"50",
-						"width":"750",
-						"fontStyle":"bold",
-						"type":"do_Label"
-					},
-					{
-						"id":"do_ImageView_2",
-						"bgColor":"0000FFFF",
-						"height":"220",
-						"source":"data://scaletype/2.jpg",
-						"width":"250",
-						"type":"do_ImageView",
-						"y":"50",
-						"x":"214"
-					},
-					{
-						"id":"do_ImageView_10",
-						"bgColor":"0000FFFF",
-						"height":"200",
-						"source":"data://scaletype/1.jpg",
-						"width":"-1",
-						"type":"do_ImageView",
-						"y":"55",
-						"x":"470"
-					}
-				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"400"
-			},
-			{
-				"id":"do_ALayout_5",
-				"height":"270",
-				"views":[
-					{
-						"id":"do_ImageView_5",
-						"bgColor":"0000FFFF",
-						"height":"-1",
-						"source":"data://scaletype/1.jpg",
-						"width":"-1",
-						"type":"do_ImageView",
-						"y":"50",
-						"x":"10"
-					},
-					{
-						"id":"do_Label_4",
-						"text":"组件宽高为-1，图片自适应3、网络图片高自适应，宽等于组件高",
-						"height":"50",
-						"width":"750",
+						"text":"1、图片宽高小于组件宽高  2、组件宽高等于-1，3、图片宽高大于组件宽高",
 						"fontStyle":"bold",
 						"type":"do_Label",
-						"fontSize":"20"
+						"height":"50"
 					},
 					{
-						"id":"do_ImageView_6",
 						"bgColor":"0000FFFF",
-						"height":"-1",
+						"width":"180",
+						"x":"443",
+						"y":"53",
+						"id":"do_ImageView_4",
+						"source":"data://scaletype/1.jpg",
+						"type":"do_ImageView",
+						"height":"180"
+					},
+					{
+						"bgColor":"0000FFFF",
+						"width":"200",
+						"x":"232",
+						"y":"51",
+						"id":"do_ImageView_9",
+						"source":"data://scaletype/1.jpg",
+						"type":"do_ImageView",
+						"height":"-1"
+					}
+				],
+				"height":"270"
+			},
+			{
+				"width":"750",
+				"y":"400",
+				"id":"do_ALayout_1",
+				"type":"do_ALayout",
+				"views":[
+					{
+						"bgColor":"0000FFFF",
+						"width":"293",
+						"x":"303",
+						"y":"48",
+						"id":"do_ImageView_1",
 						"source":"data://scaletype/2.jpg",
-						"width":"-1",
 						"type":"do_ImageView",
-						"y":"50",
-						"x":"210"
+						"height":"200"
 					},
 					{
-						"id":"do_ImageView_11",
-						"bgColor":"0000FFFF",
-						"height":"-1",
-						"source":"http://img2.imgtn.bdimg.com/it/u=568187522,2833976184&fm=23&gp=0.jpg",
-						"width":"200",
-						"type":"do_ImageView",
-						"y":"59",
-						"x":"510"
-					}
-				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"680"
-			},
-			{
-				"id":"do_ALayout_6",
-				"height":"550",
-				"views":[
-					{
-						"id":"do_ImageView_7",
-						"bgColor":"0000FFFF",
-						"height":"200",
-						"source":"http://img2.imgtn.bdimg.com/it/u=568187522,2833976184&fm=23&gp=0.jpg",
-						"width":"200",
-						"type":"do_ImageView",
-						"y":"50",
-						"x":"10"
-					},
-					{
-						"id":"do_Label_5",
-						"text":"1、网络图片宽高等于组件宽高，2、网络图片自适应3、网络图片宽自适应，高等于组件高",
-						"height":"50",
 						"width":"750",
+						"id":"do_Label_2",
+						"text":"1、图片高小于组件高，宽相等  2、组件高大于图片高，宽相等",
 						"fontStyle":"bold",
-						"type":"do_Label"
+						"type":"do_Label",
+						"height":"50"
 					},
 					{
-						"id":"do_ImageView_8",
 						"bgColor":"0000FFFF",
-						"height":"-1",
-						"source":"http://img2.imgtn.bdimg.com/it/u=568187522,2833976184&fm=23&gp=0.jpg",
-						"width":"-1",
-						"type":"do_ImageView",
+						"width":"293",
+						"x":"3",
 						"y":"50",
-						"x":"210"
-					},
-					{
-						"id":"do_ImageView_12",
-						"bgColor":"0000FFFF",
-						"height":"200",
-						"source":"http://img2.imgtn.bdimg.com/it/u=568187522,2833976184&fm=23&gp=0.jpg",
-						"width":"-1",
+						"id":"do_ImageView_2",
+						"source":"data://scaletype/2.jpg",
 						"type":"do_ImageView",
-						"y":"60",
-						"x":"400"
+						"height":"230"
 					}
 				],
+				"height":"284"
+			},
+			{
 				"width":"750",
+				"y":"690",
+				"id":"do_ALayout_5",
 				"type":"do_ALayout",
-				"y":"960"
-			},
-			{
-				"bgColor":"4B9EF9FF",
-				"id":"do_ALayout_17",
-				"height":"40",
-				"width":"750",
-				"type":"do_ALayout"
-			},
-			{
-				"bgColor":"4B9EF9FF",
-				"id":"do_ALayout_18",
-				"height":"88",
 				"views":[
 					{
+						"bgColor":"0000FFFF",
+						"width":"180",
+						"x":"10",
+						"y":"50",
+						"id":"do_ImageView_5",
+						"source":"data://scaletype/1.jpg",
+						"type":"do_ImageView",
+						"height":"200"
+					},
+					{
+						"width":"750",
+						"fontSize":"20",
+						"id":"do_Label_4",
+						"text":"1、图片宽小于组件宽，高相等2、图片宽高等于组件宽高3、图片宽大于组件宽，高相等",
+						"fontStyle":"bold",
+						"type":"do_Label",
+						"height":"50"
+					},
+					{
+						"bgColor":"0000FFFF",
+						"width":"200",
+						"x":"194",
+						"y":"48",
+						"id":"do_ImageView_6",
+						"source":"data://scaletype/1.jpg",
+						"type":"do_ImageView",
+						"height":"200"
+					},
+					{
+						"bgColor":"0000FFFF",
+						"width":"220",
+						"x":"404",
+						"y":"51",
+						"id":"do_ImageView_11",
+						"source":"data://scaletype/1.jpg",
+						"type":"do_ImageView",
+						"height":"200"
+					}
+				],
+				"height":"259"
+			},
+			{
+				"width":"750",
+				"y":"960",
+				"id":"do_ALayout_6",
+				"type":"do_ALayout",
+				"views":[
+					{
+						"bgColor":"0000FFFF",
+						"width":"-1",
+						"x":"10",
+						"y":"50",
+						"id":"do_ImageView_7",
+						"source":"http://imgsrc.baidu.com/forum/pic/item/06c6998fa0ec08fa3074f1cd59ee3d6d54fbdaae.jpg",
+						"type":"do_ImageView",
+						"height":"-1"
+					},
+					{
+						"width":"750",
+						"id":"do_Label_5",
+						"text":"1、网络图片宽高等于-1",
+						"fontStyle":"bold",
+						"type":"do_Label",
+						"height":"50"
+					},
+					{
+						"bgColor":"0000FFFF",
+						"width":"-1",
+						"x":"210",
+						"y":"50",
+						"id":"do_ImageView_8",
+						"source":"http://img2.imgtn.bdimg.com/it/u=568187522,2833976184&fm=23&gp=0.jpg",
+						"type":"do_ImageView",
+						"height":"-1"
+					},
+					{
+						"bgColor":"0000FFFF",
+						"width":"-1",
+						"x":"400",
+						"y":"60",
+						"id":"do_ImageView_12",
+						"source":"http://img2.imgtn.bdimg.com/it/u=568187522,2833976184&fm=23&gp=0.jpg",
+						"type":"do_ImageView",
+						"height":"200"
+					}
+				],
+				"height":"550"
+			},
+			{
+				"bgColor":"4B9EF9FF",
+				"width":"750",
+				"id":"do_ALayout_17",
+				"type":"do_ALayout",
+				"height":"40"
+			},
+			{
+				"bgColor":"4B9EF9FF",
+				"width":"750",
+				"y":"40",
+				"id":"do_ALayout_18",
+				"type":"do_ALayout",
+				"views":[
+					{
+						"textAlign":"center",
+						"width":"294",
+						"x":"224",
+						"fontSize":"38",
 						"id":"do_Label_9",
 						"text":"fillxy",
-						"fontColor":"FFFFFFFF",
-						"height":"88",
-						"width":"294",
-						"textAlign":"center",
-						"fontSize":"38",
 						"type":"do_Label",
-						"x":"224"
+						"fontColor":"FFFFFFFF",
+						"height":"88"
 					},
 					{
+						"x":"4",
+						"y":"4",
 						"id":"close1",
+						"type":"do_ALayout",
 						"views":[
 							{
-								"id":"do_ImageView_15",
-								"enabled":"true",
-								"height":"44",
-								"source":"source://do_ImageView/image/close.png",
 								"width":"62",
-								"type":"do_ImageView",
+								"x":"20",
 								"y":"22",
-								"x":"20"
+								"id":"do_ImageView_15",
+								"source":"source://do_ImageView/image/close.png",
+								"type":"do_ImageView",
+								"enabled":"true",
+								"height":"44"
 							}
-						],
-						"type":"do_ALayout",
-						"y":"4",
-						"x":"4"
+						]
 					}
 				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"40"
+				"height":"88"
 			}
 		],
-		"width":"750",
-		"type":"do_ALayout"
+		"height":"1334"
 	}
 }

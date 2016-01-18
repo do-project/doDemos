@@ -1,225 +1,225 @@
 {
 	"RootView":{
+		"width":"750",
 		"id":"do_ALayout_7",
-		"height":"1334",
+		"type":"do_ALayout",
 		"views":[
 			{
+				"width":"750",
+				"y":"120",
 				"id":"do_ALayout_3",
-				"height":"300",
+				"type":"do_ALayout",
 				"views":[
 					{
-						"id":"do_Label_2",
-						"text":"1、图片的宽高等于组件宽高2、图片宽高为-1,3、图片宽高大于组件宽高",
-						"height":"50",
 						"width":"748",
+						"y":"8",
 						"fontSize":"20",
-						"type":"do_Label"
+						"id":"do_Label_2",
+						"text":"1、图片的宽高小于组件宽高 2、组件宽高为-1, 3、图片宽高大于组件宽高",
+						"type":"do_Label",
+						"height":"32"
 					},
 					{
 						"bgColor":"0000FFFF",
+						"width":"220",
+						"x":"10",
+						"scale":"center",
+						"y":"39",
 						"id":"do_ImageView_2",
-						"scale":"center",
-						"height":"200",
 						"source":"data://scaletype/6.jpg",
-						"width":"200",
 						"type":"do_ImageView",
-						"y":"50",
-						"x":"10"
+						"height":"220"
 					},
 					{
 						"bgColor":"0000FFFF",
+						"width":"-1",
+						"x":"246",
+						"scale":"center",
+						"y":"47",
 						"id":"do_ImageView_3",
-						"scale":"center",
-						"height":"-1",
 						"source":"data://scaletype/6.jpg",
-						"width":"-1",
 						"type":"do_ImageView",
-						"y":"50",
-						"x":"220"
+						"height":"-1"
 					},
 					{
 						"bgColor":"0000FFFF",
-						"id":"do_ImageView_4",
+						"width":"180",
+						"x":"450",
 						"scale":"center",
-						"height":"200",
-						"source":"data://scaletype/3.jpg",
-						"width":"200",
-						"type":"do_ImageView",
-						"y":"50",
-						"x":"430"
-					}
-				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"120"
-			},
-			{
-				"id":"do_ALayout_5",
-				"height":"300",
-				"views":[
-					{
-						"id":"do_Label_3",
-						"text":"1、图片的宽=-1,高等于组件高，2、图片高=-1宽等于组件宽，,3、图片宽高小于组件宽高",
-						"height":"50",
-						"width":"748",
-						"type":"do_Label"
-					},
-					{
-						"bgColor":"0000FFFF",
-						"id":"do_ImageView_5",
-						"scale":"center",
-						"height":"200",
-						"source":"data://scaletype/6.jpg",
-						"width":"-1",
-						"type":"do_ImageView",
-						"y":"50",
-						"x":"10"
-					},
-					{
-						"bgColor":"0000FFFF",
-						"id":"do_ImageView_6",
-						"scale":"center",
-						"height":"-1",
-						"source":"data://scaletype/6.jpg",
-						"width":"200",
-						"type":"do_ImageView",
-						"y":"50",
-						"x":"220"
-					},
-					{
-						"bgColor":"0000FFFF",
-						"id":"do_ImageView_7",
-						"scale":"center",
-						"height":"220",
-						"source":"data://scaletype/4.jpg",
-						"width":"220",
-						"type":"do_ImageView",
-						"y":"50",
-						"x":"430"
-					}
-				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"440"
-			},
-			{
-				"id":"do_ALayout_6",
-				"height":"400",
-				"views":[
-					{
-						"id":"do_Label_4",
-						"text":"1、网络图片宽高=-1，2、网络图片高=-1宽等于组件宽,3、图片宽大于组件宽，高小组件高",
-						"height":"50",
-						"width":"748",
-						"type":"do_Label"
-					},
-					{
-						"bgColor":"0000FFFF",
-						"id":"do_ImageView_8",
-						"scale":"center",
-						"height":"-1",
-						"source":"http://img3.imgtn.bdimg.com/it/u=1684642630,2291077943&fm=21&gp=0.jpg",
-						"width":"-1",
-						"type":"do_ImageView",
-						"y":"50",
-						"x":"10"
-					},
-					{
-						"bgColor":"0000FFFF",
-						"id":"do_ImageView_9",
-						"scale":"center",
-						"height":"-1",
-						"source":"http://img3.imgtn.bdimg.com/it/u=1684642630,2291077943&fm=21&gp=0.jpg",
-						"width":"300",
-						"type":"do_ImageView",
 						"y":"52",
-						"x":"232"
+						"id":"do_ImageView_4",
+						"source":"data://scaletype/6.jpg",
+						"type":"do_ImageView",
+						"height":"180"
+					}
+				],
+				"height":"260"
+			},
+			{
+				"width":"750",
+				"y":"440",
+				"id":"do_ALayout_5",
+				"type":"do_ALayout",
+				"views":[
+					{
+						"bgColor":"0000FFFF",
+						"width":"-1",
+						"x":"10",
+						"scale":"center",
+						"id":"do_ImageView_5",
+						"source":"data://scaletype/6.jpg",
+						"type":"do_ImageView",
+						"height":"200"
 					},
 					{
 						"bgColor":"0000FFFF",
-						"id":"do_ImageView_10",
+						"width":"200",
+						"x":"452",
 						"scale":"center",
-						"height":"220",
-						"source":"data://scaletype/7.jpg",
-						"width":"220",
+						"y":"4",
+						"id":"do_ImageView_6",
+						"source":"data://scaletype/6.jpg",
 						"type":"do_ImageView",
-						"y":"50",
-						"x":"530"
+						"height":"-1"
+					},
+					{
+						"bgColor":"0000FFFF",
+						"width":"-1",
+						"x":"222",
+						"scale":"center",
+						"y":"1",
+						"id":"do_ImageView_7",
+						"source":"data://scaletype/6.jpg",
+						"type":"do_ImageView",
+						"height":"-1"
 					}
 				],
+				"height":"226"
+			},
+			{
 				"width":"750",
+				"y":"722",
+				"id":"do_ALayout_6",
 				"type":"do_ALayout",
-				"y":"740"
+				"views":[
+					{
+						"bgColor":"0000FFFF",
+						"width":"-1",
+						"scale":"center",
+						"id":"do_ImageView_8",
+						"source":"http://imgsrc.baidu.com/forum/pic/item/06c6998fa0ec08fa3074f1cd59ee3d6d54fbdaae.jpg",
+						"type":"do_ImageView",
+						"height":"-1"
+					},
+					{
+						"bgColor":"0000FFFF",
+						"width":"300",
+						"x":"450",
+						"scale":"center",
+						"id":"do_ImageView_9",
+						"source":"http://imgsrc.baidu.com/forum/pic/item/06c6998fa0ec08fa3074f1cd59ee3d6d54fbdaae.jpg",
+						"type":"do_ImageView",
+						"height":"-1"
+					}
+				],
+				"height":"281"
+			},
+			{
+				"width":"699",
+				"x":"-3",
+				"y":"1005",
+				"fontSize":"20",
+				"id":"do_Label_7",
+				"text":"1、网络图片宽=-1，高等于组件高2、图片宽大于组件宽，高小组件高",
+				"type":"do_Label",
+				"height":"43"
+			},
+			{
+				"bgColor":"4B9EF9FF",
+				"width":"750",
+				"id":"do_ALayout_9",
+				"type":"do_ALayout",
+				"height":"40"
+			},
+			{
+				"bgColor":"4B9EF9FF",
+				"width":"750",
+				"y":"40",
+				"id":"do_ALayout_10",
+				"type":"do_ALayout",
+				"views":[
+					{
+						"textAlign":"center",
+						"width":"294",
+						"x":"224",
+						"fontSize":"38",
+						"id":"do_Label_8",
+						"text":"center",
+						"type":"do_Label",
+						"fontColor":"FFFFFFFF",
+						"height":"88"
+					},
+					{
+						"x":"4",
+						"y":"4",
+						"id":"close1",
+						"type":"do_ALayout",
+						"views":[
+							{
+								"width":"62",
+								"x":"20",
+								"y":"22",
+								"id":"do_ImageView_12",
+								"source":"source://do_ImageView/image/close.png",
+								"type":"do_ImageView",
+								"enabled":"true",
+								"height":"44"
+							}
+						]
+					}
+				],
+				"height":"88"
 			},
 			{
 				"bgColor":"0000FFFF",
-				"id":"do_ImageView_11",
+				"width":"296",
+				"x":"384",
 				"scale":"center",
-				"height":"150",
-				"source":"http://img1.imgtn.bdimg.com/it/u=633520533,1699628968&fm=21&gp=0.jpg",
-				"width":"650",
+				"y":"1049",
+				"id":"do_ImageView_10",
+				"source":"data://scaletype/7.jpg",
 				"type":"do_ImageView",
-				"y":"1181",
-				"x":"10"
+				"height":"220"
 			},
 			{
-				"id":"do_Label_7",
-				"text":"网络图片高大于组件高，宽小于组件宽",
-				"height":"43",
-				"width":"699",
-				"fontSize":"20",
+				"bgColor":"0000FFFF",
+				"width":"-1",
+				"scale":"center",
+				"y":"1049",
+				"id":"do_ImageView_11",
+				"source":"http://imgsrc.baidu.com/forum/pic/item/06c6998fa0ec08fa3074f1cd59ee3d6d54fbdaae.jpg",
+				"type":"do_ImageView",
+				"height":"281"
+			},
+			{
+				"width":"748",
+				"x":"2",
+				"y":"384",
+				"id":"do_Label_3",
+				"text":"1、组件的宽等于-1,高等于图片高，2、组件宽高等于-1, 3、组件高等于-1，宽等于组件宽",
 				"type":"do_Label",
-				"y":"1141",
-				"x":"3"
+				"height":"50"
 			},
 			{
-				"bgColor":"4B9EF9FF",
-				"id":"do_ALayout_9",
-				"height":"40",
-				"width":"750",
-				"type":"do_ALayout"
-			},
-			{
-				"bgColor":"4B9EF9FF",
-				"id":"do_ALayout_10",
-				"height":"88",
-				"views":[
-					{
-						"id":"do_Label_8",
-						"text":"center",
-						"fontColor":"FFFFFFFF",
-						"height":"88",
-						"width":"294",
-						"textAlign":"center",
-						"fontSize":"38",
-						"type":"do_Label",
-						"x":"224"
-					},
-					{
-						"id":"close1",
-						"views":[
-							{
-								"id":"do_ImageView_12",
-								"enabled":"true",
-								"height":"44",
-								"source":"source://do_ImageView/image/close.png",
-								"width":"62",
-								"type":"do_ImageView",
-								"y":"22",
-								"x":"20"
-							}
-						],
-						"type":"do_ALayout",
-						"y":"4",
-						"x":"4"
-					}
-				],
-				"width":"750",
-				"type":"do_ALayout",
-				"y":"40"
+				"width":"748",
+				"x":"4",
+				"y":"667",
+				"id":"do_Label_4",
+				"text":"  1、网络图片宽高=-1，2、网络图片宽小于组件宽，高=-1",
+				"type":"do_Label",
+				"height":"50"
 			}
 		],
-		"width":"750",
-		"type":"do_ALayout"
+		"height":"1334"
 	}
 }
