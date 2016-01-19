@@ -1,0 +1,93 @@
+﻿{
+  "ID": "do_Picker",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "单选控件控件",
+  "Version": "Internal",
+  "Description": "可上下滑动选择的单选控件，停留在中间即为选中项",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20151223/do_Picker/iconfont-xuanze.png",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "fontSize",
+      "Name": "字体大小",
+      "Type": "Number",
+      "DefaultValue": "20",
+      "EditType": "0",
+      "Group": "",
+      "Description": "字体大小",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    },
+    {
+      "ID": "index",
+      "Name": "当前选中的数据索引",
+      "Type": "Number",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "数据的索引值，设置时会切换数据选择，索引小于0时指向数组第一个数据，越界时指向数组最后一个数据",
+      "Design": {
+        "Type": "Integer",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "selectChanged",
+      "Description": "当数据变化或数据索引变化触发",
+      "ReturnType": "Number",
+      "ReturnDesc": "返回选中数据的索引"
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "bindItems",
+      "Name": "绑定item的数据",
+      "Description": "可绑定listData实例",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "data",
+          "Name": "数据",
+          "Type": "Node",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "需有一项为text用于显示文字，比如['a''b'...]"
+        }
+      ]
+    },
+    {
+      "ID": "refreshItems",
+      "Name": "刷新item数据",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": []
+}
