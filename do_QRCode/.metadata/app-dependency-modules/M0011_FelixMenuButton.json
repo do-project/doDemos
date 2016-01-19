@@ -1,0 +1,67 @@
+﻿{
+  "ID": "M0011_FelixMenuButton",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "按钮",
+  "Version": "Internal",
+  "Description": "这是一个自定义的菜单按钮。",
+  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150709/bb113039-7337-4ae2-bb27-c53426f275ed.gif",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7.0"
+  },
+  "Android": {
+    "Support": 0,
+    "MinVersion": "8.1"
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": "8.1"
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": "8.1"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "button_menu_name",
+      "Name": "下拉菜单名",
+      "Type": "String",
+      "DefaultValue": "A,B,C,D,E,F",
+      "EditType": "1",
+      "Group": "基础属性",
+      "Description": "",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    },
+    {
+      "ID": "button_name",
+      "Name": "按钮名字",
+      "Type": "String",
+      "DefaultValue": "Tap",
+      "EditType": "1",
+      "Group": "基础属性",
+      "Description": "",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "touch",
+      "Description": "点击菜单某一项，触发。",
+      "ReturnType": "String",
+      "ReturnDesc": "回调是一个菜单的位置。"
+    }
+  ],
+  "syncMethodes": [],
+  "asyncMethodes": []
+}
