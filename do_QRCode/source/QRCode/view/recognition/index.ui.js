@@ -23,7 +23,7 @@ do_Button_1.on("touch", function(data, e) {
 	do_ALayout_4.visible=true;
 })
 do_Button_3.on("touch", function(data, e) {
-	target.recognition("source://image/a.jpg", function(data, e) {
+	target.recognition("data://a.jpg", function(data, e) {
 	do_WebView_3.visible=true;
 	do_WebView_3.url=data;
 	do_ALayout_4.visible=false;

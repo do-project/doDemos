@@ -3,15 +3,15 @@
 		"height":"1334",
 		"views":[
 			{
-				"bgColor":"4B9EF9FF",
 				"id":"do_ALayout_1",
+				"bgColor":"4B9EF9FF",
 				"height":"40",
 				"width":"750",
 				"type":"do_ALayout"
 			},
 			{
-				"bgColor":"4B9EF9FF",
 				"id":"do_ALayout_2",
+				"bgColor":"4B9EF9FF",
 				"height":"88",
 				"views":[
 					{
@@ -26,13 +26,13 @@
 					},
 					{
 						"id":"do_Label_1",
-						"text":"识别二维码",
 						"fontColor":"FFFFFFFF",
+						"text":"识别二维码",
 						"height":"88",
 						"width":"294",
 						"textAlign":"center",
-						"fontSize":"40",
 						"type":"do_Label",
+						"fontSize":"40",
 						"x":"224"
 					},
 					{
@@ -62,8 +62,8 @@
 				"height":"1208",
 				"views":[
 					{
-						"id":"do_Button_1",
 						"bgColor":"800080FF",
+						"id":"do_Button_1",
 						"height":"500",
 						"width":"490",
 						"type":"do_Button",
@@ -71,10 +71,10 @@
 						"x":"122"
 					},
 					{
-						"id":"do_ImageView_4",
 						"bgColor":"00000000",
+						"id":"do_ImageView_4",
 						"height":"500",
-						"source":"source://QRCode/image/deviceone.jpg",
+						"source":"data://a.jpg",
 						"width":"500",
 						"type":"do_ImageView",
 						"y":"114",
@@ -85,14 +85,14 @@
 						"text":"点击识别二维码",
 						"width":"454",
 						"textAlign":"center",
-						"type":"do_Label",
 						"fontSize":"20",
+						"type":"do_Label",
 						"y":"624",
 						"x":"144"
 					},
 					{
-						"bgColor":"FFFFFFFF",
 						"id":"do_WebView_3",
+						"bgColor":"FFFFFFFF",
 						"height":"1204",
 						"visible":"false",
 						"width":"750",
@@ -104,27 +104,27 @@
 						"visible":"false",
 						"views":[
 							{
-								"bgColor":"808080FF",
 								"id":"do_Button_2",
-								"fontColor":"FFFFFFFF",
+								"bgColor":"808080FF",
 								"text":"取消",
+								"fontColor":"FFFFFFFF",
 								"width":"686",
 								"radius":"10",
-								"fontSize":"30",
 								"type":"do_Button",
+								"fontSize":"30",
 								"y":"136",
 								"x":"20"
 							},
 							{
-								"bgColor":"808080FF",
 								"id":"do_Button_3",
-								"fontColor":"FFFFFFFF",
+								"bgColor":"808080FF",
 								"text":"识别二维码",
+								"fontColor":"FFFFFFFF",
 								"height":"100",
 								"width":"682",
 								"radius":"10",
-								"fontSize":"30",
 								"type":"do_Button",
+								"fontSize":"30",
 								"y":"20",
 								"x":"24"
 							}
