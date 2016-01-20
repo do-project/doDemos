@@ -14,38 +14,21 @@ page.on("back", function(data) {
 })
 
 //
+var target = ui("do_SeekBar_1");
+var timer = mm("do_Timer");
 var nf = sm("do_Notification");
-var up = ui("up");
-var down = ui("down");
+var up = ui("up1");
+var down = ui("down1");
 up.on("touch", function(data, e) {
-	nf.toast("上一曲");
+	var a=target.progress;
+	target.progress=a+10;
+	nf.toast("增加声音");
 })
 down.on("touch", function(data, e) {
-	nf.toast("下一曲");
+	var a=target.progress;
+	a=a-10;
+	target.progress=a;
+	nf.toast("减弱声音");
 })
 
-//
-var target = ui("do_SeekBar_1");
-var a = ui("do_ALayout_6");
-var image = ui("do_ImageView_4");
-var timer = mm("do_Timer");
-
-nf.toast("开始播放");
-timer.start();
-var i = 1;
-timer.on("tick", function() {
-	target.progress = i;
-	if (i == 100) {
-		timer.stop();
-	}
-	i++;
-})
-
-a.on("touch", function() {
-	image.source = "source://do_SeekBar/image/4.png";
-	nf.toast("暂停播放");
-	timer.on("tick", function() {
-		timer.stop();
-	})
-});
  

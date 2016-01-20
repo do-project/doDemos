@@ -70,55 +70,56 @@
 				"views":[
 					{
 						"id":"do_SeekBar_1",
-						"width":"614",
+						"width":"596",
 						"type":"do_SeekBar",
 						"y":"254",
-						"x":"68"
+						"x":"74"
 					},
 					{
-						"id":"do_ImageView_3",
+						"id":"do_ImageView_6",
 						"height":"100",
-						"source":"source://do_SeekBar/image/2.png",
+						"source":"source://do_SeekBar/image/sound.png",
 						"type":"do_ImageView",
-						"y":"140",
-						"x":"172"
+						"y":"70",
+						"x":"322"
 					},
 					{
-						"id":"do_ImageView_5",
-						"height":"100",
-						"source":"source://do_SeekBar/image/3.png",
-						"type":"do_ImageView",
-						"y":"140",
-						"x":"452"
-					},
-					{
-						"id":"up",
-						"type":"do_Button",
-						"y":"150",
-						"x":"172"
-					},
-					{
-						"id":"down",
-						"type":"do_Button",
-						"y":"150",
-						"x":"452"
-					},
-					{
-						"id":"do_ALayout_6",
+						"id":"up1",
 						"height":"50",
 						"views":[
 							{
-								"id":"do_ImageView_4",
+								"id":"do_ImageView_5",
 								"height":"50",
-								"source":"source://do_SeekBar/image/1.png",
+								"source":"source://do_SeekBar/image/加.png",
 								"width":"50",
+								"radius":"25",
 								"type":"do_ImageView"
 							}
 						],
 						"width":"50",
+						"isStretch":"false",
 						"type":"do_ALayout",
-						"y":"165",
-						"x":"340"
+						"y":"266",
+						"x":"690"
+					},
+					{
+						"id":"down1",
+						"height":"50",
+						"views":[
+							{
+								"id":"do_ImageView_3",
+								"height":"50",
+								"source":"source://do_SeekBar/image/减.png",
+								"width":"50",
+								"radius":"25",
+								"type":"do_ImageView"
+							}
+						],
+						"width":"50",
+						"isStretch":"false",
+						"type":"do_ALayout",
+						"y":"266",
+						"x":"8"
 					}
 				],
 				"width":"750",
