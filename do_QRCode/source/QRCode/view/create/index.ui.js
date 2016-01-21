@@ -12,7 +12,7 @@ page.on("back", function(data) {
 })
 
 //
-var do_ALayout_7=ui("do_ALayout_7");
+var do_ALayout_7 = ui("do_ALayout_7");
 do_ALayout_7.on("touch", function(data, e) {
 	app.openPage({
 		source : "source://QRCode/view/create/index2.ui",

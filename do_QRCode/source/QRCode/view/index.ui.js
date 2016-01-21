@@ -6,7 +6,7 @@ var app = sm("do_App");
 var page = sm("do_Page");
 var root = ui("$");
 
-//返回按钮
+// 返回按钮
 var close = ui("close");
 close.on("touch", function() {
 	app.closePage();
@@ -15,7 +15,7 @@ page.on("back", function(data) {
 	app.closePage();
 })
 
-//跳到代码页
+// 跳到代码页
 var code = ui("code");
 code.on("touch", function() {
 	app.openPage({
@@ -34,10 +34,8 @@ listdata.addData([ {
 }, {
 	"index" : "2",
 	"name" : "识别二维码"
-}
-]);
+} ]);
 listview.bindItems(listdata);
-
 
 listview.on("touch", function(index) {
 	switch (index) {
@@ -54,8 +52,6 @@ listview.on("touch", function(index) {
 			statusBarState : "transparent"
 		});
 		break;
-	
+
 	}
 });
-
-

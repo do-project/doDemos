@@ -4,15 +4,15 @@
 		"height":"1334",
 		"views":[
 			{
-				"id":"do_ALayout_1",
 				"bgColor":"000000FF",
+				"id":"do_ALayout_1",
 				"height":"40",
 				"width":"750",
 				"type":"do_ALayout"
 			},
 			{
-				"id":"do_ALayout_2",
 				"bgColor":"000000FF",
+				"id":"do_ALayout_2",
 				"height":"88",
 				"views":[
 					{
@@ -27,13 +27,13 @@
 					},
 					{
 						"id":"do_Label_1",
-						"text":"个人信息",
 						"fontColor":"FFFFFFFF",
+						"text":"个人信息",
 						"height":"88",
 						"width":"294",
 						"textAlign":"center",
-						"type":"do_Label",
 						"fontSize":"40",
+						"type":"do_Label",
 						"x":"224"
 					},
 					{
@@ -59,8 +59,8 @@
 				"y":"40"
 			},
 			{
-				"bgColor":"FFFFFFFF",
 				"id":"do_ALayout_3",
+				"bgColor":"FFFFFFFF",
 				"height":"528",
 				"views":[
 					{
@@ -71,8 +71,8 @@
 								"id":"do_Label_5",
 								"text":"头像",
 								"fontStyle":"bold",
-								"fontSize":"25",
 								"type":"do_Label",
+								"fontSize":"25",
 								"y":"10"
 							},
 							{
@@ -95,15 +95,15 @@
 								"id":"do_Label_6",
 								"text":"名字",
 								"fontStyle":"bold",
-								"fontSize":"25",
-								"type":"do_Label"
+								"type":"do_Label",
+								"fontSize":"25"
 							},
 							{
 								"id":"do_Label_8",
 								"text":"雪儿",
 								"textAlign":"center",
-								"fontSize":"20",
 								"type":"do_Label",
+								"fontSize":"20",
 								"x":"580"
 							}
 						],
@@ -119,15 +119,15 @@
 								"id":"do_Label_7",
 								"text":"账号",
 								"fontStyle":"bold",
-								"fontSize":"25",
-								"type":"do_Label"
+								"type":"do_Label",
+								"fontSize":"25"
 							},
 							{
 								"id":"do_Label_9",
 								"text":"xueerz",
 								"textAlign":"center",
-								"fontSize":"20",
 								"type":"do_Label",
+								"fontSize":"20",
 								"x":"580"
 							}
 						],
@@ -142,7 +142,7 @@
 							{
 								"id":"do_ImageView_4",
 								"height":"40",
-								"source":"source://QRCode/image/QR.png",
+								"source":"http://pic.xcarimg.com/img/news_photo/2013/01/10/7kwBF1BCJa7117.jpg",
 								"width":"40",
 								"type":"do_ImageView",
 								"y":"18",
@@ -162,8 +162,8 @@
 								"text":"我的二维码",
 								"width":"132",
 								"fontStyle":"bold",
-								"fontSize":"25",
-								"type":"do_TextField"
+								"type":"do_TextField",
+								"fontSize":"25"
 							}
 						],
 						"width":"700",
@@ -172,8 +172,8 @@
 						"x":"20"
 					},
 					{
-						"bgColor":"C0C0C0FF",
 						"id":"do_Label_2",
+						"bgColor":"C0C0C0FF",
 						"height":"1",
 						"width":"700",
 						"type":"do_Label",
@@ -181,8 +181,8 @@
 						"x":"20"
 					},
 					{
-						"id":"do_Label_3",
 						"bgColor":"C0C0C0FF",
+						"id":"do_Label_3",
 						"height":"1",
 						"width":"700",
 						"type":"do_Label",
@@ -190,8 +190,8 @@
 						"x":"20"
 					},
 					{
-						"id":"do_Label_4",
 						"bgColor":"C0C0C0FF",
+						"id":"do_Label_4",
 						"height":"1",
 						"width":"700",
 						"type":"do_Label",

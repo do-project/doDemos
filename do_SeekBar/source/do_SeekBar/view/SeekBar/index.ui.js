@@ -20,15 +20,13 @@ var nf = sm("do_Notification");
 var up = ui("up1");
 var down = ui("down1");
 up.on("touch", function(data, e) {
-	var a=target.progress;
-	target.progress=a+10;
+	var a = target.progress;
+	target.progress = a + 10;
 	nf.toast("增加声音");
 })
 down.on("touch", function(data, e) {
-	var a=target.progress;
-	a=a-10;
-	target.progress=a;
+	var a = target.progress;
+	a = a - 10;
+	target.progress = a;
 	nf.toast("减弱声音");
 })
-
- 
